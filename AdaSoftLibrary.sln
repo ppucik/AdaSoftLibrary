@@ -8,7 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		global.json = global.json
-		Library.xml = Library.xml
 		note.txt = note.txt
 		README.md = README.md
 	EndProjectSection
@@ -25,7 +24,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdaSoftLibrary.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdaSoftLibrary.Web", "src\AdaSoftLibrary.Web\AdaSoftLibrary.Web.csproj", "{382F326F-15A3-432D-8F89-D32C9D7AE477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaSoftLibrary.Api", "src\AdaSoftLibrary.Api\AdaSoftLibrary.Api.csproj", "{1FCD8768-53F0-4B60-BAE1-4E006767A8EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdaSoftLibrary.Api", "src\AdaSoftLibrary.Api\AdaSoftLibrary.Api.csproj", "{1FCD8768-53F0-4B60-BAE1-4E006767A8EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{615FC152-6AF2-4E7F-8345-CD3B9B31F2CA}"
+	ProjectSection(SolutionItems) = preProject
+		data\Library.sqlite = data\Library.sqlite
+		data\Library.xml = data\Library.xml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

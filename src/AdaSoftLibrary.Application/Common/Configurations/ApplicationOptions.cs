@@ -18,11 +18,9 @@ public class ApplicationOptions
     public string Password { get; init; } = default!;
 
     /// <summary>
-    /// Typ zdroja dát:
-    /// <para>"XML" - potrebné nastaviť hodnotu <see cref="XmlFilePath" /> (default)</para>
-    /// <para>"SQLite" - potrebné nastaviť hodnotu "DefaultConnection"</para>
+    /// Typ zdroja dát
     /// </summary>
-    public string DataSourceType { get; init; } = default!;
+    public DataSourceTypeEnum DataSourceType { get; init; } = default!;
 
     /// <summary>
     /// Cesta k XML súboru ("Library.xml")

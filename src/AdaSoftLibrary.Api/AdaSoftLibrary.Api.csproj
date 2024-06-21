@@ -8,6 +8,10 @@
     <PackageReference Include="Carter" />
     <PackageReference Include="MediatR" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Serilog" />
+    <PackageReference Include="Serilog.Sinks.Console" />
+    <PackageReference Include="Serilog.Sinks.File" />
+    <PackageReference Include="Serilog.Sinks.SQLite" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 

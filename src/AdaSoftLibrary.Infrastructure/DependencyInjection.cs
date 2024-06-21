@@ -18,7 +18,7 @@ public static class DependencyInjection
 
         var applicationOptions = configuration.GetSection(ApplicationOptions.SECTION_NAME).Get<ApplicationOptions>();
 
-        if (applicationOptions?.DataSourceType == "SQLite")
+        if (applicationOptions?.DataSourceType == DataSourceTypeEnum.SQLite)
         {
             // Add SQLite database context
             var connectionString = configuration.GetConnectionString("DefaultConnection");

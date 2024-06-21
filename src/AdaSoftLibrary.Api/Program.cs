@@ -4,16 +4,21 @@ using AdaSoftLibrary.Application.Extensions;
 using AdaSoftLibrary.Infrastructure;
 using Carter;
 using Microsoft.AspNetCore.Http.Json;
+using Serilog;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 var assembly = typeof(Program).Assembly;
+//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Application configuration
 builder.Services.ConfigureOptions<ApplicationOptionsSetup>();
 
 // JSON serialization
 builder.Services.Configure<JsonOptions>(options => new JsonSerializerOptions(JsonSerializerDefaults.Web) { WriteIndented = true });
+
+// Logging
+builder.Host.UseSerilog((context, config) => { config.ReadFrom.Configuration(context.Configuration); });
 
 // Add services to the container
 builder.Services
@@ -28,6 +33,7 @@ builder.Services.AddSwagger();
 builder.Services.AddCarter();
 
 var app = builder.Build();
+app.Logger.LogInformation($"AdaSoftLibrary.API starting...");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

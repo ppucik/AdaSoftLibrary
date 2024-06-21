@@ -4,11 +4,16 @@ using AdaSoftLibrary.Application.Extensions;
 using AdaSoftLibrary.Infrastructure;
 using AdaSoftLibrary.Infrastructure.Extensions;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Application configuration
 builder.Services.ConfigureOptions<ApplicationOptionsSetup>();
+
+// Logging
+builder.Host.UseSerilog((context, config) => { config.ReadFrom.Configuration(context.Configuration); });
 
 // Add cookie authentication
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -30,6 +35,8 @@ builder.Services
 builder.Services.AddGlobalErrorHandler();
 
 var app = builder.Build();
+
+app.Logger.LogInformation($"AdaSoftLibrary.Web starting...");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
