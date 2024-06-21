@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Book id="1">
+    <Author>Ernest Hemingway</Author>
+    <Name>Starec a more</Name>
+    <Year>1952</Year>
+    <Borrowed>
+      <FirstName>Peter</FirstName>
+      <LastName>Prvý</LastName>
+      <From>25.3.2016</From>
+    </Borrowed>
+  </Book>
+  <Book id="2">
+    <Author>William Shakespeare</Author>
+    <Name>Rómeo a Júlia</Name>
+    <Year xsi:nil="true" />
+    <Borrowed>
+      <FirstName>Lukáš</FirstName>
+      <LastName>Druhý</LastName>
+      <From>16.6.2018</From>
+    </Borrowed>
+  </Book>
+  <Book id="3">
+    <Author>Pavol Országh Hviezdoslav</Author>
+    <Name>Krvavé sonety</Name>
+    <Year xsi:nil="true" />
+    <Borrowed>
+      <FirstName>Matej</FirstName>
+      <LastName>Tretí</LastName>
+      <From>1.2.2017</From>
+    </Borrowed>
+  </Book>
+  <Book id="4">
+    <Author>Pavol Országh Hviezdoslav</Author>
+    <Name>Hájniková žena</Name>
+    <Year xsi:nil="true" />
+    <Borrowed>
+      <FirstName />
+      <LastName />
+      <From />
+    </Borrowed>
+  </Book>
+  <Book id="5">
+    <Author>William Shakespeare</Author>
+    <Name>Hamlet</Name>
+    <Year xsi:nil="true" />
+    <Borrowed>
+      <FirstName>Jozef</FirstName>
+      <LastName>Štvrtý</LastName>
+      <From>25.10.2009</From>
+    </Borrowed>
+  </Book>
+  <Book id="6">
+    <Author>Milo Urban</Author>
+    <Name>Živý bič</Name>
+    <Year xsi:nil="true" />
+    <Borrowed>
+      <FirstName />
+      <LastName />
+      <From />
+    </Borrowed>
+  </Book>
+</Library>

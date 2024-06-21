@@ -1,0 +1,13 @@
+===========================================================
+ ASP.NET MVC Application - Clean Architecture
+===========================================================
+
+
+
+
+
+-----------------------------------------------------------
+SQLite
+> Get-Migration -project AdaSoftLibrary.Infrastructure
+> Add-Migration InitialMigration -project AdaSoftLibrary.Infrastructure
+> Update-Database -Migration InitialMigration -project AdaSoftLibrary.Infrastructure

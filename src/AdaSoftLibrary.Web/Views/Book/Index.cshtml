@@ -1,0 +1,61 @@
+﻿@model BookViewModel;
+
+@{
+    ViewData["Title"] = "Knihy";
+}
+
+<div class="container p-2">
+    <div class="row p-2">
+        <div class="col-6">
+            <h1 class="display-5">@ViewData["Title"]</h1>
+        </div>
+        <div class="col-6 text-end">
+            @if (Model.IsAuthenticated)
+            {
+                <a asp-controller="Book" asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i>&nbsp;&nbsp;Zaevidovať knihu</a>
+            }
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Autor</th>
+                <th>Názov</th>
+                <th>Rok</th>
+                <th>Meno čitateľa</th>
+                <th>Dátum zapožičania</th>
+                <th>@(Model.IsAuthenticated ? "Akcie" : "Dostupnosť")</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td width="25%">@book.Author</td>
+                    <td width="25%">@book.Name</td>
+                    <td width="5%">@book.Year</td>
+                    <td width="20%">@book.Reader</td>
+                    <td width="15%">@book.BorrowedFrom</td>
+                    <td width="10%" class="text-center">
+                        <div>
+                            @if (Model.IsAuthenticated)
+                            {
+                                <a asp-controller="Book" asp-action="Detail" asp-route-id="@book.ID" class="btn btn-sm btn-secondary" title="Detail knihy"><i class="bi bi-book"></i></a>
+                                <a asp-controller="Book" asp-action="Edit" asp-route-id="@book.ID" class="btn btn-sm btn-primary" title="Editovať"><i class="bi bi-pencil-square"></i></a>
+                                <a asp-controller="Book" asp-action="Delete" asp-route-id="@book.ID" class="btn btn-sm btn-danger" title="Vymazať"><i class="bi bi-trash3"></i></a>
+                            }
+                            else
+                            {
+                                @if (!book.IsBorrowed)
+                                {
+                                    <a asp-controller="Book" asp-action="Detail" asp-route-id="@book.ID" class="btn btn-sm btn-secondary"><i class="bi bi-book"></i>&nbsp;&nbsp;Objednať</a>
+                                }
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

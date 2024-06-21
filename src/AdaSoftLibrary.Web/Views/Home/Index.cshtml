@@ -1,0 +1,24 @@
+﻿@model SearchViewModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Vitajte v knihovne</h1>
+    <p>Prihlásený používateľ: <b>@(User.Identity?.Name ?? "žiadny")</b></></p>
+
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-4 card p-3">
+            <form asp-controller="Book" asp-action="Index" method="post">
+                <input asp-for="SearchTerm" class="form-control mb-3" placeholder="Zadajte autora alebo časť názvu knihy" />
+                <div class="row text-start">
+                    <label class="form-check-label mb-3">
+                        <input asp-for="OnlyAvailable" class="form-check-input" />&nbsp;<span>@Html.DisplayNameFor(a => a.OnlyAvailable)</span>
+                    </label>
+                </div>
+                <input type="submit" value="Vyhľadať" class="btn btn-md btn-primary" />
+            </form>
+        </div>
+    </div>
+</div>
