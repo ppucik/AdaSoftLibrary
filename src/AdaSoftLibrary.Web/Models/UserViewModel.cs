@@ -2,6 +2,9 @@
 
 namespace AdaSoftLibrary.Web.Models;
 
+/// <summary>
+/// Prihlásenie používateľa (administrátora systému)
+/// </summary>
 public class UserViewModel
 {
     [Required(ErrorMessage = "Použivateľské meno je požadované")]

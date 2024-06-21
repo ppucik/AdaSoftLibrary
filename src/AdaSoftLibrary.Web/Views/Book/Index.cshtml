@@ -1,4 +1,4 @@
-﻿@model BookViewModel;
+﻿@model BooksViewModel;
 
 @{
     ViewData["Title"] = "Knihy";
@@ -41,9 +41,9 @@
                         <div>
                             @if (Model.IsAuthenticated)
                             {
-                                <a asp-controller="Book" asp-action="Detail" asp-route-id="@book.ID" class="btn btn-sm btn-secondary" title="Detail knihy"><i class="bi bi-book"></i></a>
-                                <a asp-controller="Book" asp-action="Edit" asp-route-id="@book.ID" class="btn btn-sm btn-primary" title="Editovať"><i class="bi bi-pencil-square"></i></a>
-                                <a asp-controller="Book" asp-action="Delete" asp-route-id="@book.ID" class="btn btn-sm btn-danger" title="Vymazať"><i class="bi bi-trash3"></i></a>
+                                <a asp-controller="Book" asp-action="Detail" asp-route-id="@book.ID" class="btn btn-sm btn-outline-secondary" title="Detail knihy"><i class="bi bi-book"></i></a>
+                                <a asp-controller="Book" asp-action="Edit" asp-route-id="@book.ID" class="btn btn-sm btn-outline-primary" title="Editovať"><i class="bi bi-pencil-square"></i></a>
+                                <a asp-controller="Book" asp-action="Delete" asp-route-id="@book.ID" class="btn btn-sm btn-outline-danger" title="Vymazať"><i class="bi bi-trash3"></i></a>
                             }
                             else
                             {

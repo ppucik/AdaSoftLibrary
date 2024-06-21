@@ -1,0 +1,64 @@
+﻿@model DetailViewModel;
+
+@{
+    ViewData["Title"] = "Detail knihy";
+}
+
+<div class="container p-2">
+    <div class="row p-2">
+        <div class="col-12">
+            <h1 class="display-5">@ViewData["Title"]</h1>
+        </div>
+    </div>
+
+    <div class="row p-2">
+        <div class="col-6">
+            <table class="table table-bordered table-striped" style="width:100%">
+                <tr>
+                    <td width="40%"><label asp-for="@Model.Book.Author" class="control-label fw-bolder"></label></td>
+                    <td width="60%">@Model.Book.Author</td>
+                </tr>
+                <tr>
+                    <td width="40%"><label asp-for="@Model.Book.Name" class="control-label fw-bolder"></label></td>
+                    <td width="60%">@Model.Book.Name</td>
+                </tr>
+                <tr>
+                    <td width="40%"><label asp-for="@Model.Book.Year" class="control-label fw-bolder"></label></td>
+                    <td width="60%">@Model.Book.Year</td>
+                </tr>
+                <tr>
+                    <td width="40%"><label asp-for="@Model.Book.Description" class="control-label fw-bolder"></label></td>
+                    <td width="60%">@Model.Book.Description</td>
+                </tr>
+            </table>
+
+            @if(Model.Book.IsBorrowed)
+            {
+                <h3 class="p-2">Zapožičané</h3>
+                <table class="table table-bordered table-striped" style="width:100%">
+                    <tr>
+                        <td width="40%"><label asp-for="@Model.Book.Reader" class="control-label fw-bolder"></label></td>
+                        <td width="60%">@Model.Book.Reader</td>
+                    </tr>
+                    <tr>
+                        <td width="40%"><label asp-for="@Model.Book.BorrowedFrom" class="control-label fw-bolder"></label></td>
+                        <td width="60%">@Model.Book.BorrowedFrom</td>
+                    </tr>
+                </table>
+                <a asp-controller="Book" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-arrow-left-circle"></i>&nbsp;&nbsp;Späť</a>
+                <a asp-controller="Book" asp-action="Return" class="btn btn-primary"><i class="bi bi-journal-arrow-down"></i>&nbsp;&nbsp;Vrátiť knihu</a>
+            }
+            else
+            {
+                <br />
+                <p><b>Chcete si skutočne objednať knihu ?</b></p>
+                <a asp-controller="Book" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-arrow-left-circle"></i>&nbsp;&nbsp;Späť</a>
+                <a asp-controller="Book" asp-action="Return" class="btn btn-success"><i class="bi bi-basket2"></i>&nbsp;&nbsp;Objednať</a>
+            }
+        </div>
+ 
+        <div class="col-6">
+            <img class="d-block m-auto" src="~/img/book.png" />
+        </div>
+    </div>
+</div>

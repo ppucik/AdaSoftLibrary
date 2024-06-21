@@ -1,6 +1,7 @@
 ﻿using AdaSoftLibrary.Application.Books.Queries;
 using AdaSoftLibrary.Web.Models;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdaSoftLibrary.Web.Controllers
@@ -19,10 +20,9 @@ namespace AdaSoftLibrary.Web.Controllers
             _mediator = mediator;
         }
 
-        //[Authorize]
         public async Task<IActionResult> Index(string? searchTerm = null, bool onlyAvailable = false)
         {
-            var model = new BookViewModel
+            var model = new BooksViewModel
             {
                 IsAuthenticated = User.Identity?.IsAuthenticated ?? false
             };
@@ -46,6 +46,55 @@ namespace AdaSoftLibrary.Web.Controllers
             return View(model);
         }
 
-        // Add other action methods
+        public async Task<IActionResult> Detail(int id)
+        {
+            var model = new DetailViewModel
+            {
+                IsAuthenticated = User.Identity?.IsAuthenticated ?? false
+            };
+
+            var query = new GetBook.Query() { Id = id };
+            model.Book = await _mediator.Send(query);
+
+            return View(model);
+        }
+
+        [Authorize]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var query = new GetBook.Query() { Id = id };
+            var book = await _mediator.Send(query);
+
+            var model = new EditViewModel
+            {
+                Author = book.Author,
+                Name = book.Name,
+                Year = book.Year,
+                Description = book.Description,
+            };
+
+            return View(model);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var query = new GetBook.Query() { Id = id };
+            var book = await _mediator.Send(query);
+
+            var model = new DeleteViewModel
+            {
+                Author = book.Author,
+                Name = book.Name
+            };
+
+            return View(model);
+        }
     }
 }

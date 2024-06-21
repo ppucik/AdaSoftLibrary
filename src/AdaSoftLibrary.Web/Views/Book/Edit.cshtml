@@ -1,0 +1,43 @@
+﻿@model EditViewModel;
+
+@{
+    ViewData["Title"] = "Editácia knihy";
+}
+
+<div class="container p-2">
+    <div class="row p-2">
+        <div class="col-12">
+            <h1 class="display-5">@ViewData["Title"]</h1>
+        </div>
+    </div>
+
+    <div class="row p-2">
+        <div class="col-6">
+            <table class="table table-bordered table-striped" style="width:100%">
+                <tr>
+                    <td width="30%"><label asp-for="@Model.Author" class="control-label fw-bolder"></label></td>
+                    <td width="70%"><input asp-for="Author" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td width="30%"><label asp-for="@Model.Name" class="control-label fw-bolder"></label></td>
+                    <td width="70%"><input asp-for="Name" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td width="30%"><label asp-for="@Model.Year" class="control-label fw-bolder"></label></td>
+                    <td width="70%"><input asp-for="Year" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td width="30%"><label asp-for="@Model.Description" class="control-label fw-bolder"></label></td>
+                    <td width="70%"><input asp-for="Description" class="form-control" /></td>
+                </tr>
+            </table>
+
+            <a asp-controller="Book" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-arrow-left-circle"></i>&nbsp;&nbsp;Späť</a>
+            <a asp-controller="Book" asp-action="Edit" class="btn btn-primary"><i class="bi bi-pencil-square"></i>&nbsp;&nbsp;Uložiť</a>
+        </div>
+ 
+        <div class="col-6">
+            <img class="d-block m-auto" src="~/img/book.png" />
+        </div>
+    </div>
+</div>

@@ -1,25 +1,23 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AdaSoftLibrary.Application.Books.Queries;
+namespace AdaSoftLibrary.Web.Models;
 
 /// <summary>
-/// Detail knihy
+/// Editácia knihy
 /// </summary>
-public class GetBookResponse
+public class EditViewModel
 {
-    public int ID { get; set; }
-
     /// <summary>
     /// Autor
     /// </summary>
-    [Required]
+    [Required(ErrorMessage = "Autor je požadovaný")]
     [Display(Name = "Autor")]
     public string Author { get; set; } = null!;
 
     /// <summary>
     /// Názov
     /// </summary>
-    [Required]
+    [Required(ErrorMessage = "Názov je požadovaný")]
     [Display(Name = "Názov")]
     public string Name { get; set; } = null!;
 
@@ -32,24 +30,13 @@ public class GetBookResponse
     /// <summary>
     /// Popis
     /// </summary>
+    [Required]
     [Display(Name = "Popis")]
     public string? Description { get; set; }
 
     /// <summary>
-    /// Meno čitateľa
+    /// Je zapožičaná
     /// </summary>
-    [Display(Name = "Meno čitateľa")]
-    public string? Reader { get; set; }
-
-    /// <summary>
-    /// Dátum zapožičania
-    /// </summary>
-    [Display(Name = "Dátum zapožičania")]
-    public DateOnly? BorrowedFrom { get; set; }
-
-    /// <summary>
-    /// Dostupnosť
-    /// </summary>
-    [Display(Name = "Dostupnosť")]
+    [Display(Name = "Zapožičaná")]
     public bool IsBorrowed { get; set; }
 }
