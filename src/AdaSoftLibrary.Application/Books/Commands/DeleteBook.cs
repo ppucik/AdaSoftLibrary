@@ -13,7 +13,8 @@ public class DeleteBook
 {
     public class Command : IRequest<Unit>
     {
-        public required int Id { get; set; }
+        public Command(int id) { Id = id; }
+        public int Id { get; set; }
     }
 
     public class CommandHandler : IRequestHandler<Command, Unit>

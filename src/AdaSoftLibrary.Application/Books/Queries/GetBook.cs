@@ -11,7 +11,8 @@ public class GetBook
 {
     public class Query : IRequest<GetBookResponse>
     {
-        public required int Id { get; set; }
+        public Query(int id) { Id = id; }
+        public int Id { get; set; }
     }
 
     public class QueryHandler : IRequestHandler<Query, GetBookResponse>

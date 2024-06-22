@@ -1,6 +1,7 @@
 ﻿using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Domain.Authentication;
 using AdaSoftLibrary.Web.Models;
+using AspNetCoreHero.ToastNotification.Abstractions;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -16,11 +17,16 @@ namespace AdaSoftLibrary.Web.Controllers
 
         private readonly IUserAuthenticationService _userAuthenticationService;
         private readonly ILogger<HomeController> _logger;
+        private readonly INotyfService _notyf;
 
-        public AccessController(IUserAuthenticationService userAuthenticationService, ILogger<HomeController> logger)
+        public AccessController(
+            IUserAuthenticationService userAuthenticationService,
+            ILogger<HomeController> logger,
+            INotyfService notyf)
         {
             _userAuthenticationService = userAuthenticationService;
             _logger = logger;
+            _notyf = notyf;
         }
 
         public IActionResult Login()
@@ -84,6 +90,7 @@ namespace AdaSoftLibrary.Web.Controllers
                     authProperties);
 
                 _logger.LogInformation($"User {model.UserName} logged in at {DateTime.Now}.");
+                _notyf.Information("Používateľ bol prihlásený");
 
                 return RedirectToAction(HomeController.ACTION_INDEX, HomeController.NAME);
             }
@@ -97,6 +104,8 @@ namespace AdaSoftLibrary.Web.Controllers
         {
             // Clear the existing external cookie
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            _notyf.Information("Používateľ bol odhlásený");
 
             return RedirectToAction(HomeController.ACTION_INDEX, HomeController.NAME);
         }

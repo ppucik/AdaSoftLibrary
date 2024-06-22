@@ -66,7 +66,7 @@ public class BookEndpoint : ICarterModule
 
     private async Task<IResult> GetBook([FromRoute] int id, IMediator mediator)
     {
-        var query = new GetBook.Query() { Id = id };
+        var query = new GetBook.Query(id);
         var result = await mediator.Send(query);
 
         return result is not null
@@ -121,7 +121,7 @@ public class BookEndpoint : ICarterModule
 
     private async Task<IResult> ReturnBook([FromRoute] int id, IMediator mediator)
     {
-        var command = new ReturnBook.Command { Id = id };
+        var command = new ReturnBook.Command(id);
         var result = await mediator.Send(command);
 
         return TypedResults.Ok();
@@ -129,7 +129,7 @@ public class BookEndpoint : ICarterModule
 
     private async Task<IResult> DeleteBook([FromRoute] int id, IMediator mediator)
     {
-        var command = new DeleteBook.Command { Id = id };
+        var command = new DeleteBook.Command(id);
         var result = await mediator.Send(command);
 
         return TypedResults.NoContent();

@@ -25,12 +25,12 @@ public class CreateViewModel
     /// Rok
     /// </summary>
     [Display(Name = "Rok")]
-    public string? Year { get; set; }
+    [Range(0, 9999, ErrorMessage = "Rok musí byť v rozsahu 0 až 9999")]
+    public int? Year { get; set; }
 
     /// <summary>
     /// Popis
     /// </summary>
-    [Required]
     [Display(Name = "Popis")]
     public string? Description { get; set; }
 }

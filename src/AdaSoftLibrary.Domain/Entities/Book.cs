@@ -31,6 +31,7 @@ public class Book : BaseEntity<int>
     /// Rok
     /// </summary>
     [XmlElement("Year")]
+    [Range(0, 9999)]
     public int? Year { get; set; }
 
     /// <summary>

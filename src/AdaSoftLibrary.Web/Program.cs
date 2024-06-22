@@ -3,6 +3,7 @@ using AdaSoftLibrary.Application.Common.Configurations;
 using AdaSoftLibrary.Application.Extensions;
 using AdaSoftLibrary.Infrastructure;
 using AdaSoftLibrary.Infrastructure.Extensions;
+using AspNetCoreHero.ToastNotification;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Serilog;
 
@@ -26,6 +27,13 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 // Add services to the container
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddNotyf((config) =>
+{
+    config.DurationInSeconds = 3;
+    config.IsDismissable = true;
+    config.Position = NotyfPosition.TopRight;
+});
 
 builder.Services
     .AddApplicationServices()

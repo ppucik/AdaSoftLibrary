@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <table class="table table-bordered table-striped" style="width:100%">
+    <table class="table table-bordered table-striped mw-100">
         <thead>
             <tr>
                 <th>Autor</th>
@@ -50,6 +50,10 @@
                                 @if (!book.IsBorrowed)
                                 {
                                     <a asp-controller="Book" asp-action="Detail" asp-route-id="@book.ID" class="btn btn-sm btn-secondary"><i class="bi bi-book"></i>&nbsp;&nbsp;Objednať</a>
+                                }
+                                else
+                                {
+                                    <i class="text-muted">Zapožičané</i>
                                 }
                             }
                         </div>

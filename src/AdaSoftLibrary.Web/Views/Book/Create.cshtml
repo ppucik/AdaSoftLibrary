@@ -13,27 +13,39 @@
 
     <div class="row p-2">
         <div class="col-6">
-            <table class="table table-bordered table-striped" style="width:100%">
-                <tr>
-                    <td width="30%"><label asp-for="@Model.Author" class="control-label fw-bolder"></label></td>
-                    <td width="70%"><input asp-for="Author" class="form-control" /></td>
-                </tr>
-                <tr>
-                    <td width="30%"><label asp-for="@Model.Name" class="control-label fw-bolder"></label></td>
-                    <td width="70%"><input asp-for="Name" class="form-control" /></td>
-                </tr>
-                <tr>
-                    <td width="30%"><label asp-for="@Model.Year" class="control-label fw-bolder"></label></td>
-                    <td width="70%"><input asp-for="Year" class="form-control" /></td>
-                </tr>
-                <tr>
-                    <td width="30%"><label asp-for="@Model.Description" class="control-label fw-bolder"></label></td>
-                    <td width="70%"><input asp-for="Description" class="form-control" /></td>
-                </tr>
-            </table>
-
-            <a asp-controller="Book" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-arrow-left-circle"></i>&nbsp;&nbsp;Späť</a>
-            <a asp-controller="Book" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i>&nbsp;&nbsp;Uložiť</a>
+            <form asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_CREATE" method="post">
+                <div class="form-group mb-2">
+                    <label asp-for="Author" class="control-label"></label>
+                    <input asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-2">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-2 w-25">
+                    <label asp-for="Year" class="control-label"></label>
+                    <input asp-for="Year" type="number" class="form-control" />
+                    <span asp-validation-for="Year" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-2">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" type="text" class="form-control" />
+                </div>
+                @if (TempData["msg"] != null)
+                {
+                    <div class="form-group text-danger">
+                        @TempData["msg"]
+                    </div>
+                }
+                <div class="form-group pt-3">
+                    <a asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left-circle"></i>&nbsp;&nbsp;Späť
+                    </a>
+                    <button type="submit" class="btn btn-primary float-end">Uložiť</button>
+                </div>
+            </form>
         </div>
  
         <div class="col-6">

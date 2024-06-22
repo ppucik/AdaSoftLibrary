@@ -27,7 +27,7 @@ public class GetBookResponse
     /// Rok
     /// </summary>
     [Display(Name = "Rok")]
-    public string? Year { get; set; }
+    public int? Year { get; set; }
 
     /// <summary>
     /// Popis
