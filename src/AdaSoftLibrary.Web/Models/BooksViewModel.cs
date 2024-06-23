@@ -1,5 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Queries;
-using AdaSoftLibrary.Web.Common;
+using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;
 
@@ -10,15 +10,19 @@ public class BooksViewModel
     /// </summary>
     public IReadOnlyCollection<GetBookResponse> Books { get; set; } = null!;
 
+    /// <summary>
+    /// Filter zoznamu kníh <see cref="BookFilterEnum" />
+    /// </summary>
+    [Display(Name = "Filter")]
     public BookFilterEnum BookFilter { get; set; }
 
     /// <summary>
     /// Podmienky vyhľadávania
     /// </summary>
-    public SearchViewModel? Search { get; set; }
+    public SearchViewModel Search { get; set; } = new();
 
     /// <summary>
-    /// Je prihlásený ?
+    /// Je prihlásený?
     /// </summary>
     public bool IsAuthenticated { get; set; }
 }

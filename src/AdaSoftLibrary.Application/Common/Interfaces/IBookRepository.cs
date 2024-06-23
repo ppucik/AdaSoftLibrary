@@ -1,4 +1,5 @@
-﻿using AdaSoftLibrary.Domain.Entities;
+﻿using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Domain.Entities;
 
 namespace AdaSoftLibrary.Application.Common.Interfaces;
 
@@ -10,21 +11,17 @@ public interface IBookRepository
     /// <summary>
     /// Vrátí zoznam kníh
     /// </summary>
+    /// <param name="bookFilter" cref="BookFilterEnum"></param>
     /// <param name="author" cref="Book.Author"></param>
     /// <param name="name" cref="Book.Name"></param>
     /// <param name="searchTerm">Časť názvu knihy alebo mena autora</param>
-    /// <param name="borrowed">
-    /// Null  - zoznam všetkých kníh, 
-    /// True  - zoznam požičaných kníh, 
-    /// False - zoznam voľných kníh.
-    /// </param>
     /// <param name="cancellationToken"></param>
     /// <returns>Zoznam kníh</returns>
     Task<IEnumerable<Book>> GetListAsync(
+        BookFilterEnum bookFilter,
         string? author = null,
         string? name = null,
         string? searchTerm = null,
-        bool? borrowed = null,
         CancellationToken cancellationToken = default);
 
     /// <summary>

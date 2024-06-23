@@ -1,6 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Books.Queries;
-using AdaSoftLibrary.Web.Common;
 using AdaSoftLibrary.Web.Models;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using MediatR;
@@ -17,8 +16,8 @@ namespace AdaSoftLibrary.Web.Controllers
         public const string ACTION_DETAIL = nameof(Detail);
         public const string ACTION_CREATE = nameof(Create);
         public const string ACTION_EDIT = nameof(Edit);
-        public const string ACTION_BORROW = "Borrow";
-        public const string ACTION_RETURN = "Return";
+        public const string ACTION_BORROW = nameof(Borrow);
+        public const string ACTION_RETURN = nameof(Return);
         public const string ACTION_DELETE = nameof(Delete);
         #endregion
 
@@ -44,25 +43,26 @@ namespace AdaSoftLibrary.Web.Controllers
 
         public async Task<IActionResult> Index(BookFilterEnum bookFilter, string? searchTerm = null, bool onlyAvailable = false)
         {
+            // DOCASNE: 
+            if (onlyAvailable) bookFilter = BookFilterEnum.FreeBooks;
+            // -------
+
             var model = new BooksViewModel
             {
-                //BookFilter = bookFilter,
+                Search = new SearchViewModel
+                {
+                    BookFilter = bookFilter,
+                    SearchTerm = searchTerm,
+                    OnlyAvailable = onlyAvailable
+                },
                 IsAuthenticated = User.Identity?.IsAuthenticated ?? false
             };
 
-            var query = new GetBooks.Query();
-
-            if (!string.IsNullOrEmpty(searchTerm))
+            var query = new GetBooks.Query
             {
-                model.Search = new SearchViewModel
-                {
-                    SearchTerm = searchTerm,
-                    OnlyAvailable = onlyAvailable
-                };
-
-                query.SearchTerm = searchTerm;
-                query.Borrowed = onlyAvailable ? false : null;
-            }
+                BookFilter = bookFilter,
+                SearchTerm = searchTerm,
+            };
 
             model.Books = await _mediator.Send(query);
 

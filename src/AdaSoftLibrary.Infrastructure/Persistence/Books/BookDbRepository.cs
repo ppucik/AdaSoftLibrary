@@ -1,4 +1,5 @@
-﻿using AdaSoftLibrary.Application.Common.Interfaces;
+﻿using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,10 +8,10 @@ namespace AdaSoftLibrary.Infrastructure.Persistence.Books;
 public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
 {
     public async Task<IEnumerable<Book>> GetListAsync(
+        BookFilterEnum bookFilter,
         string? author = null,
         string? name = null,
         string? searchTerm = null,
-        bool? borrowed = null,
         CancellationToken cancellationToken = default)
     {
         var text = searchTerm?.ToUpper();
@@ -18,10 +19,13 @@ public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
         return await _dbContext.Books
             .AsNoTracking()
             .Include(e => e.Borrowed)
+            .Where(x =>
+                (bookFilter == BookFilterEnum.AllBooks) ||
+                (bookFilter == BookFilterEnum.FreeBooks && !x.IsBorrowed) ||
+                (bookFilter == BookFilterEnum.BorrowedBooks && x.IsBorrowed))
             .Where(x => string.IsNullOrEmpty(author) || x.Author.ToUpper().Equals(author.ToUpper()))
             .Where(x => string.IsNullOrEmpty(name) || x.Name.ToUpper().Equals(name.ToUpper()))
             .Where(x => string.IsNullOrEmpty(text) || x.Author.ToUpper().Contains(text) || x.Name.ToUpper().Contains(text))
-            .Where(x => !borrowed.HasValue || x.IsBorrowed == borrowed)
             .ToListAsync(cancellationToken);
     }
 

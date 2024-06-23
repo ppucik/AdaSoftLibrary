@@ -56,8 +56,8 @@ public class BookEndpoint : ICarterModule
     {
         var query = new GetBooks.Query
         {
-            SearchTerm = request.SearchTerm,
-            Borrowed = request.Borrowed
+            BookFilter = request.BookFilter,
+            SearchTerm = request.SearchTerm
         };
 
         var result = await mediator.Send(query);

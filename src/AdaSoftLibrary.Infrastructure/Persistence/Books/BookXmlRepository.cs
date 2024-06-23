@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.AdaSoft.Infrastructure.Persistence;
+using AdaSoftLibrary.Application.Books.Queries;
 using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Domain.Entities;
 
@@ -7,17 +8,18 @@ namespace AdaSoftLibrary.Infrastructure.Persistence.Books;
 public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 {
     public Task<IEnumerable<Book>> GetListAsync(
+        BookFilterEnum bookFilter,
         string? author = null,
         string? name = null,
         string? searchTerm = null,
-        bool? borrowed = null,
         CancellationToken cancellationToken = default)
     {
-        var books = borrowed switch
+        var books = bookFilter switch
         {
-            null => _xmlContext.Books,
-            true => _xmlContext.Books.Where(x => x.Borrowed != null),
-            false => _xmlContext.Books.Where(x => x.Borrowed == null)
+            BookFilterEnum.AllBooks => _xmlContext.Books,
+            BookFilterEnum.FreeBooks => _xmlContext.Books.Where(x => !x.IsBorrowed),
+            BookFilterEnum.BorrowedBooks => _xmlContext.Books.Where(x => x.IsBorrowed),
+            _ => _xmlContext.Books
         };
 
         if (!string.IsNullOrEmpty(author))

@@ -1,4 +1,6 @@
-﻿namespace AdaSoftLibrary.Api.Contracts;
+﻿using AdaSoftLibrary.Application.Books.Queries;
+
+namespace AdaSoftLibrary.Api.Contracts;
 
 /// <summary>
 /// Dotaz na zoznam kníh
@@ -6,9 +8,9 @@
 public class GetBooksRequest
 {
     /// <summary>
-    /// Požičané knihy (True/False), všetky knihy (Null)
+    /// Filter pre zoznam kníh <see cref="BookFilterEnum" />
     /// </summary>
-    public bool? Borrowed { get; set; }
+    public BookFilterEnum BookFilter { get; set; }
 
     /// <summary>
     /// Časť názvu knihy alebo mena autora

@@ -12,6 +12,11 @@ public class GetBooks
     public class Query : IRequest<IReadOnlyCollection<GetBookResponse>>
     {
         /// <summary>
+        /// Filter pre zoznam kníh <see cref="BookFilterEnum" />
+        /// </summary>
+        public BookFilterEnum BookFilter { get; set; }
+
+        /// <summary>
         /// Autor
         /// </summary>
         public string? Author { get; set; }
@@ -25,11 +30,6 @@ public class GetBooks
         /// Časť názvu knihy alebo mena autora
         /// </summary>
         public string? SearchTerm { get; set; }
-
-        /// <summary>
-        /// Požičané knihy (True/False), všetky knihy (Null)
-        /// </summary>
-        public bool? Borrowed { get; set; }
     }
 
     public class QueryHandler : IRequestHandler<Query, IReadOnlyCollection<GetBookResponse>>
@@ -45,7 +45,7 @@ public class GetBooks
 
         public async Task<IReadOnlyCollection<GetBookResponse>> Handle(Query query, CancellationToken cancellationToken)
         {
-            var books = await _bookRepository.GetListAsync(query.Author, query.Name, query.SearchTerm, query.Borrowed, cancellationToken);
+            var books = await _bookRepository.GetListAsync(query.BookFilter, query.Author, query.Name, query.SearchTerm, cancellationToken);
 
             return _mapper.Map<IReadOnlyCollection<GetBookResponse>>(books);
         }
