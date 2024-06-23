@@ -27,7 +27,7 @@ public class GetBooks
         public string? SearchTerm { get; set; }
 
         /// <summary>
-        /// Zapožičané knihy (True/False), všetky knihy (Null)
+        /// Požičané knihy (True/False), všetky knihy (Null)
         /// </summary>
         public bool? Borrowed { get; set; }
     }

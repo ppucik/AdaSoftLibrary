@@ -1,5 +1,6 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Web.Common;
 using AdaSoftLibrary.Web.Models;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using MediatR;
@@ -41,10 +42,11 @@ namespace AdaSoftLibrary.Web.Controllers
 
         #region Index, Detail
 
-        public async Task<IActionResult> Index(string? searchTerm = null, bool onlyAvailable = false)
+        public async Task<IActionResult> Index(BookFilterEnum bookFilter, string? searchTerm = null, bool onlyAvailable = false)
         {
             var model = new BooksViewModel
             {
+                //BookFilter = bookFilter,
                 IsAuthenticated = User.Identity?.IsAuthenticated ?? false
             };
 

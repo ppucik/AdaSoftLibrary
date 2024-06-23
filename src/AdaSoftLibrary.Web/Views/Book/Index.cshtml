@@ -1,4 +1,6 @@
-﻿@model BooksViewModel;
+﻿@using AdaSoftLibrary.Web.Common;
+
+@model BooksViewModel;
 
 @{
     ViewData["Title"] = "Knihy";
@@ -9,7 +11,13 @@
         <div class="col-6">
             <h1 class="display-5">@ViewData["Title"]</h1>
         </div>
-        <div class="col-6 text-end">
+        <div class="col-3 pt-3 text-end">
+            @using (Html.BeginForm())
+            {
+                @Html.DropDownList("BookFilter", Html.GetEnumSelectList<BookFilterEnum>(), "", new { @class = "form-control", onchange = "this.form.submit();" })
+            }
+        </div>
+        <div class="col-3 pt-3 text-end">
             @if (Model.IsAuthenticated)
             {
                 <a asp-controller="Book" asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i>&nbsp;&nbsp;Zaevidovať knihu</a>
@@ -24,7 +32,7 @@
                 <th>Názov</th>
                 <th>Rok</th>
                 <th>Meno čitateľa</th>
-                <th>Dátum zapožičania</th>
+                <th>Dátum Požičania</th>
                 <th>@(Model.IsAuthenticated ? "Akcie" : "Dostupnosť")</th>
             </tr>
         </thead>
@@ -53,7 +61,7 @@
                                 }
                                 else
                                 {
-                                    <i class="text-muted">Zapožičané</i>
+                                    <i class="text-muted">Požičaná</i>
                                 }
                             }
                         </div>

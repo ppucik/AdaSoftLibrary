@@ -31,17 +31,17 @@ public class EditViewModel : BookViewModel
     public string? LastName { get; set; }
 
     /// <summary>
-    /// Dátum zapožičania
+    /// Dátum požičania
     /// </summary>
-    [Display(Name = "Dátum zapožičania")]
-    [Required(ErrorMessage = "Dátum zapožičania je povinný")]
+    [Display(Name = "Dátum požičania")]
+    [Required(ErrorMessage = "Dátum požičania je povinný")]
     [DateCurrentOrInPast()]
     [DataType(DataType.Date)]
     public DateOnly? FromDate { get; set; }
 
     /// <summary>
-    /// Je zapožičaná
+    /// Je požičaná?
     /// </summary>
-    [Display(Name = "Zapožičaná")]
+    [Display(Name = "Požičaná")]
     public bool IsBorrowed { get; set; }
 }

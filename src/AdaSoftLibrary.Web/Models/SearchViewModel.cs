@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AdaSoftLibrary.Web.Common;
+using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;
 
@@ -24,6 +25,12 @@ public class SearchViewModel
     /// </summary>
     [Display(Name = "Vyhľadať")]
     public string? SearchTerm { get; set; }
+
+    /// <summary>
+    /// Zoznam kníh
+    /// </summary>
+    [Display(Name = "")]
+    BookFilterEnum BookFilter { get; set; }
 
     /// <summary>
     /// Len dostupné knihy

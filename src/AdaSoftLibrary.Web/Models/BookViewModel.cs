@@ -12,7 +12,8 @@ public class BookViewModel
     /// </summary>
     [Display(Name = "Autor")]
     [Required(ErrorMessage = "Autor je povinný")]
-    [StringLength(250, ErrorMessage = "Autor nesmie presiahnuť 250 znakov")]
+    //[StringLength(250, ErrorMessage = "Autor nesmie presiahnuť 250 znakov")]
+    [StringLength(15, ErrorMessage = "Autor nesmie presiahnuť 15 znakov")]
     public string Author { get; set; } = null!;
 
     /// <summary>
@@ -20,7 +21,8 @@ public class BookViewModel
     /// </summary>
     [Display(Name = "Názov")]
     [Required(ErrorMessage = "Názov je povinný")]
-    [StringLength(1000, ErrorMessage = "Názov nesmie presiahnuť 1000 znakov")]
+    //[StringLength(1000, ErrorMessage = "Názov nesmie presiahnuť 1000 znakov")]
+    [StringLength(15, ErrorMessage = "Názov nesmie presiahnuť 15 znakov")]
     public string Name { get; set; } = null!;
 
     /// <summary>

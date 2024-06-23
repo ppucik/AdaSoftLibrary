@@ -6,7 +6,7 @@
 public class GetBooksRequest
 {
     /// <summary>
-    /// Zapožičané knihy (True/False), všetky knihy (Null)
+    /// Požičané knihy (True/False), všetky knihy (Null)
     /// </summary>
     public bool? Borrowed { get; set; }
 

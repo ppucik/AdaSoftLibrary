@@ -27,10 +27,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Index">Knihy</a>
                         </li>
-                        @if (User.Identity?.IsAuthenticated ?? false)
-                        {
-
-                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

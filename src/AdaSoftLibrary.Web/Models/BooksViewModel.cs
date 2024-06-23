@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Web.Common;
 
 namespace AdaSoftLibrary.Web.Models;
 
@@ -8,6 +9,8 @@ public class BooksViewModel
     /// Zoznam kníh
     /// </summary>
     public IReadOnlyCollection<GetBookResponse> Books { get; set; } = null!;
+
+    public BookFilterEnum BookFilter { get; set; }
 
     /// <summary>
     /// Podmienky vyhľadávania

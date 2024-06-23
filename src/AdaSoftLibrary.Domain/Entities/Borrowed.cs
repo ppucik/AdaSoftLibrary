@@ -48,14 +48,14 @@ public class Borrowed
     public string FullName => $"{LastName} {FirstName}".Trim();
 
     /// <summary>
-    /// Dátum zapožičania
+    /// Dátum požičania
     /// </summary>
     [DataType(DataType.Date)]
     [XmlIgnore]
     public DateOnly? FromDate { get; set; }
 
     /// <summary>
-    /// Dátum zapožičania (format "d.M.yyyy")
+    /// Dátum požičania (format "d.M.yyyy")
     /// </summary>
     [NotMapped]
     [XmlElement("From")]

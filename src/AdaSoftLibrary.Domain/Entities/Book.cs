@@ -47,7 +47,7 @@ public class Book : BaseEntity<int>
     public Borrowed? Borrowed { get; set; }
 
     /// <summary>
-    /// Je kniha zapožičaná ?
+    /// Je kniha požičaná ?
     /// </summary>
     [NotMapped]
     [XmlIgnore]
