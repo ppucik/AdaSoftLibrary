@@ -15,7 +15,8 @@ internal class BookMappingProfile : Profile
             .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
             .ForMember(dest => dest.Year, opt => opt.MapFrom(src => src.Year))
             .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
-            .ForMember(dest => dest.Reader, opt => opt.MapFrom(src => (src.Borrowed != null ? src.Borrowed.FullName : null)))
+            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => (src.Borrowed != null ? src.Borrowed.FirstName : null)))
+            .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => (src.Borrowed != null ? src.Borrowed.LastName : null)))
             .ForMember(dest => dest.BorrowedFrom, opt => opt.MapFrom(src => (src.Borrowed != null ? src.Borrowed.FromDate : null)))
             .ForMember(dest => dest.IsBorrowed, opt => opt.MapFrom(src => src.IsBorrowed))
             ;

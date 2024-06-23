@@ -8,6 +8,12 @@ namespace AdaSoftLibrary.Web.Models;
 public class DeleteViewModel
 {
     /// <summary>
+    /// ID
+    /// </summary>
+    [Required]
+    public int Id { get; set; }
+
+    /// <summary>
     /// Autor
     /// </summary>
     [Display(Name = "Autor")]

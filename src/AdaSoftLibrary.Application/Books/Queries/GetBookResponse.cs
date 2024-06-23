@@ -35,11 +35,25 @@ public class GetBookResponse
     [Display(Name = "Popis")]
     public string? Description { get; set; }
 
+    #region Borrowed
+
+    /// <summary>
+    /// Meno
+    /// </summary>
+    [Display(Name = "Meno")]
+    public string? FirstName { get; set; } = null!;
+
+    /// <summary>
+    /// Priezvisko
+    /// </summary>
+    [Display(Name = "Priezvisko")]
+    public string? LastName { get; set; } = null!;
+
     /// <summary>
     /// Meno čitateľa
     /// </summary>
     [Display(Name = "Meno čitateľa")]
-    public string? Reader { get; set; }
+    public string Reader => $"{LastName} {FirstName}".Trim();
 
     /// <summary>
     /// Dátum zapožičania
@@ -52,4 +66,6 @@ public class GetBookResponse
     /// </summary>
     [Display(Name = "Dostupnosť")]
     public bool IsBorrowed { get; set; }
+
+    #endregion
 }

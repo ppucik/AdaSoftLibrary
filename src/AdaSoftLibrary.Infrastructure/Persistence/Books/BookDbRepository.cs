@@ -7,6 +7,8 @@ namespace AdaSoftLibrary.Infrastructure.Persistence.Books;
 public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
 {
     public async Task<IEnumerable<Book>> GetListAsync(
+        string? author = null,
+        string? name = null,
         string? searchTerm = null,
         bool? borrowed = null,
         CancellationToken cancellationToken = default)
@@ -16,8 +18,10 @@ public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
         return await _dbContext.Books
             .AsNoTracking()
             .Include(e => e.Borrowed)
-            .Where(x => !borrowed.HasValue || x.IsBorrowed == borrowed)
+            .Where(x => string.IsNullOrEmpty(author) || x.Author.ToUpper().Equals(author.ToUpper()))
+            .Where(x => string.IsNullOrEmpty(name) || x.Name.ToUpper().Equals(name.ToUpper()))
             .Where(x => string.IsNullOrEmpty(text) || x.Author.ToUpper().Contains(text) || x.Name.ToUpper().Contains(text))
+            .Where(x => !borrowed.HasValue || x.IsBorrowed == borrowed)
             .ToListAsync(cancellationToken);
     }
 

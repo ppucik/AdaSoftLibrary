@@ -30,5 +30,7 @@ public class BaseResponse<T>
 
     public List<string>? ValidationErrors { get; set; }
 
+    public string? ValidationErrorsSummary => string.Join(", ", ValidationErrors ?? []);
+
     public T Data { get; set; } = default!;
 }

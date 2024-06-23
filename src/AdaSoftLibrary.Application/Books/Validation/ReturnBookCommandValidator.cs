@@ -12,7 +12,7 @@ public class ReturnBookCommandValidator : AbstractValidator<ReturnBook.Command>
         _isBorrowed = isBorrowed;
 
         RuleFor(b => b.Id)
-            .NotEmpty().WithMessage("{PropertyName} je požadované.")
+            .NotEmpty().WithMessage("{PropertyName} je povinné.")
             .GreaterThan(0).WithMessage("{PropertyName} musí byť väčšie ako 0.")
             .Must(BeBorrowed).WithMessage("Kniha nie je zapožičaná !")
             ;

@@ -13,19 +13,17 @@
 
     <div class="row p-2">
         <div class="col-6">
-            <table class="table table-bordered table-striped" style="width:100%">
-                <tr>
-                    <td width="40%"><label asp-for="@Model.Author" class="control-label fw-bolder"></label></td>
-                    <td width="60%">@Model.Author</td>
-                </tr>
-                <tr>
-                    <td width="40%"><label asp-for="@Model.Name" class="control-label fw-bolder"></label></td>
-                    <td width="60%">@Model.Name</td>
-                </tr>
-            </table>
-
-            <a asp-controller="Book" asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-arrow-left-circle"></i>&nbsp;&nbsp;Späť</a>
-            <a asp-controller="Book" asp-action="Edit" class="btn btn-danger"><i class="bi bi-trash3"></i>&nbsp;&nbsp;Vymazať</a>
+            <form asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_DELETE" method="post">
+                <p>
+                    Chcete skutočne vymazať knihu <b>@Model.Author</b>: <b>@Model.Name</b> ?
+                </p>
+                <div class="form-group pt-3">
+                    <a asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left-circle"></i>&nbsp;&nbsp;Späť
+                    </a>
+                    <button type="submit" class="btn btn-danger">Vymazať</button>
+                </div>
+            </form>
         </div>
  
         <div class="col-6">

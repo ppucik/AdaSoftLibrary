@@ -3,7 +3,7 @@
 namespace AdaSoftLibrary.Application.Exceptions;
 
 /// <summary>
-/// 
+/// Validačná vynímka
 /// </summary>
 public class ValidationException : ApplicationException
 {

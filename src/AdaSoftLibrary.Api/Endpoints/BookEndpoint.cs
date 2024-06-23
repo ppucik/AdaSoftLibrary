@@ -25,6 +25,7 @@ public class BookEndpoint : ICarterModule
 
         api.MapPost("/", CreateBook)
             .Produces(StatusCodes.Status201Created)
+            .Produces(StatusCodes.Status400BadRequest)
             .WithSummary("Zaevidovanie novej knihy");
 
         api.MapPut("/{id:int}", UpdateBook)
@@ -86,7 +87,9 @@ public class BookEndpoint : ICarterModule
 
         var result = await mediator.Send(command);
 
-        return TypedResults.Created($"/api/books/{result}", result);
+        return result.Success
+            ? TypedResults.Created($"/api/books/{result}", result)
+            : TypedResults.BadRequest(result.ValidationErrorsSummary);
     }
 
     private async Task<IResult> UpdateBook([FromRoute] int id, [FromBody] UpdateBookRequest request, IMediator mediator)
@@ -102,7 +105,9 @@ public class BookEndpoint : ICarterModule
 
         var result = await mediator.Send(command);
 
-        return TypedResults.Ok();
+        return result.Success
+            ? TypedResults.Ok()
+            : TypedResults.BadRequest(result.ValidationErrorsSummary);
     }
 
     private async Task<IResult> BorrowBook([FromRoute] int id, [FromBody] BorrowBookRequest request, IMediator mediator)

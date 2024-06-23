@@ -10,22 +10,29 @@ public interface IBookRepository
     /// <summary>
     /// Vrátí zoznam kníh
     /// </summary>
+    /// <param name="author" cref="Book.Author"></param>
+    /// <param name="name" cref="Book.Name"></param>
+    /// <param name="searchTerm">Časť názvu knihy alebo mena autora</param>
     /// <param name="borrowed">
     /// Null  - zoznam všetkých kníh, 
     /// True  - zoznam požičaných kníh, 
     /// False - zoznam voľných kníh.
     /// </param>
-    /// <param name="searchTerm">Časť názvu knihy alebo mena autora</param>
     /// <param name="cancellationToken"></param>
-    /// <returns></returns>
-    Task<IEnumerable<Book>> GetListAsync(string? searchTerm = null, bool? borrowed = null, CancellationToken cancellationToken = default);
+    /// <returns>Zoznam kníh</returns>
+    Task<IEnumerable<Book>> GetListAsync(
+        string? author = null,
+        string? name = null,
+        string? searchTerm = null,
+        bool? borrowed = null,
+        CancellationToken cancellationToken = default);
 
     /// <summary>
     /// Vrátí informácie o kníhe
     /// </summary>
     /// <param name="id">ID knihy</param>
     /// <param name="cancellationToken"></param>
-    /// <returns></returns>
+    /// <returns>Detail knihy alebo null</returns>
     Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
 
     /// <summary>

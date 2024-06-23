@@ -48,9 +48,9 @@ public class CreateBook
 
             if (validationResult.Errors.Any())
             {
-                //throw new ValidationException(validationResult);
-                response.Success = false;
+                response.Message = "Validačné chyby";
                 response.ValidationErrors = validationResult.Errors.Select(error => error.ErrorMessage).ToList();
+                response.Success = false;
             }
 
             // Persistencia

@@ -7,6 +7,8 @@ namespace AdaSoftLibrary.Infrastructure.Persistence.Books;
 public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 {
     public Task<IEnumerable<Book>> GetListAsync(
+        string? author = null,
+        string? name = null,
         string? searchTerm = null,
         bool? borrowed = null,
         CancellationToken cancellationToken = default)
@@ -17,6 +19,16 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
             true => _xmlContext.Books.Where(x => x.Borrowed != null),
             false => _xmlContext.Books.Where(x => x.Borrowed == null)
         };
+
+        if (!string.IsNullOrEmpty(author))
+        {
+            books = books.Where(x => x.Author.ToUpper().Equals(author.ToUpper()));
+        }
+
+        if (!string.IsNullOrEmpty(name))
+        {
+            books = books.Where(x => x.Name.ToUpper().Equals(name.ToUpper()));
+        }
 
         if (!string.IsNullOrEmpty(searchTerm))
         {
