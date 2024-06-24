@@ -20,3 +20,7 @@ public class GetBookTests(WebAppFactory webAppFactory)
         Assert.NotNull(result);
     }
 }
+
+
+//https://www.youtube.com/watch?v=C4hvWJqju7s
+//https://github.com/veyselugurkizmaz/cqrs-testing/blob/main/CQRSTesting.Application/Services/TodoLists/CreateTodoList/CreateTodoListHandler.cs

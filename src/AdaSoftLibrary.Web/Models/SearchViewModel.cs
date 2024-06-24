@@ -42,6 +42,6 @@ public class SearchViewModel
         if (!string.IsNullOrEmpty(SearchTerm))
             return SearchTerm;
         else
-            return $"{Author} {Name}";
+            return $"{Author} {Name}".Trim();
     }
 }
