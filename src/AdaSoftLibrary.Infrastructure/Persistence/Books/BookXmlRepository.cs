@@ -49,10 +49,10 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
         return Task.FromResult(books);
     }
 
-    private static bool LevenshteinMatch(string value, string searchText, int threshold)
+    private static bool LevenshteinMatch(string originalStr, string searchText, int threshold)
     {
-        int distance = Levenshtein.Distance(value, searchText);
-        double similarity = 100.0 - (distance * 100.0 / Math.Max(value.Length, searchText.Length));
+        int distance = Levenshtein.Distance(originalStr, searchText);
+        double similarity = 100.0 - (distance * 100.0 / Math.Max(originalStr.Length, searchText.Length));
         return similarity >= threshold;
     }
 
@@ -61,6 +61,17 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
         var book = _xmlContext.Books.SingleOrDefault(x => x.Id == id);
 
         return Task.FromResult(book);
+    }
+
+    public Task<IEnumerable<string>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+    {
+        var authors = _xmlContext.Books
+            .OrderBy(x => x.Author)
+            .Select(x => x.Author)
+            .Distinct()
+            .ToList() ?? Enumerable.Empty<string>();
+
+        return Task.FromResult(authors);
     }
 
     public Task<int> AddAsync(Book book, CancellationToken cancellationToken = default)

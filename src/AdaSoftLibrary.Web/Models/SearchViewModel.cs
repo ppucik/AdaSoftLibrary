@@ -29,7 +29,7 @@ public class SearchViewModel
     /// <summary>
     /// Vyhľadať knihu
     /// </summary>
-    [Display(Name = "Vyhľadať")]
+    [Display(Name = "Vyhľadané")]
     public string? SearchTerm { get; set; }
 
     /// <summary>

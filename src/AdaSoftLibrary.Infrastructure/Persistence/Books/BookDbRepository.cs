@@ -39,6 +39,16 @@ public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
+    public async Task<IEnumerable<string>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+    {
+        return await _dbContext.Books
+            .AsNoTracking()
+            .OrderBy(x => x.Author)
+            .Select(x => x.Author)
+            .Distinct()
+            .ToListAsync(cancellationToken);
+    }
+
     public async Task<int> AddAsync(Book book, CancellationToken cancellationToken = default)
     {
         _dbContext.Books.Add(book);

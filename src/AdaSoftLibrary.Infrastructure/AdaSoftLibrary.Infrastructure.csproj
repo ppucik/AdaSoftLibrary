@@ -22,4 +22,8 @@
     <ProjectReference Include="..\AdaSoftLibrary.Application\AdaSoftLibrary.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Authors\" />
+  </ItemGroup>
+
 </Project>

@@ -33,6 +33,13 @@ public interface IBookRepository
     Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
 
     /// <summary>
+    /// Vrátí zoznam autorov
+    /// </summary>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    Task<IEnumerable<string>> GetAuthorsAsync(CancellationToken cancellationToken = default);
+
+    /// <summary>
     /// Založenie novej knihy
     /// </summary>
     /// <param name="book" cref="Book"></param>

@@ -1,0 +1,41 @@
+﻿@using AdaSoftLibrary.Application.Books.Queries;
+
+@model AuthorsViewModel;
+
+@{
+    ViewData["Title"] = "Autori";
+}
+
+<div class="container p-2">
+    <div class="row p-2">
+        <div class="col-12">
+            <h1 class="display-5">@ViewData["Title"]</h1>
+        </div>
+    </div>
+
+    <div class="row p-2">
+        <div class="col-6">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Meno autora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var author in Model.Authors)
+                    {
+                        <tr>
+                            <td><a href="#">@author</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row p-2">
+        <div class="col-6">
+            <p><b>@Html.LabelFor(x => x.AuthorsCount)</b><span>:&nbsp;@Model.AuthorsCount</span></p>
+        </div>
+    </div>
+</div>
