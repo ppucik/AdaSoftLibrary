@@ -12,9 +12,9 @@
             <h1 class="display-5">@ViewData["Title"]</h1>
         </div>
         <div class="col-3 pt-4">
-            @if (!string.IsNullOrEmpty(Model.Search.SearchTerm))
+            @if (!string.IsNullOrEmpty(Model.Search.ToString()))
             {
-                <label asp-for="@Model.Search.SearchTerm" class="control-label fw-bolder"></label><span>:&nbsp;@Model.Search.SearchTerm</span>
+                <label asp-for="@Model.Search.SearchTerm" class="control-label fw-bolder"></label><span>:&nbsp;@Model.Search.ToString()</span>
             }
         </div>
         <div class="col-3 pt-3 text-end">

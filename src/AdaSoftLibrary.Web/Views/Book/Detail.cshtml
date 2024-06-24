@@ -26,7 +26,7 @@
                 <table class="table table-bordered table-striped" style="width:100%">
                     <tr>
                         <td width="40%"><label asp-for="@Model.Author" class="control-label fw-bolder"></label></td>
-                        <td width="60%"><a href="#">@Model.Author</a></td>
+                        <td width="60%"><a href="\@BookController.NAME?Author=@Model.Author">@Model.Author</a></td>
                     </tr>
                     <tr>
                         <td width="40%"><label asp-for="@Model.Name" class="control-label fw-bolder"></label></td>

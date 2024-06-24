@@ -14,9 +14,9 @@ public class SearchViewModel
     [Display(Name = "Filter")]
     public BookFilterEnum BookFilter { get; set; } = BookFilterEnum.AllBooks;
     /// <summary>
-    /// Vyhľadať knihu
+    /// Vyhľadať
     /// </summary>
-    [Display(Name = "Vyhľadať knihu")]
+    [Display(Name = "Vyhľadané")]
     public string? SearchTerm { get; set; }
 
     /// <summary>
@@ -36,4 +36,12 @@ public class SearchViewModel
     /// </summary>
     [Display(Name = "Len dostupné knihy")]
     public bool OnlyAvailable { get; set; }
+
+    public override string ToString()
+    {
+        if (!string.IsNullOrEmpty(SearchTerm))
+            return SearchTerm;
+        else
+            return $"{Author} {Name}";
+    }
 }

@@ -58,6 +58,8 @@ public class BookController : Controller
         var query = new GetBooks.Query
         {
             BookFilter = search.BookFilter,
+            Author = search.Author,
+            Name = search.Name,
             SearchTerm = search.SearchTerm
         };
 

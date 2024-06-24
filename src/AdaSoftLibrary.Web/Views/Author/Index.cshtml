@@ -25,7 +25,9 @@
                     @foreach (var author in Model.Authors)
                     {
                         <tr>
-                            <td><a href="#">@author</a></td>
+                            <td>
+                                <a href="\@BookController.NAME?Author=@author">@author</a>
+                            </td>
                         </tr>
                     }
                 </tbody>

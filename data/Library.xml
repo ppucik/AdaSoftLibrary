@@ -60,14 +60,4 @@
       <From />
     </Borrowed>
   </Book>
-  <Book id="7">
-    <Author>a</Author>
-    <Name>a</Name>
-    <Year>2002</Year>
-    <Borrowed>
-      <FirstName>Peter</FirstName>
-      <LastName>Púčik</LastName>
-      <From>23.6.2024</From>
-    </Borrowed>
-  </Book>
 </Library>
