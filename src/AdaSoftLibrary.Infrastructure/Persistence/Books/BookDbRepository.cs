@@ -1,6 +1,6 @@
-﻿using AdaSoftLibrary.Application.Books.Queries;
-using AdaSoftLibrary.Application.Common.Interfaces;
+﻿using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Domain.Entities;
+using AdaSoftLibrary.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace AdaSoftLibrary.Infrastructure.Persistence.Books;

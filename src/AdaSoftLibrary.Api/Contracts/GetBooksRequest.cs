@@ -1,4 +1,4 @@
-﻿using AdaSoftLibrary.Application.Books.Queries;
+﻿using AdaSoftLibrary.Domain.Enums;
 
 namespace AdaSoftLibrary.Api.Contracts;
 

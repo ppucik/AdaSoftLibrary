@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Common.Interfaces;
+using AdaSoftLibrary.Domain.Enums;
 using AutoMapper;
 using MediatR;
 

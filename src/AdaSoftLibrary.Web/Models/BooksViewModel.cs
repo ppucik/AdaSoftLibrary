@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Domain.Enums;
 using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;

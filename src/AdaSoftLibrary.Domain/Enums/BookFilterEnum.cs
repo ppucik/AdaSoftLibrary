@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AdaSoftLibrary.Application.Books.Queries;
+namespace AdaSoftLibrary.Domain.Enums;
 
 /// <summary>
 /// Filter pre zoznam kníh

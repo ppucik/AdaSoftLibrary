@@ -1,5 +1,5 @@
-﻿using AdaSoftLibrary.Application.Books.Queries;
-using AdaSoftLibrary.Domain.Entities;
+﻿using AdaSoftLibrary.Domain.Entities;
+using AdaSoftLibrary.Domain.Enums;
 
 namespace AdaSoftLibrary.Application.Common.Interfaces;
 
