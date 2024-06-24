@@ -42,27 +42,23 @@ public class BookController : Controller
 
     #region Index
 
-    public async Task<IActionResult> Index(BookFilterEnum bookFilter, string? searchTerm = null, bool onlyAvailable = false)
+    public async Task<IActionResult> Index(SearchViewModel search)
     {
-        // DOCASNE: 
-        if (onlyAvailable) bookFilter = BookFilterEnum.FreeBooks;
-        // -------
+        if (search.OnlyAvailable)
+        {
+            search.BookFilter = BookFilterEnum.FreeBooks;
+        }
 
         var model = new BooksViewModel
         {
-            Search = new SearchViewModel
-            {
-                BookFilter = bookFilter,
-                SearchTerm = searchTerm,
-                OnlyAvailable = onlyAvailable
-            },
+            Search = search,
             IsAuthenticated = User.Identity?.IsAuthenticated ?? false
         };
 
         var query = new GetBooks.Query
         {
-            BookFilter = bookFilter,
-            SearchTerm = searchTerm,
+            BookFilter = search.BookFilter,
+            SearchTerm = search.SearchTerm
         };
 
         model.Books = await _mediator.Send(query);

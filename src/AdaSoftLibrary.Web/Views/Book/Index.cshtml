@@ -20,14 +20,19 @@
         <div class="col-3 pt-3 text-end">
             @using (Html.BeginForm())
             {
-                @Html.DropDownList("BookFilter", Html.GetEnumSelectList<BookFilterEnum>(), "", new { @class = "form-control", onchange = "this.form.submit();" })
+                <select asp-for="Search.BookFilter" asp-items="@Html.GetEnumSelectList<BookFilterEnum>()" class="form-control" onchange="this.form.submit();"></select>
             }
         </div>
         <div class="col-3 pt-3 text-end">
             @if (Model.IsAuthenticated)
             {
-                <a asp-controller="Book" asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i>&nbsp;&nbsp;Zaevidovať knihu</a>
+                <a asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_CREATE" class="btn btn-success">
+                    <i class="bi bi-plus-circle"></i>&nbsp;&nbsp;Zaevidovať knihu
+                </a>
             }
+            <a asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" class="btn btn-outline-secondary" title="Obnovit">
+                <i class="bi bi-arrow-repeat"></i>
+            </a>
         </div>
     </div>
 

@@ -12,7 +12,12 @@ public class SearchViewModel
     /// Filter zoznamu kníh <see cref="BookFilterEnum" />
     /// </summary>
     [Display(Name = "Filter")]
-    public BookFilterEnum BookFilter { get; set; }
+    public BookFilterEnum BookFilter { get; set; } = BookFilterEnum.AllBooks;
+    /// <summary>
+    /// Vyhľadať knihu
+    /// </summary>
+    [Display(Name = "Vyhľadať knihu")]
+    public string? SearchTerm { get; set; }
 
     /// <summary>
     /// Autor
@@ -25,12 +30,6 @@ public class SearchViewModel
     /// </summary>
     [Display(Name = "Názov")]
     public string? Name { get; set; }
-
-    /// <summary>
-    /// Vyhľadať knihu
-    /// </summary>
-    [Display(Name = "Vyhľadané")]
-    public string? SearchTerm { get; set; }
 
     /// <summary>
     /// Len dostupné knihy
