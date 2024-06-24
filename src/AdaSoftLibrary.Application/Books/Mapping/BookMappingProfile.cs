@@ -1,5 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
-using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Application.Books.Contracts;
 using AdaSoftLibrary.Domain.Entities;
 using AutoMapper;
 

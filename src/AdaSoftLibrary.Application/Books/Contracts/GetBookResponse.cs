@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AdaSoftLibrary.Application.Books.Queries;
+namespace AdaSoftLibrary.Application.Books.Contracts;
 
 /// <summary>
 /// Detail knihy
@@ -8,6 +8,8 @@ namespace AdaSoftLibrary.Application.Books.Queries;
 public class GetBookResponse
 {
     public int ID { get; set; }
+
+    #region Book
 
     /// <summary>
     /// Autor
@@ -34,6 +36,8 @@ public class GetBookResponse
     /// </summary>
     [Display(Name = "Popis")]
     public string? Description { get; set; }
+
+    #endregion
 
     #region Borrowed
 

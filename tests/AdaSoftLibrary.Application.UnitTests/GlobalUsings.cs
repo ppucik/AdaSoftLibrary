@@ -1,1 +1,3 @@
-﻿//global using Xunit;
+﻿global using AdaSoftLibrary.Application.UnitTests.Common;
+
+global using MediatR;
