@@ -1,5 +1,6 @@
 ﻿using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Domain.Authentication;
+using AdaSoftLibrary.Domain.Constants;
 using AdaSoftLibrary.Web.Models;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using Microsoft.AspNetCore.Authentication;
@@ -55,7 +56,7 @@ public class AccessController : Controller
             var claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Name, model.UserName),
-                new Claim(ClaimTypes.Role, "Administrator"),
+                new Claim(ClaimTypes.Role, Roles.Administrator),
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
