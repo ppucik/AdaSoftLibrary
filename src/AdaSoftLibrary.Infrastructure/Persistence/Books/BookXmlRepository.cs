@@ -1,7 +1,9 @@
 ﻿using AdaSoftLibrary.AdaSoft.Infrastructure.Persistence;
 using AdaSoftLibrary.Application.Books.Queries;
 using AdaSoftLibrary.Application.Common.Interfaces;
+using AdaSoftLibrary.Application.Extensions;
 using AdaSoftLibrary.Domain.Entities;
+using Fastenshtein;
 
 namespace AdaSoftLibrary.Infrastructure.Persistence.Books;
 
@@ -24,24 +26,34 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 
         if (!string.IsNullOrEmpty(author))
         {
-            books = books.Where(x => x.Author.ToUpper().Equals(author.ToUpper()));
+            // Levenshtein distance algoritmus vyhľadanie autora so 90% zhodou 
+            books = books.Where(x => LevenshteinMatch(x.Author, author, 85));
         }
 
         if (!string.IsNullOrEmpty(name))
         {
-            books = books.Where(x => x.Name.ToUpper().Equals(name.ToUpper()));
+            // Levenshtein distance algoritmus vyhľadávania názvu so 75% zhodou
+            books = books.Where(x => LevenshteinMatch(x.Name, name, 75));
         }
 
         if (!string.IsNullOrEmpty(searchTerm))
         {
-            string text = searchTerm.ToUpper();
+            // Fulltext vyhľadanie časti mena autora alebo slova názve CI AS
+            string text = searchTerm.RemoveDiacritics().ToUpper();
 
             books = books.Where(x =>
-                x.Author.ToUpper().Contains(text) ||
-                x.Name.ToUpper().Contains(text));
+                x.Author.RemoveDiacritics().ToUpper().Contains(text) ||
+                x.Name.RemoveDiacritics().ToUpper().Contains(text));
         }
 
         return Task.FromResult(books);
+    }
+
+    private static bool LevenshteinMatch(string value, string searchText, int threshold)
+    {
+        int distance = Levenshtein.Distance(value, searchText);
+        double similarity = 100.0 - (distance * 100.0 / Math.Max(value.Length, searchText.Length));
+        return similarity >= threshold;
     }
 
     public Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken = default)

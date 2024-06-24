@@ -16,6 +16,8 @@ public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
     {
         var text = searchTerm?.ToUpper();
 
+        //TODO: Levenshtein distance Author a Name + Fulltext CI AS
+
         return await _dbContext.Books
             .AsNoTracking()
             .Include(e => e.Borrowed)
