@@ -39,7 +39,7 @@ namespace AdaSoftLibrary.Web.Controllers
 
         #endregion
 
-        #region Index, Detail
+        #region Index
 
         public async Task<IActionResult> Index(BookFilterEnum bookFilter, string? searchTerm = null, bool onlyAvailable = false)
         {
@@ -68,6 +68,10 @@ namespace AdaSoftLibrary.Web.Controllers
 
             return View(model);
         }
+
+        #endregion
+
+        #region Detail
 
         public async Task<IActionResult> Detail(int id)
         {
