@@ -11,6 +11,12 @@ public class BooksViewModel
     public IReadOnlyCollection<GetBookResponse> Books { get; set; } = null!;
 
     /// <summary>
+    /// Počet kníh
+    /// </summary>
+    [Display(Name = "Počet kníh")]
+    public int BooksCount => Books?.Count ?? 0;
+
+    /// <summary>
     /// Filter zoznamu kníh <see cref="BookFilterEnum" />
     /// </summary>
     [Display(Name = "Filter")]

@@ -37,8 +37,11 @@
                 <th>Autor</th>
                 <th>Názov</th>
                 <th>Rok</th>
-                <th>Meno čitateľa</th>
-                <th>Dátum Požičania</th>
+                @if (Model.IsAuthenticated)
+                {
+                    <th>Meno čitateľa</th>
+                }
+                <th>Dátum požičania</th>
                 <th>@(Model.IsAuthenticated ? "Akcie" : "Dostupnosť")</th>
             </tr>
         </thead>
@@ -49,7 +52,10 @@
                     <td width="25%">@book.Author</td>
                     <td width="25%">@book.Name</td>
                     <td width="5%">@book.Year</td>
-                    <td width="20%">@book.Reader</td>
+                    @if (Model.IsAuthenticated)
+                    {
+                        <td width="20%">@book.Reader</td>
+                    }
                     <td width="15%">@book.BorrowedFrom</td>
                     <td width="10%" class="text-center">
                         <div>
@@ -76,4 +82,10 @@
             }
         </tbody>
     </table>
+
+    <div class="row p-2">
+        <div class="col-6">
+            <p><b>@Html.LabelFor(x => x.BooksCount)</b><span>:&nbsp;@Model.BooksCount</span></p>
+        </div>
+    </div>
 </div>
