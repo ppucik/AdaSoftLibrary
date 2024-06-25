@@ -53,7 +53,7 @@ public class UpdateBook
                 throw new NotFoundException(nameof(Book), command.Id);
 
             // Validácia údajov
-            var validator = new UpdateBookCommandValidator();
+            var validator = new UpdateBookCommandValidator(book.IsBorrowed);
             var validationResult = await validator.ValidateAsync(command);
 
             if (validationResult.Errors.Any())

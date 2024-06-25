@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Common.Configurations;
+using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Domain.Entities;
 using Microsoft.Extensions.Options;
 using System.Xml.Serialization;
@@ -8,7 +9,7 @@ namespace AdaSoftLibrary.AdaSoft.Infrastructure.Persistence;
 /// <summary>
 /// XML dátový kontext
 /// </summary>
-public class AppXmlContext
+public class AppXmlContext : IAppDataContext
 {
     private readonly ApplicationOptions _options;
 
@@ -36,14 +37,18 @@ public class AppXmlContext
 
     public List<Book> Books => Library.Books ?? new();
 
-    /// <summary>
-    /// Uloženie zmien do súboru
-    /// </summary>
-    public void SaveChanges()
+    public int SaveChanges()
     {
         using (var writer = new StreamWriter(XmlFilePath))
         {
             XmlSerializer.Serialize(writer, Library);
         }
+
+        return 1;
+    }
+
+    public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        throw new NotImplementedException("The implementation of asynchronous storage is only in the database");
     }
 }

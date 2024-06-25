@@ -26,19 +26,19 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 
         if (!string.IsNullOrEmpty(author))
         {
-            // Levenshtein distance algoritmus vyhľadanie autora so 90% zhodou 
+            // Levenshtein distance algoritmus vyhľadanie autora s 90% zhodou 
             books = books.Where(x => LevenshteinMatch(x.Author, author, 85));
         }
 
         if (!string.IsNullOrEmpty(name))
         {
-            // Levenshtein distance algoritmus vyhľadávania názvu so 75% zhodou
+            // Levenshtein distance algoritmus vyhľadávania názvu s 75% zhodou
             books = books.Where(x => LevenshteinMatch(x.Name, name, 75));
         }
 
         if (!string.IsNullOrEmpty(searchTerm))
         {
-            // Fulltext vyhľadanie časti mena autora alebo slova názve CI AS
+            // Fulltext vyhľadanie časti mena autora alebo slova v názve CI AS
             string text = searchTerm.RemoveDiacritics().ToUpper();
 
             books = books.Where(x =>

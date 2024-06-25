@@ -32,9 +32,9 @@ public class DetailViewModel : BookViewModel
     public string? LastName { get; set; } = null!;
 
     /// <summary>
-    /// Dátum zapožičania
+    /// Dátum požičania
     /// </summary>
-    [Display(Name = "Dátum zapožičania")]
+    [Display(Name = "Dátum požičania")]
     [DataType(DataType.Date)]
     public DateOnly? FromDate { get; set; }
 

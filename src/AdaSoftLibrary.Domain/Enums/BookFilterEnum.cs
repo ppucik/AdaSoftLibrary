@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace AdaSoftLibrary.Domain.Enums;
 
 /// <summary>
 /// Filter pre zoznam kníh
 /// </summary>
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public enum BookFilterEnum
 {
     /// <summary>

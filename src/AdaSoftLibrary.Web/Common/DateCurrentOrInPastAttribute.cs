@@ -17,11 +17,14 @@ public class DateCurrentOrInPastAttribute : ValidationAttribute
 
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)
     {
-        DateOnly dateValue = (DateOnly)value;
-
-        if (dateValue > DateOnly.FromDateTime(DateTime.Now))
+        if (value != null)
         {
-            return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
+            var dateValue = (DateOnly)value;
+
+            if (dateValue > DateOnly.FromDateTime(DateTime.Now))
+            {
+                return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
+            }
         }
 
         return ValidationResult.Success;

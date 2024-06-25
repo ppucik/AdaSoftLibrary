@@ -5,7 +5,7 @@ namespace AdaSoftLibrary.Application.Books.Validation;
 
 public class UpdateBookCommandValidator : AbstractValidator<UpdateBook.Command>
 {
-    public UpdateBookCommandValidator()
+    public UpdateBookCommandValidator(bool? isBorrowed = null)
     {
         RuleFor(b => b.Id)
             .NotEmpty().WithMessage("{PropertyName} je povinné.")
@@ -28,22 +28,25 @@ public class UpdateBookCommandValidator : AbstractValidator<UpdateBook.Command>
             .ExclusiveBetween(0, 9999).WithMessage("{PropertyName} musí byť v rozsahu 0 až 9999.")
             ;
 
-        RuleFor(b => b.FirstName)
-            .NotEmpty().WithMessage("{PropertyName} je povinné.")
-            .NotNull()
-            .MinimumLength(3).WithMessage("{PropertyName} musí mať minimálne 3 znaky.")
-            .MaximumLength(100).WithMessage("{PropertyName} nesmie presiahnuť 100 znakov.")
-            ;
+        if (isBorrowed == true)
+        {
+            RuleFor(b => b.FirstName)
+                .NotEmpty().WithMessage("{PropertyName} je povinné.")
+                .NotNull()
+                .MinimumLength(3).WithMessage("{PropertyName} musí mať minimálne 3 znaky.")
+                .MaximumLength(100).WithMessage("{PropertyName} nesmie presiahnuť 100 znakov.")
+                ;
 
-        RuleFor(b => b.LastName)
-            .NotEmpty().WithMessage("{PropertyName} je povinné.")
-            .NotNull()
-            .MinimumLength(3).WithMessage("{PropertyName} musí mať minimálne 3 znaky.")
-            .MaximumLength(100).WithMessage("{PropertyName} nesmie presiahnuť 100 znakov.")
-            ;
+            RuleFor(b => b.LastName)
+                .NotEmpty().WithMessage("{PropertyName} je povinné.")
+                .NotNull()
+                .MinimumLength(3).WithMessage("{PropertyName} musí mať minimálne 3 znaky.")
+                .MaximumLength(100).WithMessage("{PropertyName} nesmie presiahnuť 100 znakov.")
+                ;
 
-        RuleFor(b => b.BorrowedFrom)
-            .LessThanOrEqualTo(DateOnly.FromDateTime(DateTime.Now)).WithMessage("{PropertyName} nemôže byť v budúcnosti.")
-            ;
+            RuleFor(b => b.BorrowedFrom)
+                .LessThanOrEqualTo(DateOnly.FromDateTime(DateTime.Now)).WithMessage("{PropertyName} nemôže byť v budúcnosti.")
+                ;
+        }
     }
 }

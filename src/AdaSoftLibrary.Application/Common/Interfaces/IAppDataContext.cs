@@ -1,18 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AdaSoftLibrary.Domain.Entities;
 
 namespace AdaSoftLibrary.Application.Common.Interfaces;
 
 public interface IAppDataContext
 {
     /// <summary>
-    /// Generický DbSet (tabuľka)
+    /// Data knihovna
     /// </summary>
-    /// <typeparam name="TEntity"></typeparam>
-    /// <returns></returns>
-    public DbSet<TEntity> Set<TEntity>() where TEntity : class;
+    public Library Library { get; init; }
 
     /// <summary>
-    /// Uloží všetky zmeny v danom kontexte do databázy
+    /// Uloží všetky zmeny v danom kontexte do súboru
     /// </summary>
     /// <returns></returns>
     public int SaveChanges();

@@ -2,6 +2,7 @@
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using Unchase.Swashbuckle.AspNetCore.Extensions.Extensions;
+using Unchase.Swashbuckle.AspNetCore.Extensions.Options;
 
 namespace AdaSoftLibrary.Application.Extensions;
 
@@ -26,6 +27,13 @@ public static class SwaggerExtension
             options.IncludeXmlComments(xmlFilePath, true);
             options.IncludeXmlCommentsWithRemarks(xmlFilePath, true);
             options.IncludeXmlCommentsFromInheritDocs(includeRemarks: true, excludedTypes: typeof(string));
+
+            options.AddEnumsWithValuesFixFilters(o =>
+            {
+                o.IncludeDescriptions = true;
+                o.DescriptionSource = DescriptionSources.DescriptionAttributesThenXmlComments;
+                o.IncludeXmlCommentsFrom(Path.Combine(AppContext.BaseDirectory, "AdaSoftLibrary.Domain.xml"));
+            });
         });
     }
 }

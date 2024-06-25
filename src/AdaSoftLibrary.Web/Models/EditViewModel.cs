@@ -18,7 +18,7 @@ public class EditViewModel : BookViewModel
     /// Meno
     /// </summary>
     [Display(Name = "Meno")]
-    [Required(ErrorMessage = "Meno je povinné")]
+    [RequiredIfCustom(nameof(IsBorrowed), true, ErrorMessage = "Meno je povinné")]
     [StringLength(100, MinimumLength = 3, ErrorMessage = "Meno musí byť v rozsahu 3 až 100 znakov")]
     public string? FirstName { get; set; }
 
@@ -26,15 +26,15 @@ public class EditViewModel : BookViewModel
     /// Priezvisko
     /// </summary>
     [Display(Name = "Priezvisko")]
-    [Required(ErrorMessage = "Priezvisko je povinné")]
+    [RequiredIfCustom(nameof(IsBorrowed), true, ErrorMessage = "Priezvisko je povinné")]
     [StringLength(100, MinimumLength = 3, ErrorMessage = "Priezvisko musí byť v rozsahu 3 až 100 znakov")]
     public string? LastName { get; set; }
 
     /// <summary>
-    /// Dátum zapožičania
+    /// Dátum požičania
     /// </summary>
-    [Display(Name = "Dátum zapožičania")]
-    [Required(ErrorMessage = "Dátum zapožičania je povinný")]
+    [Display(Name = "Dátum požičania")]
+    [RequiredIfCustom(nameof(IsBorrowed), true, ErrorMessage = "Dátum požičania je povinný")]
     [DateCurrentOrInPast()]
     [DataType(DataType.Date)]
     public DateOnly? FromDate { get; set; }

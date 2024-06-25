@@ -8,8 +8,6 @@ using Serilog;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
-var assembly = typeof(Program).Assembly;
-//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Application configuration
 builder.Services.ConfigureOptions<ApplicationOptionsSetup>();

@@ -172,8 +172,8 @@ public class BookController : Controller
             Year = book.Year,
             Description = book.Description,
 
-            FirstName = book.FirstName ?? string.Empty,
-            LastName = book.LastName ?? string.Empty,
+            FirstName = book.FirstName,
+            LastName = book.LastName,
             FromDate = book.BorrowedFrom,
             IsBorrowed = book.IsBorrowed
         };

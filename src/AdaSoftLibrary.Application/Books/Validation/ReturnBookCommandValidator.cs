@@ -18,7 +18,7 @@ public class ReturnBookCommandValidator : AbstractValidator<ReturnBook.Command>
             ;
     }
 
-    // // kniha musí byť OBJEDNANÁ
+    // kniha musí byť OBJEDNANÁ
     private bool BeBorrowed(int id)
     {
         return _isBorrowed == true;

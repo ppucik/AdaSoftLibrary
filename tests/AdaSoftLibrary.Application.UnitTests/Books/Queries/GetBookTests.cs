@@ -1,8 +1,16 @@
-﻿namespace AdaSoftLibrary.Application.UnitTests.Books.Queries;
+﻿using AdaSoftLibrary.Application.Common.Interfaces;
+using AdaSoftLibrary.Application.UnitTests.Mocks;
 
-public class GetBookTests()
+namespace AdaSoftLibrary.Application.UnitTests.Books.Queries;
+
+public class GetBookTests
 {
-    //private readonly IMediator _mediator = webAppFactory.CreateMediator();
+    private readonly IAppDataContext _mockAppXmlContext;
+
+    public GetBookTests()
+    {
+        _mockAppXmlContext = MockAppDataContext.GetAppXmlContext().Object;
+    }
 
     //[Fact]
     public async Task GetBook_WhenValidQuery_ShouldReturnBook()
