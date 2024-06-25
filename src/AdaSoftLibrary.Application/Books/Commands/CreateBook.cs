@@ -20,12 +20,7 @@ public class CreateBook
         public string? Description { get; set; }
     }
 
-    public class Response : BaseResponse<Book?>
-    {
-        public Response() : base() { }
-
-        public Book? Book { get; set; }
-    }
+    public class Response : BaseResponse<Book?> { }
 
     public class CommandHandler : IRequestHandler<Command, Response>
     {
@@ -56,9 +51,9 @@ public class CreateBook
             // Persistencia
             if (response.Success)
             {
-                response.Book = _mapper.Map<Book>(command);
+                response.Data = _mapper.Map<Book>(command);
 
-                await _bookRepository.AddAsync(response.Book, cancellationToken);
+                await _bookRepository.AddAsync(response.Data, cancellationToken);
             }
 
             return response;

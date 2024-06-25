@@ -5,7 +5,7 @@ using AutoMapper;
 
 namespace AdaSoftLibrary.Application.Books.Mapping;
 
-internal class BookMappingProfile : Profile
+public class BookMappingProfile : Profile
 {
     public BookMappingProfile()
     {

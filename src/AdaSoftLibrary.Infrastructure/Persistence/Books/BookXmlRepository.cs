@@ -1,13 +1,12 @@
-﻿using AdaSoftLibrary.AdaSoft.Infrastructure.Persistence;
-using AdaSoftLibrary.Application.Common.Interfaces;
+﻿using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.Extensions;
 using AdaSoftLibrary.Domain.Entities;
 using AdaSoftLibrary.Domain.Enums;
 using Fastenshtein;
 
-namespace AdaSoftLibrary.Infrastructure.Persistence.Books;
+namespace AdaSoftLibrary.Infrastructure.Persistence.BookList;
 
-public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
+public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
 {
     public Task<IEnumerable<Book>> GetListAsync(
         BookFilterEnum bookFilter,
@@ -18,10 +17,10 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
     {
         var books = bookFilter switch
         {
-            BookFilterEnum.AllBooks => _xmlContext.Books,
-            BookFilterEnum.FreeBooks => _xmlContext.Books.Where(x => !x.IsBorrowed),
-            BookFilterEnum.BorrowedBooks => _xmlContext.Books.Where(x => x.IsBorrowed),
-            _ => _xmlContext.Books
+            BookFilterEnum.AllBooks => _xmlContext.BookList,
+            BookFilterEnum.FreeBooks => _xmlContext.BookList.Where(x => !x.IsBorrowed),
+            BookFilterEnum.BorrowedBooks => _xmlContext.BookList.Where(x => x.IsBorrowed),
+            _ => _xmlContext.BookList
         };
 
         if (!string.IsNullOrEmpty(author))
@@ -49,6 +48,7 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
         return Task.FromResult(books);
     }
 
+    // Levenshtein distance algoritmus
     private static bool LevenshteinMatch(string originalStr, string searchText, int threshold)
     {
         int distance = Levenshtein.Distance(originalStr, searchText);
@@ -58,14 +58,14 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 
     public Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
     {
-        var book = _xmlContext.Books.SingleOrDefault(x => x.Id == id);
+        var book = _xmlContext.BookList.SingleOrDefault(x => x.Id == id);
 
         return Task.FromResult(book);
     }
 
     public Task<IEnumerable<string>> GetAuthorsAsync(CancellationToken cancellationToken = default)
     {
-        var authors = _xmlContext.Books
+        var authors = _xmlContext.BookList
             .OrderBy(x => x.Author)
             .Select(x => x.Author)
             .Distinct()
@@ -76,9 +76,9 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 
     public Task<int> AddAsync(Book book, CancellationToken cancellationToken = default)
     {
-        book.Id = _xmlContext.Books.Max(x => x.Id) + 1;
+        book.Id = _xmlContext.BookList.Max(x => x.Id) + 1;
 
-        _xmlContext.Books.Add(book);
+        _xmlContext.BookList.Add(book);
         _xmlContext.SaveChanges();
 
         return Task.FromResult(book.Id);
@@ -86,7 +86,7 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 
     public Task UpdateAsync(Book book, CancellationToken cancellationToken = default)
     {
-        var b = _xmlContext.Books.Single(x => x.Id == book.Id);
+        var b = _xmlContext.BookList.Single(x => x.Id == book.Id);
 
         b.Author = book.Author;
         b.Name = book.Name;
@@ -101,9 +101,9 @@ public class BookXmlRepository(AppXmlContext _xmlContext) : IBookRepository
 
     public Task DeleteAsync(int id, CancellationToken cancellationToken = default)
     {
-        var book = _xmlContext.Books.Single(x => x.Id == id);
+        var book = _xmlContext.BookList.Single(x => x.Id == id);
 
-        _xmlContext.Books.Remove(book);
+        _xmlContext.BookList.Remove(book);
         _xmlContext.SaveChanges();
 
         return Task.CompletedTask;

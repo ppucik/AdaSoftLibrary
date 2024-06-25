@@ -25,12 +25,7 @@ public class UpdateBook
         public DateOnly? BorrowedFrom { get; set; }
     }
 
-    public class Response : BaseResponse<Book?>
-    {
-        public Response() : base() { }
-
-        public Book? Book { get; set; }
-    }
+    public class Response : BaseResponse<Book?> { }
 
     public class CommandHandler : IRequestHandler<Command, Response>
     {
@@ -74,6 +69,8 @@ public class UpdateBook
                     book.Borrowed.LastName = command.LastName!;
                     book.Borrowed.FromDate = command.BorrowedFrom;
                 }
+
+                response.Data = book;
 
                 await _bookRepository.UpdateAsync(book, cancellationToken);
             }

@@ -2,6 +2,7 @@
 using AdaSoftLibrary.Application.Common.Configurations;
 using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Infrastructure.Persistence;
+using AdaSoftLibrary.Infrastructure.Persistence.BookList;
 using AdaSoftLibrary.Infrastructure.Persistence.Books;
 using AdaSoftLibrary.Infrastructure.Security;
 using Microsoft.EntityFrameworkCore;
@@ -23,12 +24,14 @@ public static class DependencyInjection
             // Add SQLite database context
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<AppDbContext>(options => options.UseSqlite(connectionString));
+            services.AddScoped<IAppDataContext, AppDbContext>();
             services.AddScoped<IBookRepository, BookDbRepository>();
         }
         else
         {
             // Add XML data context
             services.AddSingleton<AppXmlContext>();
+            services.AddScoped<IAppDataContext, AppXmlContext>();
             services.AddScoped<IBookRepository, BookXmlRepository>();
         }
 

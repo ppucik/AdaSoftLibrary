@@ -5,9 +5,14 @@ namespace AdaSoftLibrary.Application.Common.Interfaces;
 public interface IAppDataContext
 {
     /// <summary>
-    /// Data knihovna
+    /// Data knižnice
     /// </summary>
     public Library Library { get; init; }
+
+    /// <summary>
+    /// Zoznam kníh
+    /// </summary>
+    public List<Book> BookList { get; }
 
     /// <summary>
     /// Uloží všetky zmeny v danom kontexte do súboru

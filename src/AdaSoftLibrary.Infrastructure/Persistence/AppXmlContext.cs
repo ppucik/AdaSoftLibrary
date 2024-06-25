@@ -35,7 +35,7 @@ public class AppXmlContext : IAppDataContext
 
     public Library Library { get; init; } = new();
 
-    public List<Book> Books => Library.Books ?? new();
+    public List<Book> BookList => Library.Books ?? new();
 
     public int SaveChanges()
     {

@@ -8,12 +8,12 @@ using Shouldly;
 
 namespace AdaSoftLibrary.Application.UnitTests.Books.Commands;
 
-public class CreateBookTests
+public class BorrowBookTests
 {
     private readonly IMapper _mapper;
     private readonly Mock<IBookRepository> _bookRepository;
 
-    public CreateBookTests()
+    public BorrowBookTests()
     {
         _bookRepository = MockBookRepository.GetBookRepository();
 
@@ -26,30 +26,22 @@ public class CreateBookTests
     }
 
     [Fact]
-    public async Task CreateBook_CommandHandler_WhenValidQuery()
+    public async Task BorrowBook_CommandHandler_WhenValidQuery()
     {
         // Arrange
-        var handler = new CreateBook.CommandHandler(_bookRepository.Object, _mapper);
+        var handler = new BorrowBook.CommandHandler(_bookRepository.Object, _mapper);
 
         // Act
-        var command = new CreateBook.Command
+        var command = new BorrowBook.Command
         {
-            Author = "Peter Púčik",
-            Name = "Test novej knihy",
-            Year = 2024,
-            Description = "Krátky popis"
+            Id = 6,
+            FirstName = "Peter",
+            LastName = "Púčik"
         };
 
         var result = await handler.Handle(command, CancellationToken.None);
 
         // Assert
-        result.ShouldBeOfType<CreateBook.Response>();
-
-        Assert.True(result.Success);
-        Assert.Null(result.Message);
-        Assert.Null(result.ValidationErrors);
-        Assert.Equal(result.Data?.Id, 7);
-
-        // pocet knih = 7
+        result.ShouldBeOfType<Unit>();
     }
 }

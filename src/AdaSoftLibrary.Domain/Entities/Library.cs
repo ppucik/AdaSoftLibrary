@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 namespace AdaSoftLibrary.Domain.Entities;
 
 /// <summary>
-/// Knihovna
+/// Knižnica
 /// </summary>
 public class Library
 {
