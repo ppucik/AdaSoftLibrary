@@ -60,4 +60,9 @@
       <From />
     </Borrowed>
   </Book>
+  <Book id="7">
+    <Author>a</Author>
+    <Name>a</Name>
+    <Year xsi:nil="true" />
+  </Book>
 </Library>

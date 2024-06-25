@@ -5,16 +5,11 @@ namespace AdaSoftLibrary.Web.Common;
 #pragma warning disable CS8765, CS8603
 
 /// <summary>
-/// Validačný atribút kontroľuje, či ...
+/// Validačný atribút kontroľuje, či je splnená podmienke pre požadovanú hodnotu
 /// </summary>
 [AttributeUsage(AttributeTargets.Property)]
 public class RequiredIfCustom(string otherProperty, object targetValue) : ValidationAttribute
 {
-    public override string FormatErrorMessage(string name)
-    {
-        return $"{name} položka je povinná";
-    }
-
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)
     {
         var otherPropertyValue = validationContext.ObjectType

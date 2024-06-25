@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Web.Common;
+using ExpressiveAnnotations.Attributes;
 using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;
@@ -18,7 +19,7 @@ public class EditViewModel : BookViewModel
     /// Meno
     /// </summary>
     [Display(Name = "Meno")]
-    [RequiredIfCustom(nameof(IsBorrowed), true, ErrorMessage = "Meno je povinné")]
+    [RequiredIf(nameof(IsBorrowed), ErrorMessage = "Meno je povinné")]
     [StringLength(100, MinimumLength = 3, ErrorMessage = "Meno musí byť v rozsahu 3 až 100 znakov")]
     public string? FirstName { get; set; }
 
@@ -26,7 +27,7 @@ public class EditViewModel : BookViewModel
     /// Priezvisko
     /// </summary>
     [Display(Name = "Priezvisko")]
-    [RequiredIfCustom(nameof(IsBorrowed), true, ErrorMessage = "Priezvisko je povinné")]
+    [RequiredIf(nameof(IsBorrowed), ErrorMessage = "Priezvisko je povinné")]
     [StringLength(100, MinimumLength = 3, ErrorMessage = "Priezvisko musí byť v rozsahu 3 až 100 znakov")]
     public string? LastName { get; set; }
 
@@ -34,7 +35,7 @@ public class EditViewModel : BookViewModel
     /// Dátum požičania
     /// </summary>
     [Display(Name = "Dátum požičania")]
-    [RequiredIfCustom(nameof(IsBorrowed), true, ErrorMessage = "Dátum požičania je povinný")]
+    [RequiredIf(nameof(IsBorrowed), ErrorMessage = "Dátum požičania je povinný")]
     [DateCurrentOrInPast()]
     [DataType(DataType.Date)]
     public DateOnly? FromDate { get; set; }
