@@ -5,7 +5,6 @@ namespace AdaSoftLibrary.Application.Common.Configurations;
 
 public class ApplicationOptionsSetup : IConfigureOptions<ApplicationOptions>
 {
-    private const string SECTION_NAME = "Application";
     private readonly IConfiguration _configuration;
 
     public ApplicationOptionsSetup(IConfiguration configuration)
@@ -16,7 +15,7 @@ public class ApplicationOptionsSetup : IConfigureOptions<ApplicationOptions>
     public void Configure(ApplicationOptions options)
     {
         _configuration
-            .GetSection(SECTION_NAME)
+            .GetSection(ApplicationOptions.SECTION_NAME)
             .Bind(options);
     }
 }

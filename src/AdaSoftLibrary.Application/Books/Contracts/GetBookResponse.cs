@@ -60,9 +60,9 @@ public class GetBookResponse
     public string Reader => $"{LastName} {FirstName}".Trim();
 
     /// <summary>
-    /// Dátum požičania
+    /// Dátum zapožičania
     /// </summary>
-    [Display(Name = "Dátum požičania")]
+    [Display(Name = "Dátum zapožičania")]
     public DateOnly? BorrowedFrom { get; set; }
 
     /// <summary>

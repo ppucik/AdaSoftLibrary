@@ -31,10 +31,10 @@ public class EditViewModel : BookViewModel
     public string? LastName { get; set; }
 
     /// <summary>
-    /// Dátum požičania
+    /// Dátum zapožičania
     /// </summary>
-    [Display(Name = "Dátum požičania")]
-    [Required(ErrorMessage = "Dátum požičania je povinný")]
+    [Display(Name = "Dátum zapožičania")]
+    [Required(ErrorMessage = "Dátum zapožičania je povinný")]
     [DateCurrentOrInPast()]
     [DataType(DataType.Date)]
     public DateOnly? FromDate { get; set; }
