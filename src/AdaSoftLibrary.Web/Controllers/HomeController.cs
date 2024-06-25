@@ -8,6 +8,8 @@ public class HomeController : Controller
 {
     public const string NAME = "Home";
     public const string ACTION_INDEX = nameof(Index);
+    public const string ACTION_PRIVACY = nameof(Privacy);
+    public const string ACTION_CONTACT = nameof(Contact);
 
     private readonly ILogger<HomeController> _logger;
 
@@ -22,6 +24,11 @@ public class HomeController : Controller
     }
 
     public IActionResult Privacy()
+    {
+        return View();
+    }
+
+    public IActionResult Contact()
     {
         return View();
     }

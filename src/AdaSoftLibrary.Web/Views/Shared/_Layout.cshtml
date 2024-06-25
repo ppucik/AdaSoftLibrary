@@ -22,13 +22,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Domov</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="@HomeController.NAME" asp-action="@HomeController.ACTION_INDEX">Domov</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Author" asp-action="Index">Autori</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="@AuthorController.NAME" asp-action="@AuthorController.ACTION_INDEX">Autori</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Index">Knihy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX">Knihy</a>
                         </li>
                         @if (User.Identity?.IsAuthenticated ?? false)
                         {
@@ -36,6 +36,9 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Reader" asp-action="Index">Čitatelia</a>
                             </li>
                         }
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="@HomeController.NAME" asp-action="@HomeController.ACTION_CONTACT">Kontakt</a>
+                        </li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -51,7 +54,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - AdaSoftLibrary.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - AdaSoftLibrary.Web - <a asp-area="" asp-controller="@HomeController.NAME" asp-action="@HomeController.ACTION_PRIVACY">Privacy</a>
         </div>
     </footer>
 
