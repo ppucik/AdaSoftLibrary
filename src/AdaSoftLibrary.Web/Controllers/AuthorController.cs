@@ -19,11 +19,14 @@ public class AuthorController : Controller
         _mediator = mediator;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(AuthorsViewModel model)
     {
-        var model = new AuthorsViewModel();
+        var query = new GetAuthors.Query
+        {
+            SearchAuthor = model.SearchAuthor
+        };
 
-        model.Authors = await _mediator.Send(new GetAuthors.Query());
+        model.Authors = await _mediator.Send(query);
 
         return View(model);
     }

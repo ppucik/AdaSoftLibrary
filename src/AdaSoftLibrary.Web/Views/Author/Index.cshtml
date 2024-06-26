@@ -8,8 +8,20 @@
 
 <div class="container p-2">
     <div class="row p-2">
-        <div class="col-12">
+        <div class="col-6">
             <h1 class="display-5">@ViewData["Title"]</h1>
+        </div>
+    </div>
+
+    <div class="row p-2">
+        <div class="col-6">
+            <form asp-controller="@AuthorController.NAME" asp-action="@BookController.ACTION_INDEX" method="post">
+                <div class="input-group">
+                    <input asp-for="SearchAuthor" class="form-control" />
+                    <input type="submit" value="Vyhľadať" class="btn btn-md btn-primary" />
+                    <a href="\@AuthorController.NAME" class="btn btn-outline-secondary" title="Obnovit"><i class="bi bi-arrow-repeat"></i></a>
+                </div>
+            </form>
         </div>
     </div>
 

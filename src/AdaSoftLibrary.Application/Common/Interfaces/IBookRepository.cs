@@ -35,9 +35,10 @@ public interface IBookRepository
     /// <summary>
     /// Vrátí zoznam autorov
     /// </summary>
+    /// <param name="searchAuthor">Hľadaný autor</param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    Task<IEnumerable<string>> GetAuthorsAsync(CancellationToken cancellationToken = default);
+    Task<IEnumerable<string>> GetAuthorsAsync(string? searchAuthor, CancellationToken cancellationToken = default);
 
     /// <summary>
     /// Založenie novej knihy

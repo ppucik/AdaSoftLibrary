@@ -39,7 +39,7 @@ public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
-    public async Task<IEnumerable<string>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+    public async Task<IEnumerable<string>> GetAuthorsAsync(string? searchAuthor, CancellationToken cancellationToken = default)
     {
         return await _dbContext.Books
             .AsNoTracking()

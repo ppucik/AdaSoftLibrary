@@ -11,6 +11,7 @@ public class GetAuthors
 {
     public class Query : IRequest<IReadOnlyCollection<string>>
     {
+        public string? SearchAuthor { get; set; }
     }
 
     public class QueryHandler : IRequestHandler<Query, IReadOnlyCollection<string>>
@@ -26,7 +27,7 @@ public class GetAuthors
 
         public async Task<IReadOnlyCollection<string>> Handle(Query query, CancellationToken cancellationToken)
         {
-            var authors = await _bookRepository.GetAuthorsAsync(cancellationToken);
+            var authors = await _bookRepository.GetAuthorsAsync(query.SearchAuthor, cancellationToken);
 
             return authors.ToList();
         }

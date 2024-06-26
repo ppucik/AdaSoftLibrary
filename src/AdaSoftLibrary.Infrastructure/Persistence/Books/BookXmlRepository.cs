@@ -63,9 +63,10 @@ public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
         return Task.FromResult(book);
     }
 
-    public Task<IEnumerable<string>> GetAuthorsAsync(CancellationToken cancellationToken = default)
+    public Task<IEnumerable<string>> GetAuthorsAsync(string? searchAuthor, CancellationToken cancellationToken = default)
     {
         var authors = _xmlContext.BookList
+            .Where(x => string.IsNullOrEmpty(searchAuthor) || LevenshteinMatch(x.Author, searchAuthor, 50))
             .OrderBy(x => x.Author)
             .Select(x => x.Author)
             .Distinct()
