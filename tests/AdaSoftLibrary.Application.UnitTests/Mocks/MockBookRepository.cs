@@ -114,6 +114,7 @@ public class MockBookRepository
 
         mockBookRepository
             .Setup(x => x.GetAuthorsAsync(
+                It.IsAny<string?>(),
                 It.IsAny<CancellationToken>()))
             .ReturnsAsync(() =>
             {
