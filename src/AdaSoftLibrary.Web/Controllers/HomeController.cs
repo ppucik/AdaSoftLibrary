@@ -10,6 +10,7 @@ public class HomeController : Controller
     public const string ACTION_INDEX = nameof(Index);
     public const string ACTION_PRIVACY = nameof(Privacy);
     public const string ACTION_CONTACT = nameof(Contact);
+    public const string ACTION_HELP = nameof(Help);
 
     private readonly ILogger<HomeController> _logger;
 
@@ -29,6 +30,11 @@ public class HomeController : Controller
     }
 
     public IActionResult Contact()
+    {
+        return View();
+    }
+
+    public IActionResult Help()
     {
         return View();
     }

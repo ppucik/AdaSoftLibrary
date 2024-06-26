@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Nápoveda";
+}
+
+<div class="container p-2">
+    <div class="row p-2">
+        <div class="col-12">
+            <h1 class="display-5">@ViewData["Title"]</h1>
+        </div>
+    </div>
+
+    <div class="row p-2">
+        <p>
+            V aplikácii sa pracuje v dvoch režimoch, a to ako bežný používateľ (čitateľ) alebo administrátor (knihovník),
+            podľa toho sú riadené aj prístupy k zobrazovaniu dát a editačné funkcie, ktoré má k dispozícii.
+            Do režimu administrátora prejdeme po prihlásení cez prihlasovaciu obrazovku
+            <a asp-area="" asp-controller="@AccessController.NAME" asp-action="@AccessController.ACTION_LOGIN">Login</a>,
+            prihlasovacie údaje sú meno: <code>admin</code>, heslo: <code>admin</code>.
+        </p>
+
+        <h5>Čitateľ</h5>
+        <p>V tomto režime má používateľ nasledovné oprávnenia:</p>
+        <div>
+            <ul style="list-style-type:disc;">
+                <li>Vyhľadávanie kníh v knižnici podľa zadaných kritérií (vyhľadávanie je CI AS).</li>
+                <li>Zobrazenie zoznamu autorov.</li>
+                <li>Zobrazenie zoznamu kníh, bez mena čitateľa, ktorý si knihu požičal.</li>
+                <li>Objednať si knihu, ktorá je práve voľná, nezadáva dátum výpožičky, ten sa nastaví automaticky.</li>
+            </ul>
+        </div>
+
+        <h5>Administrátor</h5>
+        <p>V tomto režime má používateľ naviac obrazovku <b>Čitatelia</b> a tieto oprávnenia v sekcii <b>Knihy</b>:</p>
+        <div>
+            <ul style="list-style-type:disc;">
+                <li>Zobrazenie zoznamu kníh, aj s menom čitateľa, ktorý si knihu požičal a akcie pre prácu s danou knihou.</li>
+                <li>Obrazovka <b>Zaevidovanie knihy</b> umožňuje vytvoriť nový záznam knihy vyplnením povinných položiek.</li>
+                <li>Obrazovka <b>Detail knihy</b>, ktorá obsahuje údaje o knihe a funkcie <b>Objednať</b> alebo <b>Vrátiť knihu</b> podľa jej aktuálneho stavu.</li>
+                <li>Obrazovka <b>Editácia knihy</b> umožňuje upravovať všetky údaje o knihe, údaje o výpožičke, vrátane dátumu požičania.</li>
+                <li>Obrazovka <b>Vymazanie knihy</b> umožňuje celý záznam odstrániť.</li>
+            </ul>
+        </div>
+
+        <hr class="mt-4" />
+
+        <h5>Domov</h5>
+        <p>
+            Obrazovka obsahuje filter pre "fulltext" vyhľadávanie kníh zadaním kritérií a to časti mena autora alebo názvu knihy, 
+            ktorý može byť aplikovaný len na aktuálne dostupné knihy. 
+            Vyhľadávanie sa robí v rámci celého textu, nerozlišujú sa malé/veľké písmená a ani diakritika.
+        </p>
+
+        <hr class="mt-2" />
+
+        <h5>Autori</h5>
+        <p>
+            Obrazovka obsahuje autorov, kde je možné prekliknúť sa na zoznam kníh daného autora.
+        </p>
+        
+        <hr class="mt-2" />
+
+        <h5>Knihy</h5>
+        <p>
+            Obrazovka obsahuje zoznam kníh, kde možné vyfiltrovať knihy podľa ich dostupnosti.
+            Ostatné funkcie závisia od prístupových práv prihláseného používateľa (popísané hore).
+        </p>
+
+        <hr class="mt-2" />
+
+        <h5>Čitatelia</h5>
+        <p>
+            Zatiaľ len ilustračná obrazovka.
+         </p>
+
+    </div>
+</div>
