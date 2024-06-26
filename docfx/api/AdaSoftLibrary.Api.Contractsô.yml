@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Api.Contractsô
+  commentId: N:AdaSoftLibrary.Api.Contractsô
+  id: AdaSoftLibrary.Api.Contractsô
+  children:
+  - AdaSoftLibrary.Api.Contractsô.BorrowBookRequest
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Api.Contractsô
+  nameWithType: AdaSoftLibrary.Api.Contractsô
+  fullName: AdaSoftLibrary.Api.Contractsô
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Api
+references:
+- uid: AdaSoftLibrary.Api.Contractsô.BorrowBookRequest
+  commentId: T:AdaSoftLibrary.Api.Contractsô.BorrowBookRequest
+  href: AdaSoftLibrary.Api.Contractsô.BorrowBookRequest.html
+  name: BorrowBookRequest
+  nameWithType: BorrowBookRequest
+  fullName: AdaSoftLibrary.Api.Contractsô.BorrowBookRequest

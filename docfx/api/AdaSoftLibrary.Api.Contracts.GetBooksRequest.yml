@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  commentId: T:AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  id: GetBooksRequest
+  parent: AdaSoftLibrary.Api.Contracts
+  children:
+  - AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter
+  - AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm
+  langs:
+  - csharp
+  - vb
+  name: GetBooksRequest
+  nameWithType: GetBooksRequest
+  fullName: AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Api/Contracts/GetBooksRequest.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: GetBooksRequest
+    path: ../src/AdaSoftLibrary.Api/Contracts/GetBooksRequest.cs
+    startLine: 7
+  assemblies:
+  - AdaSoftLibrary.Api
+  namespace: AdaSoftLibrary.Api.Contracts
+  summary: Dotaz na zoznam kníh
+  example: []
+  syntax:
+    content: public class GetBooksRequest
+    content.vb: Public Class GetBooksRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter
+  commentId: P:AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter
+  id: BookFilter
+  parent: AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  langs:
+  - csharp
+  - vb
+  name: BookFilter
+  nameWithType: GetBooksRequest.BookFilter
+  fullName: AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Api/Contracts/GetBooksRequest.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: BookFilter
+    path: ../src/AdaSoftLibrary.Api/Contracts/GetBooksRequest.cs
+    startLine: 12
+  assemblies:
+  - AdaSoftLibrary.Api
+  namespace: AdaSoftLibrary.Api.Contracts
+  summary: Filter pre zoznam kníh <xref href="AdaSoftLibrary.Domain.Enums.BookFilterEnum" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public BookFilterEnum BookFilter { get; set; }
+    parameters: []
+    return:
+      type: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+    content.vb: Public Property BookFilter As BookFilterEnum
+  overload: AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter*
+- uid: AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm
+  commentId: P:AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm
+  id: SearchTerm
+  parent: AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  langs:
+  - csharp
+  - vb
+  name: SearchTerm
+  nameWithType: GetBooksRequest.SearchTerm
+  fullName: AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Api/Contracts/GetBooksRequest.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: SearchTerm
+    path: ../src/AdaSoftLibrary.Api/Contracts/GetBooksRequest.cs
+    startLine: 17
+  assemblies:
+  - AdaSoftLibrary.Api
+  namespace: AdaSoftLibrary.Api.Contracts
+  summary: Časť názvu knihy alebo mena autora
+  example: []
+  syntax:
+    content: public string? SearchTerm { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SearchTerm As String
+  overload: AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm*
+references:
+- uid: AdaSoftLibrary.Api.Contracts
+  commentId: N:AdaSoftLibrary.Api.Contracts
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Api.Contracts
+  nameWithType: AdaSoftLibrary.Api.Contracts
+  fullName: AdaSoftLibrary.Api.Contracts
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Api
+    name: Api
+    href: AdaSoftLibrary.Api.html
+  - name: .
+  - uid: AdaSoftLibrary.Api.Contracts
+    name: Contracts
+    href: AdaSoftLibrary.Api.Contracts.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Api
+    name: Api
+    href: AdaSoftLibrary.Api.html
+  - name: .
+  - uid: AdaSoftLibrary.Api.Contracts
+    name: Contracts
+    href: AdaSoftLibrary.Api.Contracts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  commentId: T:AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  parent: AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.Domain.Enums.BookFilterEnum.html
+  name: BookFilterEnum
+  nameWithType: BookFilterEnum
+  fullName: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+- uid: AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter*
+  commentId: Overload:AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter
+  href: AdaSoftLibrary.Api.Contracts.GetBooksRequest.html#AdaSoftLibrary_Api_Contracts_GetBooksRequest_BookFilter
+  name: BookFilter
+  nameWithType: GetBooksRequest.BookFilter
+  fullName: AdaSoftLibrary.Api.Contracts.GetBooksRequest.BookFilter
+- uid: AdaSoftLibrary.Domain.Enums
+  commentId: N:AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Enums
+  nameWithType: AdaSoftLibrary.Domain.Enums
+  fullName: AdaSoftLibrary.Domain.Enums
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
+- uid: AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm*
+  commentId: Overload:AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm
+  href: AdaSoftLibrary.Api.Contracts.GetBooksRequest.html#AdaSoftLibrary_Api_Contracts_GetBooksRequest_SearchTerm
+  name: SearchTerm
+  nameWithType: GetBooksRequest.SearchTerm
+  fullName: AdaSoftLibrary.Api.Contracts.GetBooksRequest.SearchTerm
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

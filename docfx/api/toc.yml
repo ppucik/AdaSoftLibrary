@@ -1,0 +1,302 @@
+### YamlMime:TableOfContent
+items:
+- uid: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  name: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  items:
+  - uid: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext
+    name: AppXmlContext
+- uid: AdaSoftLibrary.Api
+  name: AdaSoftLibrary.Api
+  items:
+  - uid: AdaSoftLibrary.Api.IAssemblyMarker
+    name: IAssemblyMarker
+- uid: AdaSoftLibrary.Api.Contracts
+  name: AdaSoftLibrary.Api.Contracts
+  items:
+  - uid: AdaSoftLibrary.Api.Contracts.CreateBookRequest
+    name: CreateBookRequest
+  - uid: AdaSoftLibrary.Api.Contracts.GetBooksRequest
+    name: GetBooksRequest
+  - uid: AdaSoftLibrary.Api.Contracts.UpdateBookRequest
+    name: UpdateBookRequest
+- uid: AdaSoftLibrary.Api.Contractsô
+  name: AdaSoftLibrary.Api.Contractsô
+  items:
+  - uid: AdaSoftLibrary.Api.Contractsô.BorrowBookRequest
+    name: BorrowBookRequest
+- uid: AdaSoftLibrary.Api.Endpoints
+  name: AdaSoftLibrary.Api.Endpoints
+  items:
+  - uid: AdaSoftLibrary.Api.Endpoints.BookEndpoint
+    name: BookEndpoint
+  - uid: AdaSoftLibrary.Api.Endpoints.HomeEndpoint
+    name: HomeEndpoint
+- uid: AdaSoftLibrary.Application
+  name: AdaSoftLibrary.Application
+  items:
+  - uid: AdaSoftLibrary.Application.DependencyInjection
+    name: DependencyInjection
+- uid: AdaSoftLibrary.Application.Books.Commands
+  name: AdaSoftLibrary.Application.Books.Commands
+  items:
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook
+    name: BorrowBook
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command
+    name: BorrowBook.Command
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler
+    name: BorrowBook.CommandHandler
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+    name: CreateBook
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Command
+    name: CreateBook.Command
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler
+    name: CreateBook.CommandHandler
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+    name: CreateBook.Response
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook
+    name: DeleteBook
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command
+    name: DeleteBook.Command
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler
+    name: DeleteBook.CommandHandler
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook
+    name: ReturnBook
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command
+    name: ReturnBook.Command
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler
+    name: ReturnBook.CommandHandler
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+    name: UpdateBook
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command
+    name: UpdateBook.Command
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler
+    name: UpdateBook.CommandHandler
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response
+    name: UpdateBook.Response
+- uid: AdaSoftLibrary.Application.Books.Contracts
+  name: AdaSoftLibrary.Application.Books.Contracts
+  items:
+  - uid: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+    name: GetBookResponse
+- uid: AdaSoftLibrary.Application.Books.Mapping
+  name: AdaSoftLibrary.Application.Books.Mapping
+  items:
+  - uid: AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile
+    name: BookMappingProfile
+- uid: AdaSoftLibrary.Application.Books.Queries
+  name: AdaSoftLibrary.Application.Books.Queries
+  items:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors
+    name: GetAuthors
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query
+    name: GetAuthors.Query
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler
+    name: GetAuthors.QueryHandler
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook
+    name: GetBook
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook.Query
+    name: GetBook.Query
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler
+    name: GetBook.QueryHandler
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: GetBooks.Query
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+    name: GetBooks.QueryHandler
+- uid: AdaSoftLibrary.Application.Books.Validation
+  name: AdaSoftLibrary.Application.Books.Validation
+  items:
+  - uid: AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator
+    name: BorrowBookCommandValidator
+  - uid: AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator
+    name: CreateBookCommandValidator
+  - uid: AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator
+    name: ReturnBookCommandValidator
+  - uid: AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator
+    name: UpdateBookCommandValidator
+- uid: AdaSoftLibrary.Application.Common.Configurations
+  name: AdaSoftLibrary.Application.Common.Configurations
+  items:
+  - uid: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions
+    name: ApplicationOptions
+  - uid: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup
+    name: ApplicationOptionsSetup
+  - uid: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+    name: DataSourceTypeEnum
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  items:
+  - uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+    name: IAppDataContext
+  - uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+    name: IBookRepository
+  - uid: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+    name: IDateTimeProvider
+  - uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+    name: IUserAuthenticationService
+- uid: AdaSoftLibrary.Application.Exceptions
+  name: AdaSoftLibrary.Application.Exceptions
+  items:
+  - uid: AdaSoftLibrary.Application.Exceptions.ApiException
+    name: ApiException
+  - uid: AdaSoftLibrary.Application.Exceptions.BadRequestException
+    name: BadRequestException
+  - uid: AdaSoftLibrary.Application.Exceptions.NotFoundException
+    name: NotFoundException
+  - uid: AdaSoftLibrary.Application.Exceptions.ValidationException
+    name: ValidationException
+- uid: AdaSoftLibrary.Application.Extensions
+  name: AdaSoftLibrary.Application.Extensions
+  items:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions
+    name: EnumExtensions
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo
+    name: EnumExtensions.EnumEntryInfo
+  - uid: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+    name: GlobalErrorHandlerExtension
+  - uid: AdaSoftLibrary.Application.Extensions.StringExtensions
+    name: StringExtensions
+  - uid: AdaSoftLibrary.Application.Extensions.SwaggerExtension
+    name: SwaggerExtension
+- uid: AdaSoftLibrary.Application.Middleware
+  name: AdaSoftLibrary.Application.Middleware
+  items:
+  - uid: AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware
+    name: GlobalErrorHandlerMiddleware
+- uid: AdaSoftLibrary.Application.Security
+  name: AdaSoftLibrary.Application.Security
+  items:
+  - uid: AdaSoftLibrary.Application.Security.AuthorizeAttribute
+    name: AuthorizeAttribute
+- uid: AdaSoftLibrary.Domain.Authentication
+  name: AdaSoftLibrary.Domain.Authentication
+  items:
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+    name: AuthenticationRequest
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+    name: AuthenticationResponse
+- uid: AdaSoftLibrary.Domain.Common
+  name: AdaSoftLibrary.Domain.Common
+  items:
+  - uid: AdaSoftLibrary.Domain.Common.BaseEntity`1
+    name: BaseEntity<TKey>
+  - uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+    name: BaseResponse<T>
+  - uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+    name: IHasKey<T>
+- uid: AdaSoftLibrary.Domain.Constants
+  name: AdaSoftLibrary.Domain.Constants
+  items:
+  - uid: AdaSoftLibrary.Domain.Constants.Roles
+    name: Roles
+- uid: AdaSoftLibrary.Domain.Entities
+  name: AdaSoftLibrary.Domain.Entities
+  items:
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+  - uid: AdaSoftLibrary.Domain.Entities.Borrowed
+    name: Borrowed
+  - uid: AdaSoftLibrary.Domain.Entities.Library
+    name: Library
+- uid: AdaSoftLibrary.Domain.Enums
+  name: AdaSoftLibrary.Domain.Enums
+  items:
+  - uid: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+    name: BookFilterEnum
+- uid: AdaSoftLibrary.Infrastructure
+  name: AdaSoftLibrary.Infrastructure
+  items:
+  - uid: AdaSoftLibrary.Infrastructure.DependencyInjection
+    name: DependencyInjection
+- uid: AdaSoftLibrary.Infrastructure.Extensions
+  name: AdaSoftLibrary.Infrastructure.Extensions
+  items:
+  - uid: AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension
+    name: MigrationExtension
+- uid: AdaSoftLibrary.Infrastructure.Migrations
+  name: AdaSoftLibrary.Infrastructure.Migrations
+  items:
+  - uid: AdaSoftLibrary.Infrastructure.Migrations.AddBookYear
+    name: AddBookYear
+  - uid: AdaSoftLibrary.Infrastructure.Migrations.InitialMigration
+    name: InitialMigration
+- uid: AdaSoftLibrary.Infrastructure.Persistence
+  name: AdaSoftLibrary.Infrastructure.Persistence
+  items:
+  - uid: AdaSoftLibrary.Infrastructure.Persistence.AppDbContext
+    name: AppDbContext
+- uid: AdaSoftLibrary.Infrastructure.Persistence.BookList
+  name: AdaSoftLibrary.Infrastructure.Persistence.BookList
+  items:
+  - uid: AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository
+    name: BookXmlRepository
+- uid: AdaSoftLibrary.Infrastructure.Persistence.Books
+  name: AdaSoftLibrary.Infrastructure.Persistence.Books
+  items:
+  - uid: AdaSoftLibrary.Infrastructure.Persistence.Books.BookDbRepository
+    name: BookDbRepository
+- uid: AdaSoftLibrary.Infrastructure.Security
+  name: AdaSoftLibrary.Infrastructure.Security
+  items:
+  - uid: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+    name: UserAuthenticationService
+- uid: AdaSoftLibrary.Web.Common
+  name: AdaSoftLibrary.Web.Common
+  items:
+  - uid: AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute
+    name: DateCurrentOrInPastAttribute
+  - uid: AdaSoftLibrary.Web.Common.RequiredIfCustom
+    name: RequiredIfCustom
+- uid: AdaSoftLibrary.Web.Controllers
+  name: AdaSoftLibrary.Web.Controllers
+  items:
+  - uid: AdaSoftLibrary.Web.Controllers.AccessController
+    name: AccessController
+  - uid: AdaSoftLibrary.Web.Controllers.AuthorController
+    name: AuthorController
+  - uid: AdaSoftLibrary.Web.Controllers.BookController
+    name: BookController
+  - uid: AdaSoftLibrary.Web.Controllers.HomeController
+    name: HomeController
+  - uid: AdaSoftLibrary.Web.Controllers.ReaderController
+    name: ReaderController
+- uid: AdaSoftLibrary.Web.Filters
+  name: AdaSoftLibrary.Web.Filters
+  items:
+  - uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+    name: GlobalExceptionFilters
+- uid: AdaSoftLibrary.Web.Helpers
+  name: AdaSoftLibrary.Web.Helpers
+  items:
+  - uid: AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper
+    name: LabelRequiredTagHelper
+- uid: AdaSoftLibrary.Web.Mapping
+  name: AdaSoftLibrary.Web.Mapping
+  items:
+  - uid: AdaSoftLibrary.Web.Mapping.BookMappingProfile
+    name: BookMappingProfile
+- uid: AdaSoftLibrary.Web.Models
+  name: AdaSoftLibrary.Web.Models
+  items:
+  - uid: AdaSoftLibrary.Web.Models.AuthorsViewModel
+    name: AuthorsViewModel
+  - uid: AdaSoftLibrary.Web.Models.BookViewModel
+    name: BookViewModel
+  - uid: AdaSoftLibrary.Web.Models.BooksViewModel
+    name: BooksViewModel
+  - uid: AdaSoftLibrary.Web.Models.CreateViewModel
+    name: CreateViewModel
+  - uid: AdaSoftLibrary.Web.Models.DeleteViewModel
+    name: DeleteViewModel
+  - uid: AdaSoftLibrary.Web.Models.DetailViewModel
+    name: DetailViewModel
+  - uid: AdaSoftLibrary.Web.Models.EditViewModel
+    name: EditViewModel
+  - uid: AdaSoftLibrary.Web.Models.ErrorViewModel
+    name: ErrorViewModel
+  - uid: AdaSoftLibrary.Web.Models.SearchViewModel
+    name: SearchViewModel
+  - uid: AdaSoftLibrary.Web.Models.UserViewModel
+    name: UserViewModel
+memberLayout: SamePage

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Web.Filters
+  commentId: N:AdaSoftLibrary.Web.Filters
+  id: AdaSoftLibrary.Web.Filters
+  children:
+  - AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Web.Filters
+  nameWithType: AdaSoftLibrary.Web.Filters
+  fullName: AdaSoftLibrary.Web.Filters
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Web
+references:
+- uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  commentId: T:AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  href: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.html
+  name: GlobalExceptionFilters
+  nameWithType: GlobalExceptionFilters
+  fullName: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters

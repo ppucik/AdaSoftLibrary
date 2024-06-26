@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Api
+  commentId: N:AdaSoftLibrary.Api
+  id: AdaSoftLibrary.Api
+  children:
+  - AdaSoftLibrary.Api.IAssemblyMarker
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Api
+  nameWithType: AdaSoftLibrary.Api
+  fullName: AdaSoftLibrary.Api
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Api
+references:
+- uid: AdaSoftLibrary.Api.IAssemblyMarker
+  commentId: T:AdaSoftLibrary.Api.IAssemblyMarker
+  href: AdaSoftLibrary.Api.IAssemblyMarker.html
+  name: IAssemblyMarker
+  nameWithType: IAssemblyMarker
+  fullName: AdaSoftLibrary.Api.IAssemblyMarker

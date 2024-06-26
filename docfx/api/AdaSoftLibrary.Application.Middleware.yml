@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Middleware
+  commentId: N:AdaSoftLibrary.Application.Middleware
+  id: AdaSoftLibrary.Application.Middleware
+  children:
+  - AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Middleware
+  nameWithType: AdaSoftLibrary.Application.Middleware
+  fullName: AdaSoftLibrary.Application.Middleware
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware
+  commentId: T:AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware
+  href: AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware.html
+  name: GlobalErrorHandlerMiddleware
+  nameWithType: GlobalErrorHandlerMiddleware
+  fullName: AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware

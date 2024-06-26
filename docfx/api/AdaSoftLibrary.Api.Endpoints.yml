@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Api.Endpoints
+  commentId: N:AdaSoftLibrary.Api.Endpoints
+  id: AdaSoftLibrary.Api.Endpoints
+  children:
+  - AdaSoftLibrary.Api.Endpoints.BookEndpoint
+  - AdaSoftLibrary.Api.Endpoints.HomeEndpoint
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Api.Endpoints
+  nameWithType: AdaSoftLibrary.Api.Endpoints
+  fullName: AdaSoftLibrary.Api.Endpoints
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Api
+references:
+- uid: AdaSoftLibrary.Api.Endpoints.BookEndpoint
+  commentId: T:AdaSoftLibrary.Api.Endpoints.BookEndpoint
+  href: AdaSoftLibrary.Api.Endpoints.BookEndpoint.html
+  name: BookEndpoint
+  nameWithType: BookEndpoint
+  fullName: AdaSoftLibrary.Api.Endpoints.BookEndpoint
+- uid: AdaSoftLibrary.Api.Endpoints.HomeEndpoint
+  commentId: T:AdaSoftLibrary.Api.Endpoints.HomeEndpoint
+  href: AdaSoftLibrary.Api.Endpoints.HomeEndpoint.html
+  name: HomeEndpoint
+  nameWithType: HomeEndpoint
+  fullName: AdaSoftLibrary.Api.Endpoints.HomeEndpoint

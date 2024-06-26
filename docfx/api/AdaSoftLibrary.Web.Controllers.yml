@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Web.Controllers
+  commentId: N:AdaSoftLibrary.Web.Controllers
+  id: AdaSoftLibrary.Web.Controllers
+  children:
+  - AdaSoftLibrary.Web.Controllers.AccessController
+  - AdaSoftLibrary.Web.Controllers.AuthorController
+  - AdaSoftLibrary.Web.Controllers.BookController
+  - AdaSoftLibrary.Web.Controllers.HomeController
+  - AdaSoftLibrary.Web.Controllers.ReaderController
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Web.Controllers
+  nameWithType: AdaSoftLibrary.Web.Controllers
+  fullName: AdaSoftLibrary.Web.Controllers
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Web
+references:
+- uid: AdaSoftLibrary.Web.Controllers.AccessController
+  commentId: T:AdaSoftLibrary.Web.Controllers.AccessController
+  href: AdaSoftLibrary.Web.Controllers.AccessController.html
+  name: AccessController
+  nameWithType: AccessController
+  fullName: AdaSoftLibrary.Web.Controllers.AccessController
+- uid: AdaSoftLibrary.Web.Controllers.AuthorController
+  commentId: T:AdaSoftLibrary.Web.Controllers.AuthorController
+  href: AdaSoftLibrary.Web.Controllers.AuthorController.html
+  name: AuthorController
+  nameWithType: AuthorController
+  fullName: AdaSoftLibrary.Web.Controllers.AuthorController
+- uid: AdaSoftLibrary.Web.Controllers.BookController
+  commentId: T:AdaSoftLibrary.Web.Controllers.BookController
+  href: AdaSoftLibrary.Web.Controllers.BookController.html
+  name: BookController
+  nameWithType: BookController
+  fullName: AdaSoftLibrary.Web.Controllers.BookController
+- uid: AdaSoftLibrary.Web.Controllers.HomeController
+  commentId: T:AdaSoftLibrary.Web.Controllers.HomeController
+  href: AdaSoftLibrary.Web.Controllers.HomeController.html
+  name: HomeController
+  nameWithType: HomeController
+  fullName: AdaSoftLibrary.Web.Controllers.HomeController
+- uid: AdaSoftLibrary.Web.Controllers.ReaderController
+  commentId: T:AdaSoftLibrary.Web.Controllers.ReaderController
+  href: AdaSoftLibrary.Web.Controllers.ReaderController.html
+  name: ReaderController
+  nameWithType: ReaderController
+  fullName: AdaSoftLibrary.Web.Controllers.ReaderController

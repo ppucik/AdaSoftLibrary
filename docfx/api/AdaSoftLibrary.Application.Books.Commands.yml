@@ -1,0 +1,370 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Books.Commands
+  commentId: N:AdaSoftLibrary.Application.Books.Commands
+  id: AdaSoftLibrary.Application.Books.Commands
+  children:
+  - AdaSoftLibrary.Application.Books.Commands.BorrowBook
+  - AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command
+  - AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler
+  - AdaSoftLibrary.Application.Books.Commands.CreateBook
+  - AdaSoftLibrary.Application.Books.Commands.CreateBook.Command
+  - AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler
+  - AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+  - AdaSoftLibrary.Application.Books.Commands.DeleteBook
+  - AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command
+  - AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler
+  - AdaSoftLibrary.Application.Books.Commands.ReturnBook
+  - AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command
+  - AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler
+  - AdaSoftLibrary.Application.Books.Commands.UpdateBook
+  - AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command
+  - AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler
+  - AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Books.Commands
+  nameWithType: AdaSoftLibrary.Application.Books.Commands
+  fullName: AdaSoftLibrary.Application.Books.Commands
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.BorrowBook
+  href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.html
+  name: BorrowBook
+  nameWithType: BorrowBook
+  fullName: AdaSoftLibrary.Application.Books.Commands.BorrowBook
+- uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command
+  parent: AdaSoftLibrary.Application.Books.Commands
+  href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.html
+  name: BorrowBook.Command
+  nameWithType: BorrowBook.Command
+  fullName: AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook
+    name: BorrowBook
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook
+    name: BorrowBook
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command.html
+- uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler
+  href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.html
+  name: BorrowBook.CommandHandler
+  nameWithType: BorrowBook.CommandHandler
+  fullName: AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook
+    name: BorrowBook
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook
+    name: BorrowBook
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler.html
+- uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.CreateBook
+  href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  name: CreateBook
+  nameWithType: CreateBook
+  fullName: AdaSoftLibrary.Application.Books.Commands.CreateBook
+- uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Command
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.CreateBook.Command
+  parent: AdaSoftLibrary.Application.Books.Commands
+  href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  name: CreateBook.Command
+  nameWithType: CreateBook.Command
+  fullName: AdaSoftLibrary.Application.Books.Commands.CreateBook.Command
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+    name: CreateBook
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.Command.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+    name: CreateBook
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.Command.html
+- uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+  href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  name: CreateBook.Response
+  nameWithType: CreateBook.Response
+  fullName: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+    name: CreateBook
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+    name: Response
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+    name: CreateBook
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+    name: Response
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response.html
+- uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler
+  href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  name: CreateBook.CommandHandler
+  nameWithType: CreateBook.CommandHandler
+  fullName: AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+    name: CreateBook
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook
+    name: CreateBook
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler.html
+- uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.DeleteBook
+  href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.html
+  name: DeleteBook
+  nameWithType: DeleteBook
+  fullName: AdaSoftLibrary.Application.Books.Commands.DeleteBook
+- uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command
+  parent: AdaSoftLibrary.Application.Books.Commands
+  href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.html
+  name: DeleteBook.Command
+  nameWithType: DeleteBook.Command
+  fullName: AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook
+    name: DeleteBook
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook
+    name: DeleteBook
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command.html
+- uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler
+  href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.html
+  name: DeleteBook.CommandHandler
+  nameWithType: DeleteBook.CommandHandler
+  fullName: AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook
+    name: DeleteBook
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook
+    name: DeleteBook
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler.html
+- uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.ReturnBook
+  href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.html
+  name: ReturnBook
+  nameWithType: ReturnBook
+  fullName: AdaSoftLibrary.Application.Books.Commands.ReturnBook
+- uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command
+  parent: AdaSoftLibrary.Application.Books.Commands
+  href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.html
+  name: ReturnBook.Command
+  nameWithType: ReturnBook.Command
+  fullName: AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook
+    name: ReturnBook
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook
+    name: ReturnBook
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command.html
+- uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler
+  href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.html
+  name: ReturnBook.CommandHandler
+  nameWithType: ReturnBook.CommandHandler
+  fullName: AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook
+    name: ReturnBook
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook
+    name: ReturnBook
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler.html
+- uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.UpdateBook
+  href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  name: UpdateBook
+  nameWithType: UpdateBook
+  fullName: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+- uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command
+  parent: AdaSoftLibrary.Application.Books.Commands
+  href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  name: UpdateBook.Command
+  nameWithType: UpdateBook.Command
+  fullName: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+    name: UpdateBook
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+    name: UpdateBook
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command
+    name: Command
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command.html
+- uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response
+  href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  name: UpdateBook.Response
+  nameWithType: UpdateBook.Response
+  fullName: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+    name: UpdateBook
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response
+    name: Response
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+    name: UpdateBook
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response
+    name: Response
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response.html
+- uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler
+  href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  name: UpdateBook.CommandHandler
+  nameWithType: UpdateBook.CommandHandler
+  fullName: AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+    name: UpdateBook
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook
+    name: UpdateBook
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler
+    name: CommandHandler
+    href: AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler.html
+- uid: AdaSoftLibrary.Application.Books.Commands
+  commentId: N:AdaSoftLibrary.Application.Books.Commands
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Books.Commands
+  nameWithType: AdaSoftLibrary.Application.Books.Commands
+  fullName: AdaSoftLibrary.Application.Books.Commands
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands
+    name: Commands
+    href: AdaSoftLibrary.Application.Books.Commands.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands
+    name: Commands
+    href: AdaSoftLibrary.Application.Books.Commands.html

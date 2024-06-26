@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Books.Contracts
+  commentId: N:AdaSoftLibrary.Application.Books.Contracts
+  id: AdaSoftLibrary.Application.Books.Contracts
+  children:
+  - AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Books.Contracts
+  nameWithType: AdaSoftLibrary.Application.Books.Contracts
+  fullName: AdaSoftLibrary.Application.Books.Contracts
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+  commentId: T:AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+  href: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse.html
+  name: GetBookResponse
+  nameWithType: GetBookResponse
+  fullName: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse

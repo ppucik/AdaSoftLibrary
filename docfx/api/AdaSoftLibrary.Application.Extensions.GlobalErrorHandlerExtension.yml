@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  commentId: T:AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  id: GlobalErrorHandlerExtension
+  parent: AdaSoftLibrary.Application.Extensions
+  children:
+  - AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  langs:
+  - csharp
+  - vb
+  name: GlobalErrorHandlerExtension
+  nameWithType: GlobalErrorHandlerExtension
+  fullName: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Extensions/GlobalErrorHandlerExtension.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: GlobalErrorHandlerExtension
+    path: ../src/AdaSoftLibrary.Application/Extensions/GlobalErrorHandlerExtension.cs
+    startLine: 6
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Extensions
+  syntax:
+    content: public static class GlobalErrorHandlerExtension
+    content.vb: Public Module GlobalErrorHandlerExtension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddGlobalErrorHandler(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  langs:
+  - csharp
+  - vb
+  name: AddGlobalErrorHandler(IServiceCollection)
+  nameWithType: GlobalErrorHandlerExtension.AddGlobalErrorHandler(IServiceCollection)
+  fullName: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Extensions/GlobalErrorHandlerExtension.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: AddGlobalErrorHandler
+    path: ../src/AdaSoftLibrary.Application/Extensions/GlobalErrorHandlerExtension.cs
+    startLine: 8
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Extensions
+  syntax:
+    content: public static void AddGlobalErrorHandler(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Sub AddGlobalErrorHandler(services As IServiceCollection)
+  overload: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler*
+- uid: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  id: UseGlobalErrorHandlerMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  isExtensionMethod: true
+  parent: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  langs:
+  - csharp
+  - vb
+  name: UseGlobalErrorHandlerMiddleware(IApplicationBuilder)
+  nameWithType: GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware(IApplicationBuilder)
+  fullName: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Extensions/GlobalErrorHandlerExtension.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: UseGlobalErrorHandlerMiddleware
+    path: ../src/AdaSoftLibrary.Application/Extensions/GlobalErrorHandlerExtension.cs
+    startLine: 14
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Extensions
+  syntax:
+    content: public static IApplicationBuilder UseGlobalErrorHandlerMiddleware(this IApplicationBuilder applicationBuilder)
+    parameters:
+    - id: applicationBuilder
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    return:
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    content.vb: Public Shared Function UseGlobalErrorHandlerMiddleware(applicationBuilder As IApplicationBuilder) As IApplicationBuilder
+  overload: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware*
+references:
+- uid: AdaSoftLibrary.Application.Extensions
+  commentId: N:AdaSoftLibrary.Application.Extensions
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Extensions
+  nameWithType: AdaSoftLibrary.Application.Extensions
+  fullName: AdaSoftLibrary.Application.Extensions
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions
+    name: Extensions
+    href: AdaSoftLibrary.Application.Extensions.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions
+    name: Extensions
+    href: AdaSoftLibrary.Application.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler*
+  commentId: Overload:AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler
+  href: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.html#AdaSoftLibrary_Application_Extensions_GlobalErrorHandlerExtension_AddGlobalErrorHandler_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddGlobalErrorHandler
+  nameWithType: GlobalErrorHandlerExtension.AddGlobalErrorHandler
+  fullName: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.AddGlobalErrorHandler
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware*
+  commentId: Overload:AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware
+  href: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.html#AdaSoftLibrary_Application_Extensions_GlobalErrorHandlerExtension_UseGlobalErrorHandlerMiddleware_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  name: UseGlobalErrorHandlerMiddleware
+  nameWithType: GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware
+  fullName: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.UseGlobalErrorHandlerMiddleware
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder

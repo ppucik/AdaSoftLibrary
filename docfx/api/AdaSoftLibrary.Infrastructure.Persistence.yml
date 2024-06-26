@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Infrastructure.Persistence
+  commentId: N:AdaSoftLibrary.Infrastructure.Persistence
+  id: AdaSoftLibrary.Infrastructure.Persistence
+  children:
+  - AdaSoftLibrary.Infrastructure.Persistence.AppDbContext
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Infrastructure.Persistence
+  nameWithType: AdaSoftLibrary.Infrastructure.Persistence
+  fullName: AdaSoftLibrary.Infrastructure.Persistence
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+references:
+- uid: AdaSoftLibrary.Infrastructure.Persistence.AppDbContext
+  commentId: T:AdaSoftLibrary.Infrastructure.Persistence.AppDbContext
+  parent: AdaSoftLibrary.Infrastructure.Persistence
+  href: AdaSoftLibrary.Infrastructure.Persistence.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: AdaSoftLibrary.Infrastructure.Persistence.AppDbContext
+- uid: AdaSoftLibrary.Infrastructure.Persistence
+  commentId: N:AdaSoftLibrary.Infrastructure.Persistence
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Infrastructure.Persistence
+  nameWithType: AdaSoftLibrary.Infrastructure.Persistence
+  fullName: AdaSoftLibrary.Infrastructure.Persistence
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure
+    name: Infrastructure
+    href: AdaSoftLibrary.Infrastructure.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure.Persistence
+    name: Persistence
+    href: AdaSoftLibrary.Infrastructure.Persistence.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure
+    name: Infrastructure
+    href: AdaSoftLibrary.Infrastructure.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure.Persistence
+    name: Persistence
+    href: AdaSoftLibrary.Infrastructure.Persistence.html

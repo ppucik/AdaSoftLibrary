@@ -1,0 +1,599 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  commentId: T:AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  id: GlobalExceptionFilters
+  parent: AdaSoftLibrary.Web.Filters
+  children:
+  - AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.#ctor(Microsoft.Extensions.Logging.ILogger{AdaSoftLibrary.Web.Filters.GlobalExceptionFilters})
+  - AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  langs:
+  - csharp
+  - vb
+  name: GlobalExceptionFilters
+  nameWithType: GlobalExceptionFilters
+  fullName: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Filters/GlobalExceptionFilters.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: GlobalExceptionFilters
+    path: ../src/AdaSoftLibrary.Web/Filters/GlobalExceptionFilters.cs
+    startLine: 7
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Filters
+  syntax:
+    content: 'public class GlobalExceptionFilters : IExceptionFilter, IFilterMetadata'
+    content.vb: Public Class GlobalExceptionFilters Implements IExceptionFilter, IFilterMetadata
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter
+  - Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.#ctor(Microsoft.Extensions.Logging.ILogger{AdaSoftLibrary.Web.Filters.GlobalExceptionFilters})
+  commentId: M:AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.#ctor(Microsoft.Extensions.Logging.ILogger{AdaSoftLibrary.Web.Filters.GlobalExceptionFilters})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{AdaSoftLibrary.Web.Filters.GlobalExceptionFilters})'
+  parent: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  langs:
+  - csharp
+  - vb
+  name: GlobalExceptionFilters(ILogger<GlobalExceptionFilters>)
+  nameWithType: GlobalExceptionFilters.GlobalExceptionFilters(ILogger<GlobalExceptionFilters>)
+  fullName: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.GlobalExceptionFilters(Microsoft.Extensions.Logging.ILogger<AdaSoftLibrary.Web.Filters.GlobalExceptionFilters>)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Filters/GlobalExceptionFilters.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: .ctor
+    path: ../src/AdaSoftLibrary.Web/Filters/GlobalExceptionFilters.cs
+    startLine: 11
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Filters
+  syntax:
+    content: public GlobalExceptionFilters(ILogger<GlobalExceptionFilters> logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{AdaSoftLibrary.Web.Filters.GlobalExceptionFilters}
+    content.vb: Public Sub New(logger As ILogger(Of GlobalExceptionFilters))
+  overload: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.#ctor*
+  nameWithType.vb: GlobalExceptionFilters.New(ILogger(Of GlobalExceptionFilters))
+  fullName.vb: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.New(Microsoft.Extensions.Logging.ILogger(Of AdaSoftLibrary.Web.Filters.GlobalExceptionFilters))
+  name.vb: New(ILogger(Of GlobalExceptionFilters))
+- uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  commentId: M:AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  id: OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  parent: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+  langs:
+  - csharp
+  - vb
+  name: OnException(ExceptionContext)
+  nameWithType: GlobalExceptionFilters.OnException(ExceptionContext)
+  fullName: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Filters/GlobalExceptionFilters.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: OnException
+    path: ../src/AdaSoftLibrary.Web/Filters/GlobalExceptionFilters.cs
+    startLine: 16
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Filters
+  summary: Called after an action has thrown an <xref href="System.Exception" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void OnException(ExceptionContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+      description: The <xref href="Microsoft.AspNetCore.Mvc.Filters.ExceptionContext" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub OnException(context As ExceptionContext)
+  overload: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException*
+  implements:
+  - Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+references:
+- uid: AdaSoftLibrary.Web.Filters
+  commentId: N:AdaSoftLibrary.Web.Filters
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Web.Filters
+  nameWithType: AdaSoftLibrary.Web.Filters
+  fullName: AdaSoftLibrary.Web.Filters
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Web
+    name: Web
+    href: AdaSoftLibrary.Web.html
+  - name: .
+  - uid: AdaSoftLibrary.Web.Filters
+    name: Filters
+    href: AdaSoftLibrary.Web.Filters.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Web
+    name: Web
+    href: AdaSoftLibrary.Web.html
+  - name: .
+  - uid: AdaSoftLibrary.Web.Filters
+    name: Filters
+    href: AdaSoftLibrary.Web.Filters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iexceptionfilter
+  name: IExceptionFilter
+  nameWithType: IExceptionFilter
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter
+- uid: Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.ifiltermetadata
+  name: IFilterMetadata
+  nameWithType: IFilterMetadata
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc.Filters
+  commentId: N:Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.Filters
+  nameWithType: Microsoft.AspNetCore.Mvc.Filters
+  fullName: Microsoft.AspNetCore.Mvc.Filters
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Filters
+    name: Filters
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Filters
+    name: Filters
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters
+- uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.#ctor*
+  commentId: Overload:AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.#ctor
+  href: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.html#AdaSoftLibrary_Web_Filters_GlobalExceptionFilters__ctor_Microsoft_Extensions_Logging_ILogger_AdaSoftLibrary_Web_Filters_GlobalExceptionFilters__
+  name: GlobalExceptionFilters
+  nameWithType: GlobalExceptionFilters.GlobalExceptionFilters
+  fullName: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.GlobalExceptionFilters
+  nameWithType.vb: GlobalExceptionFilters.New
+  fullName.vb: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{AdaSoftLibrary.Web.Filters.GlobalExceptionFilters}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{AdaSoftLibrary.Web.Filters.GlobalExceptionFilters}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<GlobalExceptionFilters>
+  nameWithType: ILogger<GlobalExceptionFilters>
+  fullName: Microsoft.Extensions.Logging.ILogger<AdaSoftLibrary.Web.Filters.GlobalExceptionFilters>
+  nameWithType.vb: ILogger(Of GlobalExceptionFilters)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of AdaSoftLibrary.Web.Filters.GlobalExceptionFilters)
+  name.vb: ILogger(Of GlobalExceptionFilters)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+    name: GlobalExceptionFilters
+    href: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters
+    name: GlobalExceptionFilters
+    href: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.exceptioncontext
+  name: ExceptionContext
+  nameWithType: ExceptionContext
+  fullName: Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+- uid: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException*
+  commentId: Overload:AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException
+  href: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.html#AdaSoftLibrary_Web_Filters_GlobalExceptionFilters_OnException_Microsoft_AspNetCore_Mvc_Filters_ExceptionContext_
+  name: OnException
+  nameWithType: GlobalExceptionFilters.OnException
+  fullName: AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.OnException
+- uid: Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  commentId: M:Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  parent: Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iexceptionfilter.onexception
+  name: OnException(ExceptionContext)
+  nameWithType: IExceptionFilter.OnException(ExceptionContext)
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+    name: OnException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iexceptionfilter.onexception
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+    name: ExceptionContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.exceptioncontext
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+    name: OnException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iexceptionfilter.onexception
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+    name: ExceptionContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.exceptioncontext
+  - name: )

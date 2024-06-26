@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Common.Configurations
+  commentId: N:AdaSoftLibrary.Application.Common.Configurations
+  id: AdaSoftLibrary.Application.Common.Configurations
+  children:
+  - AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions
+  - AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup
+  - AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Common.Configurations
+  nameWithType: AdaSoftLibrary.Application.Common.Configurations
+  fullName: AdaSoftLibrary.Application.Common.Configurations
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions
+  commentId: T:AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions
+  parent: AdaSoftLibrary.Application.Common.Configurations
+  href: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.html
+  name: ApplicationOptions
+  nameWithType: ApplicationOptions
+  fullName: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions
+- uid: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup
+  commentId: T:AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup
+  href: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup.html
+  name: ApplicationOptionsSetup
+  nameWithType: ApplicationOptionsSetup
+  fullName: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup
+- uid: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  commentId: T:AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  parent: AdaSoftLibrary.Application.Common.Configurations
+  href: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.html
+  name: DataSourceTypeEnum
+  nameWithType: DataSourceTypeEnum
+  fullName: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+- uid: AdaSoftLibrary.Application.Common.Configurations
+  commentId: N:AdaSoftLibrary.Application.Common.Configurations
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Configurations
+  nameWithType: AdaSoftLibrary.Application.Common.Configurations
+  fullName: AdaSoftLibrary.Application.Common.Configurations
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Configurations
+    name: Configurations
+    href: AdaSoftLibrary.Application.Common.Configurations.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Configurations
+    name: Configurations
+    href: AdaSoftLibrary.Application.Common.Configurations.html

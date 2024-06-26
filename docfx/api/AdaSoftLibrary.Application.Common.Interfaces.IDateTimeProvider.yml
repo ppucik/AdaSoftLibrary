@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+  id: IDateTimeProvider
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  children:
+  - AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now
+  langs:
+  - csharp
+  - vb
+  name: IDateTimeProvider
+  nameWithType: IDateTimeProvider
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+  type: Interface
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IDateTimeProvider.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: IDateTimeProvider
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IDateTimeProvider.cs
+    startLine: 2
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  syntax:
+    content: public interface IDateTimeProvider
+    content.vb: Public Interface IDateTimeProvider
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now
+  commentId: P:AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now
+  id: Now
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+  langs:
+  - csharp
+  - vb
+  name: Now
+  nameWithType: IDateTimeProvider.Now
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IDateTimeProvider.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Now
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IDateTimeProvider.cs
+    startLine: 4
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  syntax:
+    content: DateTime Now { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: ReadOnly Property Now As Date
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now*
+references:
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now
+  href: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.html#AdaSoftLibrary_Application_Common_Interfaces_IDateTimeProvider_Now
+  name: Now
+  nameWithType: IDateTimeProvider.Now
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.Now
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

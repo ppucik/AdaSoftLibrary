@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Domain.Authentication
+  commentId: N:AdaSoftLibrary.Domain.Authentication
+  id: AdaSoftLibrary.Domain.Authentication
+  children:
+  - AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+  - AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Domain.Authentication
+  nameWithType: AdaSoftLibrary.Domain.Authentication
+  fullName: AdaSoftLibrary.Domain.Authentication
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Domain
+references:
+- uid: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+  commentId: T:AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+  parent: AdaSoftLibrary.Domain.Authentication
+  href: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest.html
+  name: AuthenticationRequest
+  nameWithType: AuthenticationRequest
+  fullName: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+- uid: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+  commentId: T:AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+  href: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse.html
+  name: AuthenticationResponse
+  nameWithType: AuthenticationResponse
+  fullName: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+- uid: AdaSoftLibrary.Domain.Authentication
+  commentId: N:AdaSoftLibrary.Domain.Authentication
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Authentication
+  nameWithType: AdaSoftLibrary.Domain.Authentication
+  fullName: AdaSoftLibrary.Domain.Authentication
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Authentication
+    name: Authentication
+    href: AdaSoftLibrary.Domain.Authentication.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Authentication
+    name: Authentication
+    href: AdaSoftLibrary.Domain.Authentication.html

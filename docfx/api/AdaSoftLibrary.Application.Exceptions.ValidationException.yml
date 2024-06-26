@@ -1,0 +1,730 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException
+  commentId: T:AdaSoftLibrary.Application.Exceptions.ValidationException
+  id: ValidationException
+  parent: AdaSoftLibrary.Application.Exceptions
+  children:
+  - AdaSoftLibrary.Application.Exceptions.ValidationException.#ctor(FluentValidation.Results.ValidationResult)
+  - AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError(System.String)
+  - AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors
+  langs:
+  - csharp
+  - vb
+  name: ValidationException
+  nameWithType: ValidationException
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: ValidationException
+    path: ../src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+    startLine: 7
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Exceptions
+  summary: Validačná vynímka
+  example: []
+  syntax:
+    content: 'public class ValidationException : ApplicationException, ISerializable'
+    content.vb: Public Class ValidationException Inherits ApplicationException Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  - System.ApplicationException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.GetType
+  - System.Exception.ToString
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors
+  commentId: P:AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors
+  id: ValdationErrors
+  parent: AdaSoftLibrary.Application.Exceptions.ValidationException
+  langs:
+  - csharp
+  - vb
+  name: ValdationErrors
+  nameWithType: ValidationException.ValdationErrors
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: ValdationErrors
+    path: ../src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+    startLine: 9
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Exceptions
+  syntax:
+    content: public List<string> ValdationErrors { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property ValdationErrors As List(Of String)
+  overload: AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors*
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException.#ctor(FluentValidation.Results.ValidationResult)
+  commentId: M:AdaSoftLibrary.Application.Exceptions.ValidationException.#ctor(FluentValidation.Results.ValidationResult)
+  id: '#ctor(FluentValidation.Results.ValidationResult)'
+  parent: AdaSoftLibrary.Application.Exceptions.ValidationException
+  langs:
+  - csharp
+  - vb
+  name: ValidationException(ValidationResult)
+  nameWithType: ValidationException.ValidationException(ValidationResult)
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException.ValidationException(FluentValidation.Results.ValidationResult)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: .ctor
+    path: ../src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+    startLine: 11
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Exceptions
+  syntax:
+    content: public ValidationException(ValidationResult validationResult)
+    parameters:
+    - id: validationResult
+      type: FluentValidation.Results.ValidationResult
+    content.vb: Public Sub New(validationResult As ValidationResult)
+  overload: AdaSoftLibrary.Application.Exceptions.ValidationException.#ctor*
+  nameWithType.vb: ValidationException.New(ValidationResult)
+  fullName.vb: AdaSoftLibrary.Application.Exceptions.ValidationException.New(FluentValidation.Results.ValidationResult)
+  name.vb: New(ValidationResult)
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError(System.String)
+  commentId: M:AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError(System.String)
+  id: AddCustomError(System.String)
+  parent: AdaSoftLibrary.Application.Exceptions.ValidationException
+  langs:
+  - csharp
+  - vb
+  name: AddCustomError(string)
+  nameWithType: ValidationException.AddCustomError(string)
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError(string)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: AddCustomError
+    path: ../src/AdaSoftLibrary.Application/Exceptions/ValidationException.cs
+    startLine: 21
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Exceptions
+  syntax:
+    content: public void AddCustomError(string errorMessage)
+    parameters:
+    - id: errorMessage
+      type: System.String
+    content.vb: Public Sub AddCustomError(errorMessage As String)
+  overload: AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError*
+  nameWithType.vb: ValidationException.AddCustomError(String)
+  fullName.vb: AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError(String)
+  name.vb: AddCustomError(String)
+references:
+- uid: AdaSoftLibrary.Application.Exceptions
+  commentId: N:AdaSoftLibrary.Application.Exceptions
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Exceptions
+  nameWithType: AdaSoftLibrary.Application.Exceptions
+  fullName: AdaSoftLibrary.Application.Exceptions
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Exceptions
+    name: Exceptions
+    href: AdaSoftLibrary.Application.Exceptions.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Exceptions
+    name: Exceptions
+    href: AdaSoftLibrary.Application.Exceptions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.ApplicationException
+  commentId: T:System.ApplicationException
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.applicationexception
+  name: ApplicationException
+  nameWithType: ApplicationException
+  fullName: System.ApplicationException
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors*
+  commentId: Overload:AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors
+  href: AdaSoftLibrary.Application.Exceptions.ValidationException.html#AdaSoftLibrary_Application_Exceptions_ValidationException_ValdationErrors
+  name: ValdationErrors
+  nameWithType: ValidationException.ValdationErrors
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException.ValdationErrors
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException.#ctor*
+  commentId: Overload:AdaSoftLibrary.Application.Exceptions.ValidationException.#ctor
+  href: AdaSoftLibrary.Application.Exceptions.ValidationException.html#AdaSoftLibrary_Application_Exceptions_ValidationException__ctor_FluentValidation_Results_ValidationResult_
+  name: ValidationException
+  nameWithType: ValidationException.ValidationException
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException.ValidationException
+  nameWithType.vb: ValidationException.New
+  fullName.vb: AdaSoftLibrary.Application.Exceptions.ValidationException.New
+  name.vb: New
+- uid: FluentValidation.Results.ValidationResult
+  commentId: T:FluentValidation.Results.ValidationResult
+  parent: FluentValidation.Results
+  isExternal: true
+  name: ValidationResult
+  nameWithType: ValidationResult
+  fullName: FluentValidation.Results.ValidationResult
+- uid: FluentValidation.Results
+  commentId: N:FluentValidation.Results
+  isExternal: true
+  name: FluentValidation.Results
+  nameWithType: FluentValidation.Results
+  fullName: FluentValidation.Results
+  spec.csharp:
+  - uid: FluentValidation
+    name: FluentValidation
+    isExternal: true
+  - name: .
+  - uid: FluentValidation.Results
+    name: Results
+    isExternal: true
+  spec.vb:
+  - uid: FluentValidation
+    name: FluentValidation
+    isExternal: true
+  - name: .
+  - uid: FluentValidation.Results
+    name: Results
+    isExternal: true
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError*
+  commentId: Overload:AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError
+  href: AdaSoftLibrary.Application.Exceptions.ValidationException.html#AdaSoftLibrary_Application_Exceptions_ValidationException_AddCustomError_System_String_
+  name: AddCustomError
+  nameWithType: ValidationException.AddCustomError
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException.AddCustomError
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

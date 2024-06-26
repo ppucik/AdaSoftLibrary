@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Extensions
+  commentId: N:AdaSoftLibrary.Application.Extensions
+  id: AdaSoftLibrary.Application.Extensions
+  children:
+  - AdaSoftLibrary.Application.Extensions.EnumExtensions
+  - AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo
+  - AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  - AdaSoftLibrary.Application.Extensions.StringExtensions
+  - AdaSoftLibrary.Application.Extensions.SwaggerExtension
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Extensions
+  nameWithType: AdaSoftLibrary.Application.Extensions
+  fullName: AdaSoftLibrary.Application.Extensions
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions
+  commentId: T:AdaSoftLibrary.Application.Extensions.EnumExtensions
+  parent: AdaSoftLibrary.Application.Extensions
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo
+  commentId: T:AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo
+  parent: AdaSoftLibrary.Application.Extensions
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html
+  name: EnumExtensions.EnumEntryInfo
+  nameWithType: EnumExtensions.EnumEntryInfo
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions
+    name: EnumExtensions
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo
+    name: EnumEntryInfo
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions
+    name: EnumExtensions
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo
+    name: EnumEntryInfo
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo.html
+- uid: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  commentId: T:AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+  href: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.html
+  name: GlobalErrorHandlerExtension
+  nameWithType: GlobalErrorHandlerExtension
+  fullName: AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension
+- uid: AdaSoftLibrary.Application.Extensions.StringExtensions
+  commentId: T:AdaSoftLibrary.Application.Extensions.StringExtensions
+  href: AdaSoftLibrary.Application.Extensions.StringExtensions.html
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: AdaSoftLibrary.Application.Extensions.StringExtensions
+- uid: AdaSoftLibrary.Application.Extensions.SwaggerExtension
+  commentId: T:AdaSoftLibrary.Application.Extensions.SwaggerExtension
+  href: AdaSoftLibrary.Application.Extensions.SwaggerExtension.html
+  name: SwaggerExtension
+  nameWithType: SwaggerExtension
+  fullName: AdaSoftLibrary.Application.Extensions.SwaggerExtension
+- uid: AdaSoftLibrary.Application.Extensions
+  commentId: N:AdaSoftLibrary.Application.Extensions
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Extensions
+  nameWithType: AdaSoftLibrary.Application.Extensions
+  fullName: AdaSoftLibrary.Application.Extensions
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions
+    name: Extensions
+    href: AdaSoftLibrary.Application.Extensions.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions
+    name: Extensions
+    href: AdaSoftLibrary.Application.Extensions.html

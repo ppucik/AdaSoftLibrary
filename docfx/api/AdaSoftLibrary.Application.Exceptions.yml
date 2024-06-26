@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Exceptions
+  commentId: N:AdaSoftLibrary.Application.Exceptions
+  id: AdaSoftLibrary.Application.Exceptions
+  children:
+  - AdaSoftLibrary.Application.Exceptions.ApiException
+  - AdaSoftLibrary.Application.Exceptions.BadRequestException
+  - AdaSoftLibrary.Application.Exceptions.NotFoundException
+  - AdaSoftLibrary.Application.Exceptions.ValidationException
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Exceptions
+  nameWithType: AdaSoftLibrary.Application.Exceptions
+  fullName: AdaSoftLibrary.Application.Exceptions
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Exceptions.ApiException
+  commentId: T:AdaSoftLibrary.Application.Exceptions.ApiException
+  href: AdaSoftLibrary.Application.Exceptions.ApiException.html
+  name: ApiException
+  nameWithType: ApiException
+  fullName: AdaSoftLibrary.Application.Exceptions.ApiException
+- uid: AdaSoftLibrary.Application.Exceptions.BadRequestException
+  commentId: T:AdaSoftLibrary.Application.Exceptions.BadRequestException
+  href: AdaSoftLibrary.Application.Exceptions.BadRequestException.html
+  name: BadRequestException
+  nameWithType: BadRequestException
+  fullName: AdaSoftLibrary.Application.Exceptions.BadRequestException
+- uid: AdaSoftLibrary.Application.Exceptions.NotFoundException
+  commentId: T:AdaSoftLibrary.Application.Exceptions.NotFoundException
+  href: AdaSoftLibrary.Application.Exceptions.NotFoundException.html
+  name: NotFoundException
+  nameWithType: NotFoundException
+  fullName: AdaSoftLibrary.Application.Exceptions.NotFoundException
+- uid: AdaSoftLibrary.Application.Exceptions.ValidationException
+  commentId: T:AdaSoftLibrary.Application.Exceptions.ValidationException
+  href: AdaSoftLibrary.Application.Exceptions.ValidationException.html
+  name: ValidationException
+  nameWithType: ValidationException
+  fullName: AdaSoftLibrary.Application.Exceptions.ValidationException

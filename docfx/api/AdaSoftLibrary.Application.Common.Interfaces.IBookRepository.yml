@@ -1,0 +1,731 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  id: IBookRepository
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  children:
+  - AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  - AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync(System.Int32,System.Threading.CancellationToken)
+  - AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync(System.String,System.Threading.CancellationToken)
+  - AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync(System.Int32,System.Threading.CancellationToken)
+  - AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync(AdaSoftLibrary.Domain.Enums.BookFilterEnum,System.String,System.String,System.String,System.Threading.CancellationToken)
+  - AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  type: Interface
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: IBookRepository
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+    startLine: 8
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Repozitár kníh
+  example: []
+  syntax:
+    content: public interface IBookRepository
+    content.vb: Public Interface IBookRepository
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync(AdaSoftLibrary.Domain.Enums.BookFilterEnum,System.String,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync(AdaSoftLibrary.Domain.Enums.BookFilterEnum,System.String,System.String,System.String,System.Threading.CancellationToken)
+  id: GetListAsync(AdaSoftLibrary.Domain.Enums.BookFilterEnum,System.String,System.String,System.String,System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetListAsync(BookFilterEnum, string?, string?, string?, CancellationToken)
+  nameWithType: IBookRepository.GetListAsync(BookFilterEnum, string?, string?, string?, CancellationToken)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync(AdaSoftLibrary.Domain.Enums.BookFilterEnum, string?, string?, string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: GetListAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+    startLine: 19
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Vrátí zoznam kníh
+  example: []
+  syntax:
+    content: Task<IEnumerable<Book>> GetListAsync(BookFilterEnum bookFilter, string? author = null, string? name = null, string? searchTerm = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: bookFilter
+      type: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+      description: ''
+    - id: author
+      type: System.String
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    - id: searchTerm
+      type: System.String
+      description: Časť názvu knihy alebo mena autora
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{AdaSoftLibrary.Domain.Entities.Book}}
+      description: Zoznam kníh
+    content.vb: Function GetListAsync(bookFilter As BookFilterEnum, author As String = Nothing, name As String = Nothing, searchTerm As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of Book))
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync*
+  nameWithType.vb: IBookRepository.GetListAsync(BookFilterEnum, String, String, String, CancellationToken)
+  fullName.vb: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync(AdaSoftLibrary.Domain.Enums.BookFilterEnum, String, String, String, System.Threading.CancellationToken)
+  name.vb: GetListAsync(BookFilterEnum, String, String, String, CancellationToken)
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync(System.Int32,System.Threading.CancellationToken)
+  id: GetByIdAsync(System.Int32,System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(int, CancellationToken)
+  nameWithType: IBookRepository.GetByIdAsync(int, CancellationToken)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync(int, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: GetByIdAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+    startLine: 32
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Vrátí informácie o kníhe
+  example: []
+  syntax:
+    content: Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ID knihy
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Entities.Book}
+      description: Detail knihy alebo null
+    content.vb: Function GetByIdAsync(id As Integer, cancellationToken As CancellationToken = Nothing) As Task(Of Book)
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync*
+  nameWithType.vb: IBookRepository.GetByIdAsync(Integer, CancellationToken)
+  fullName.vb: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync(Integer, System.Threading.CancellationToken)
+  name.vb: GetByIdAsync(Integer, CancellationToken)
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync(System.String,System.Threading.CancellationToken)
+  id: GetAuthorsAsync(System.String,System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAuthorsAsync(string?, CancellationToken)
+  nameWithType: IBookRepository.GetAuthorsAsync(string?, CancellationToken)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync(string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: GetAuthorsAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+    startLine: 40
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Vrátí zoznam autorov
+  example: []
+  syntax:
+    content: Task<IEnumerable<string>> GetAuthorsAsync(string? searchAuthor, CancellationToken cancellationToken = default)
+    parameters:
+    - id: searchAuthor
+      type: System.String
+      description: Hľadaný autor
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+      description: ''
+    content.vb: Function GetAuthorsAsync(searchAuthor As String, cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of String))
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync*
+  nameWithType.vb: IBookRepository.GetAuthorsAsync(String, CancellationToken)
+  fullName.vb: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync(String, System.Threading.CancellationToken)
+  name.vb: GetAuthorsAsync(String, CancellationToken)
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  id: AddAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: AddAsync(Book, CancellationToken)
+  nameWithType: IBookRepository.AddAsync(Book, CancellationToken)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync(AdaSoftLibrary.Domain.Entities.Book, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: AddAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+    startLine: 48
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Založenie novej knihy
+  example: []
+  syntax:
+    content: Task<int> AddAsync(Book book, CancellationToken cancellationToken = default)
+    parameters:
+    - id: book
+      type: AdaSoftLibrary.Domain.Entities.Book
+      description: ''
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: ID novej knihy
+    content.vb: Function AddAsync(book As Book, cancellationToken As CancellationToken = Nothing) As Task(Of Integer)
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync*
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  id: UpdateAsync(AdaSoftLibrary.Domain.Entities.Book,System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Book, CancellationToken)
+  nameWithType: IBookRepository.UpdateAsync(Book, CancellationToken)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync(AdaSoftLibrary.Domain.Entities.Book, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: UpdateAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+    startLine: 56
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Editácia údajov o knihe
+  example: []
+  syntax:
+    content: Task UpdateAsync(Book book, CancellationToken cancellationToken = default)
+    parameters:
+    - id: book
+      type: AdaSoftLibrary.Domain.Entities.Book
+      description: ''
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function UpdateAsync(book As Book, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync*
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync(System.Int32,System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync(System.Int32,System.Threading.CancellationToken)
+  id: DeleteAsync(System.Int32,System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(int, CancellationToken)
+  nameWithType: IBookRepository.DeleteAsync(int, CancellationToken)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync(int, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: DeleteAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IBookRepository.cs
+    startLine: 64
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Zmazanie knihy
+  example: []
+  syntax:
+    content: Task DeleteAsync(int id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ID knihy
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function DeleteAsync(id As Integer, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync*
+  nameWithType.vb: IBookRepository.DeleteAsync(Integer, CancellationToken)
+  fullName.vb: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync(Integer, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(Integer, CancellationToken)
+references:
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html#AdaSoftLibrary_Application_Common_Interfaces_IBookRepository_GetListAsync_AdaSoftLibrary_Domain_Enums_BookFilterEnum_System_String_System_String_System_String_System_Threading_CancellationToken_
+  name: GetListAsync
+  nameWithType: IBookRepository.GetListAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetListAsync
+- uid: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  commentId: T:AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  parent: AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.Domain.Enums.BookFilterEnum.html
+  name: BookFilterEnum
+  nameWithType: BookFilterEnum
+  fullName: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{AdaSoftLibrary.Domain.Entities.Book}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{AdaSoftLibrary.Domain.Entities.Book}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Book>>
+  nameWithType: Task<IEnumerable<Book>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<AdaSoftLibrary.Domain.Entities.Book>>
+  nameWithType.vb: Task(Of IEnumerable(Of Book))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of AdaSoftLibrary.Domain.Entities.Book))
+  name.vb: Task(Of IEnumerable(Of Book))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+  - name: )
+  - name: )
+- uid: AdaSoftLibrary.Domain.Enums
+  commentId: N:AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Enums
+  nameWithType: AdaSoftLibrary.Domain.Enums
+  fullName: AdaSoftLibrary.Domain.Enums
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html#AdaSoftLibrary_Application_Common_Interfaces_IBookRepository_GetByIdAsync_System_Int32_System_Threading_CancellationToken_
+  name: GetByIdAsync
+  nameWithType: IBookRepository.GetByIdAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetByIdAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Entities.Book}
+  commentId: T:System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Entities.Book}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Book>
+  nameWithType: Task<Book>
+  fullName: System.Threading.Tasks.Task<AdaSoftLibrary.Domain.Entities.Book>
+  nameWithType.vb: Task(Of Book)
+  fullName.vb: System.Threading.Tasks.Task(Of AdaSoftLibrary.Domain.Entities.Book)
+  name.vb: Task(Of Book)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+  - name: )
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html#AdaSoftLibrary_Application_Common_Interfaces_IBookRepository_GetAuthorsAsync_System_String_System_Threading_CancellationToken_
+  name: GetAuthorsAsync
+  nameWithType: IBookRepository.GetAuthorsAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.GetAuthorsAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<string>>
+  nameWithType: Task<IEnumerable<string>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<string>>
+  nameWithType.vb: Task(Of IEnumerable(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Task(Of IEnumerable(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html#AdaSoftLibrary_Application_Common_Interfaces_IBookRepository_AddAsync_AdaSoftLibrary_Domain_Entities_Book_System_Threading_CancellationToken_
+  name: AddAsync
+  nameWithType: IBookRepository.AddAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.AddAsync
+- uid: AdaSoftLibrary.Domain.Entities.Book
+  commentId: T:AdaSoftLibrary.Domain.Entities.Book
+  parent: AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.Domain.Entities.Book.html
+  name: Book
+  nameWithType: Book
+  fullName: AdaSoftLibrary.Domain.Entities.Book
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: AdaSoftLibrary.Domain.Entities
+  commentId: N:AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Entities
+  nameWithType: AdaSoftLibrary.Domain.Entities
+  fullName: AdaSoftLibrary.Domain.Entities
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Entities
+    name: Entities
+    href: AdaSoftLibrary.Domain.Entities.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Entities
+    name: Entities
+    href: AdaSoftLibrary.Domain.Entities.html
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html#AdaSoftLibrary_Application_Common_Interfaces_IBookRepository_UpdateAsync_AdaSoftLibrary_Domain_Entities_Book_System_Threading_CancellationToken_
+  name: UpdateAsync
+  nameWithType: IBookRepository.UpdateAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.UpdateAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html#AdaSoftLibrary_Application_Common_Interfaces_IBookRepository_DeleteAsync_System_Int32_System_Threading_CancellationToken_
+  name: DeleteAsync
+  nameWithType: IBookRepository.DeleteAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.DeleteAsync

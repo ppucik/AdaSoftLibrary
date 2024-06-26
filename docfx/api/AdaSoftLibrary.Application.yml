@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application
+  commentId: N:AdaSoftLibrary.Application
+  id: AdaSoftLibrary.Application
+  children:
+  - AdaSoftLibrary.Application.DependencyInjection
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application
+  nameWithType: AdaSoftLibrary.Application
+  fullName: AdaSoftLibrary.Application
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.DependencyInjection
+  commentId: T:AdaSoftLibrary.Application.DependencyInjection
+  href: AdaSoftLibrary.Application.DependencyInjection.html
+  name: DependencyInjection
+  nameWithType: DependencyInjection
+  fullName: AdaSoftLibrary.Application.DependencyInjection

@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Api.IAssemblyMarker
+  commentId: T:AdaSoftLibrary.Api.IAssemblyMarker
+  id: IAssemblyMarker
+  parent: AdaSoftLibrary.Api
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IAssemblyMarker
+  nameWithType: IAssemblyMarker
+  fullName: AdaSoftLibrary.Api.IAssemblyMarker
+  type: Interface
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Api/IAssemblyMarker.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: IAssemblyMarker
+    path: ../src/AdaSoftLibrary.Api/IAssemblyMarker.cs
+    startLine: 2
+  assemblies:
+  - AdaSoftLibrary.Api
+  namespace: AdaSoftLibrary.Api
+  syntax:
+    content: public interface IAssemblyMarker
+    content.vb: Public Interface IAssemblyMarker
+references:
+- uid: AdaSoftLibrary.Api
+  commentId: N:AdaSoftLibrary.Api
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Api
+  nameWithType: AdaSoftLibrary.Api
+  fullName: AdaSoftLibrary.Api
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Api
+    name: Api
+    href: AdaSoftLibrary.Api.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Api
+    name: Api
+    href: AdaSoftLibrary.Api.html

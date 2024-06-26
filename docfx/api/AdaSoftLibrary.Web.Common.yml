@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Web.Common
+  commentId: N:AdaSoftLibrary.Web.Common
+  id: AdaSoftLibrary.Web.Common
+  children:
+  - AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute
+  - AdaSoftLibrary.Web.Common.RequiredIfCustom
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Web.Common
+  nameWithType: AdaSoftLibrary.Web.Common
+  fullName: AdaSoftLibrary.Web.Common
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Web
+references:
+- uid: AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute
+  commentId: T:AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute
+  href: AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute.html
+  name: DateCurrentOrInPastAttribute
+  nameWithType: DateCurrentOrInPastAttribute
+  fullName: AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute
+- uid: AdaSoftLibrary.Web.Common.RequiredIfCustom
+  commentId: T:AdaSoftLibrary.Web.Common.RequiredIfCustom
+  href: AdaSoftLibrary.Web.Common.RequiredIfCustom.html
+  name: RequiredIfCustom
+  nameWithType: RequiredIfCustom
+  fullName: AdaSoftLibrary.Web.Common.RequiredIfCustom

@@ -1,0 +1,1408 @@
+{
+  "source_base_path": "C:/GitHub/AdaSoftLibrary/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Contracts.CreateBookRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Contracts.CreateBookRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Contracts.GetBooksRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Contracts.GetBooksRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Contracts.UpdateBookRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Contracts.UpdateBookRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Contracts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Contracts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Contractsô.BorrowBookRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Contractsô.BorrowBookRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Contractsô.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Contractsô.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Endpoints.BookEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Endpoints.BookEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Endpoints.HomeEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Endpoints.HomeEndpoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.Endpoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.Endpoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.IAssemblyMarker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.IAssemblyMarker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Api.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.BorrowBook.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.BorrowBook.CommandHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.BorrowBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.BorrowBook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.CommandHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.Response.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.CreateBook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.DeleteBook.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.DeleteBook.CommandHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.DeleteBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.DeleteBook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.ReturnBook.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.ReturnBook.CommandHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.ReturnBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.ReturnBook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.CommandHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.Response.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.UpdateBook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Commands.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Contracts.GetBookResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Contracts.GetBookResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Contracts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Contracts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Mapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Mapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetAuthors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetAuthors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBook.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBook.Query.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBooks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.GetBooks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Queries.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Books.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Books.Validation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.ApplicationOptionsSetup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Configurations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Common.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.DependencyInjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Exceptions.ApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Exceptions.ApiException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Exceptions.BadRequestException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Exceptions.BadRequestException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Exceptions.NotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Exceptions.NotFoundException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Exceptions.ValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Exceptions.ValidationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Extensions.EnumExtensions.EnumEntryInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Extensions.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Extensions.EnumExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Extensions.GlobalErrorHandlerExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Extensions.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Extensions.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Extensions.SwaggerExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Extensions.SwaggerExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Middleware.GlobalErrorHandlerMiddleware.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Middleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Middleware.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Security.AuthorizeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Security.AuthorizeAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.Security.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.Security.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Application.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Authentication.AuthenticationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Authentication.AuthenticationRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Authentication.AuthenticationResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Authentication.AuthenticationResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Authentication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Authentication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Common.BaseEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Common.BaseEntity-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Common.BaseResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Common.BaseResponse-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Common.IHasKey-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Common.IHasKey-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Constants.Roles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Constants.Roles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Constants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Entities.Book.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Entities.Book.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Entities.Borrowed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Entities.Borrowed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Entities.Library.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Entities.Library.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Entities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Enums.BookFilterEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Enums.BookFilterEnum.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Domain.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Domain.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.DependencyInjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Migrations.AddBookYear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Migrations.AddBookYear.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Migrations.InitialMigration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Migrations.InitialMigration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Migrations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.AppDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.AppDbContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.BookList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.BookList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.Books.BookDbRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.Books.BookDbRepository.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.Books.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.Books.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Persistence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.Security.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.Security.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Infrastructure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Common.DateCurrentOrInPastAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Common.RequiredIfCustom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Common.RequiredIfCustom.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Controllers.AccessController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Controllers.AccessController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Controllers.AuthorController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Controllers.AuthorController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Controllers.BookController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Controllers.BookController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Controllers.HomeController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Controllers.ReaderController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Controllers.ReaderController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Controllers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Filters.GlobalExceptionFilters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Filters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Helpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Mapping.BookMappingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Mapping.BookMappingProfile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Mapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Mapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.AuthorsViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.AuthorsViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.BookViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.BookViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.BooksViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.BooksViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.CreateViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.CreateViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.DeleteViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.DeleteViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.DetailViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.DetailViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.EditViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.EditViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.ErrorViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.SearchViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.SearchViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.UserViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.UserViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AdaSoftLibrary.Web.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AdaSoftLibrary.Web.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

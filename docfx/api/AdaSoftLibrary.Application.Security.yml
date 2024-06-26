@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Security
+  commentId: N:AdaSoftLibrary.Application.Security
+  id: AdaSoftLibrary.Application.Security
+  children:
+  - AdaSoftLibrary.Application.Security.AuthorizeAttribute
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Security
+  nameWithType: AdaSoftLibrary.Application.Security
+  fullName: AdaSoftLibrary.Application.Security
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Security.AuthorizeAttribute
+  commentId: T:AdaSoftLibrary.Application.Security.AuthorizeAttribute
+  href: AdaSoftLibrary.Application.Security.AuthorizeAttribute.html
+  name: AuthorizeAttribute
+  nameWithType: AuthorizeAttribute
+  fullName: AdaSoftLibrary.Application.Security.AuthorizeAttribute

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Infrastructure.Extensions
+  commentId: N:AdaSoftLibrary.Infrastructure.Extensions
+  id: AdaSoftLibrary.Infrastructure.Extensions
+  children:
+  - AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Infrastructure.Extensions
+  nameWithType: AdaSoftLibrary.Infrastructure.Extensions
+  fullName: AdaSoftLibrary.Infrastructure.Extensions
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+references:
+- uid: AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension
+  commentId: T:AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension
+  href: AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension.html
+  name: MigrationExtension
+  nameWithType: MigrationExtension
+  fullName: AdaSoftLibrary.Infrastructure.Extensions.MigrationExtension

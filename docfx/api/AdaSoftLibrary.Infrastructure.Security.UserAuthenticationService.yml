@@ -1,0 +1,690 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  commentId: T:AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  id: UserAuthenticationService
+  parent: AdaSoftLibrary.Infrastructure.Security
+  children:
+  - AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.#ctor(Microsoft.Extensions.Options.IOptions{AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions})
+  - AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  langs:
+  - csharp
+  - vb
+  name: UserAuthenticationService
+  nameWithType: UserAuthenticationService
+  fullName: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Infrastructure/Security/UserAuthenticationService.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: UserAuthenticationService
+    path: ../src/AdaSoftLibrary.Infrastructure/Security/UserAuthenticationService.cs
+    startLine: 7
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+  namespace: AdaSoftLibrary.Infrastructure.Security
+  syntax:
+    content: 'public class UserAuthenticationService : IUserAuthenticationService'
+    content.vb: Public Class UserAuthenticationService Implements IUserAuthenticationService
+  inheritance:
+  - System.Object
+  implements:
+  - AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.#ctor(Microsoft.Extensions.Options.IOptions{AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions})
+  commentId: M:AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.#ctor(Microsoft.Extensions.Options.IOptions{AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions})
+  id: '#ctor(Microsoft.Extensions.Options.IOptions{AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions})'
+  parent: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: UserAuthenticationService(IOptions<ApplicationOptions>)
+  nameWithType: UserAuthenticationService.UserAuthenticationService(IOptions<ApplicationOptions>)
+  fullName: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.UserAuthenticationService(Microsoft.Extensions.Options.IOptions<AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions>)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Infrastructure/Security/UserAuthenticationService.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: .ctor
+    path: ../src/AdaSoftLibrary.Infrastructure/Security/UserAuthenticationService.cs
+    startLine: 11
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+  namespace: AdaSoftLibrary.Infrastructure.Security
+  syntax:
+    content: public UserAuthenticationService(IOptions<ApplicationOptions> options)
+    parameters:
+    - id: options
+      type: Microsoft.Extensions.Options.IOptions{AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions}
+    content.vb: Public Sub New(options As IOptions(Of ApplicationOptions))
+  overload: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.#ctor*
+  nameWithType.vb: UserAuthenticationService.New(IOptions(Of ApplicationOptions))
+  fullName.vb: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.New(Microsoft.Extensions.Options.IOptions(Of AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions))
+  name.vb: New(IOptions(Of ApplicationOptions))
+- uid: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  commentId: M:AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  id: AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  parent: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: AuthenticateAsync(AuthenticationRequest)
+  nameWithType: UserAuthenticationService.AuthenticateAsync(AuthenticationRequest)
+  fullName: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Infrastructure/Security/UserAuthenticationService.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: AuthenticateAsync
+    path: ../src/AdaSoftLibrary.Infrastructure/Security/UserAuthenticationService.cs
+    startLine: 16
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+  namespace: AdaSoftLibrary.Infrastructure.Security
+  example: []
+  syntax:
+    content: public Task<AuthenticationResponse> AuthenticateAsync(AuthenticationRequest request)
+    parameters:
+    - id: request
+      type: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+    return:
+      type: System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Authentication.AuthenticationResponse}
+    content.vb: Public Function AuthenticateAsync(request As AuthenticationRequest) As Task(Of AuthenticationResponse)
+  overload: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync*
+  implements:
+  - AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+references:
+- uid: AdaSoftLibrary.Infrastructure.Security
+  commentId: N:AdaSoftLibrary.Infrastructure.Security
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Infrastructure.Security
+  nameWithType: AdaSoftLibrary.Infrastructure.Security
+  fullName: AdaSoftLibrary.Infrastructure.Security
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure
+    name: Infrastructure
+    href: AdaSoftLibrary.Infrastructure.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure.Security
+    name: Security
+    href: AdaSoftLibrary.Infrastructure.Security.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure
+    name: Infrastructure
+    href: AdaSoftLibrary.Infrastructure.html
+  - name: .
+  - uid: AdaSoftLibrary.Infrastructure.Security
+    name: Security
+    href: AdaSoftLibrary.Infrastructure.Security.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.html
+  name: IUserAuthenticationService
+  nameWithType: IUserAuthenticationService
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+- uid: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.#ctor*
+  commentId: Overload:AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.#ctor
+  href: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.html#AdaSoftLibrary_Infrastructure_Security_UserAuthenticationService__ctor_Microsoft_Extensions_Options_IOptions_AdaSoftLibrary_Application_Common_Configurations_ApplicationOptions__
+  name: UserAuthenticationService
+  nameWithType: UserAuthenticationService.UserAuthenticationService
+  fullName: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.UserAuthenticationService
+  nameWithType.vb: UserAuthenticationService.New
+  fullName.vb: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.New
+  name.vb: New
+- uid: Microsoft.Extensions.Options.IOptions{AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions}
+  commentId: T:Microsoft.Extensions.Options.IOptions{AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IOptions`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<ApplicationOptions>
+  nameWithType: IOptions<ApplicationOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions>
+  nameWithType.vb: IOptions(Of ApplicationOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions)
+  name.vb: IOptions(Of ApplicationOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - uid: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions
+    name: ApplicationOptions
+    href: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions
+    name: ApplicationOptions
+    href: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.html
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptions`1
+  commentId: T:Microsoft.Extensions.Options.IOptions`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  name: IOptions<TOptions>
+  nameWithType: IOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptions<TOptions>
+  nameWithType.vb: IOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptions(Of TOptions)
+  name.vb: IOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IOptions`1
+    name: IOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.options
+- uid: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync*
+  commentId: Overload:AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync
+  href: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.html#AdaSoftLibrary_Infrastructure_Security_UserAuthenticationService_AuthenticateAsync_AdaSoftLibrary_Domain_Authentication_AuthenticationRequest_
+  name: AuthenticateAsync
+  nameWithType: UserAuthenticationService.AuthenticateAsync
+  fullName: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.AuthenticateAsync
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  href: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.html#AdaSoftLibrary_Application_Common_Interfaces_IUserAuthenticationService_AuthenticateAsync_AdaSoftLibrary_Domain_Authentication_AuthenticationRequest_
+  name: AuthenticateAsync(AuthenticationRequest)
+  nameWithType: IUserAuthenticationService.AuthenticateAsync(AuthenticationRequest)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+    name: AuthenticateAsync
+    href: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.html#AdaSoftLibrary_Application_Common_Interfaces_IUserAuthenticationService_AuthenticateAsync_AdaSoftLibrary_Domain_Authentication_AuthenticationRequest_
+  - name: (
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+    name: AuthenticationRequest
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+    name: AuthenticateAsync
+    href: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.html#AdaSoftLibrary_Application_Common_Interfaces_IUserAuthenticationService_AuthenticateAsync_AdaSoftLibrary_Domain_Authentication_AuthenticationRequest_
+  - name: (
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+    name: AuthenticationRequest
+  - name: )
+- uid: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+  commentId: T:AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+  parent: AdaSoftLibrary.Domain.Authentication
+  href: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest.html
+  name: AuthenticationRequest
+  nameWithType: AuthenticationRequest
+  fullName: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+- uid: System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Authentication.AuthenticationResponse}
+  commentId: T:System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Authentication.AuthenticationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AuthenticationResponse>
+  nameWithType: Task<AuthenticationResponse>
+  fullName: System.Threading.Tasks.Task<AdaSoftLibrary.Domain.Authentication.AuthenticationResponse>
+  nameWithType.vb: Task(Of AuthenticationResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of AdaSoftLibrary.Domain.Authentication.AuthenticationResponse)
+  name.vb: Task(Of AuthenticationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+    name: AuthenticationResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+    name: AuthenticationResponse
+  - name: )
+- uid: AdaSoftLibrary.Domain.Authentication
+  commentId: N:AdaSoftLibrary.Domain.Authentication
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Authentication
+  nameWithType: AdaSoftLibrary.Domain.Authentication
+  fullName: AdaSoftLibrary.Domain.Authentication
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Authentication
+    name: Authentication
+    href: AdaSoftLibrary.Domain.Authentication.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Authentication
+    name: Authentication
+    href: AdaSoftLibrary.Domain.Authentication.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

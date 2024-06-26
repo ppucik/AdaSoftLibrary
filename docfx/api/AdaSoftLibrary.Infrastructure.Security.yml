@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Infrastructure.Security
+  commentId: N:AdaSoftLibrary.Infrastructure.Security
+  id: AdaSoftLibrary.Infrastructure.Security
+  children:
+  - AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Infrastructure.Security
+  nameWithType: AdaSoftLibrary.Infrastructure.Security
+  fullName: AdaSoftLibrary.Infrastructure.Security
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+references:
+- uid: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  commentId: T:AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService
+  href: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService.html
+  name: UserAuthenticationService
+  nameWithType: UserAuthenticationService
+  fullName: AdaSoftLibrary.Infrastructure.Security.UserAuthenticationService

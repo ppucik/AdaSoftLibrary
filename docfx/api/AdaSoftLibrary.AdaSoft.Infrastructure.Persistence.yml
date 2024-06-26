@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  commentId: N:AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  id: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  children:
+  - AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  nameWithType: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  fullName: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+references:
+- uid: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext
+  commentId: T:AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext
+  href: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext.html
+  name: AppXmlContext
+  nameWithType: AppXmlContext
+  fullName: AdaSoftLibrary.AdaSoft.Infrastructure.Persistence.AppXmlContext

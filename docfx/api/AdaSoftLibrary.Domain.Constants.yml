@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Domain.Constants
+  commentId: N:AdaSoftLibrary.Domain.Constants
+  id: AdaSoftLibrary.Domain.Constants
+  children:
+  - AdaSoftLibrary.Domain.Constants.Roles
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Domain.Constants
+  nameWithType: AdaSoftLibrary.Domain.Constants
+  fullName: AdaSoftLibrary.Domain.Constants
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Domain
+references:
+- uid: AdaSoftLibrary.Domain.Constants.Roles
+  commentId: T:AdaSoftLibrary.Domain.Constants.Roles
+  href: AdaSoftLibrary.Domain.Constants.Roles.html
+  name: Roles
+  nameWithType: Roles
+  fullName: AdaSoftLibrary.Domain.Constants.Roles

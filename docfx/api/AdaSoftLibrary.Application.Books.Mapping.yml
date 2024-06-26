@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Books.Mapping
+  commentId: N:AdaSoftLibrary.Application.Books.Mapping
+  id: AdaSoftLibrary.Application.Books.Mapping
+  children:
+  - AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Books.Mapping
+  nameWithType: AdaSoftLibrary.Application.Books.Mapping
+  fullName: AdaSoftLibrary.Application.Books.Mapping
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile
+  commentId: T:AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile
+  href: AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile.html
+  name: BookMappingProfile
+  nameWithType: BookMappingProfile
+  fullName: AdaSoftLibrary.Application.Books.Mapping.BookMappingProfile

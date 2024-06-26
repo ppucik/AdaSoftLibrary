@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Infrastructure.Migrations
+  commentId: N:AdaSoftLibrary.Infrastructure.Migrations
+  id: AdaSoftLibrary.Infrastructure.Migrations
+  children:
+  - AdaSoftLibrary.Infrastructure.Migrations.AddBookYear
+  - AdaSoftLibrary.Infrastructure.Migrations.InitialMigration
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Infrastructure.Migrations
+  nameWithType: AdaSoftLibrary.Infrastructure.Migrations
+  fullName: AdaSoftLibrary.Infrastructure.Migrations
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+references:
+- uid: AdaSoftLibrary.Infrastructure.Migrations.InitialMigration
+  commentId: T:AdaSoftLibrary.Infrastructure.Migrations.InitialMigration
+  href: AdaSoftLibrary.Infrastructure.Migrations.InitialMigration.html
+  name: InitialMigration
+  nameWithType: InitialMigration
+  fullName: AdaSoftLibrary.Infrastructure.Migrations.InitialMigration
+- uid: AdaSoftLibrary.Infrastructure.Migrations.AddBookYear
+  commentId: T:AdaSoftLibrary.Infrastructure.Migrations.AddBookYear
+  href: AdaSoftLibrary.Infrastructure.Migrations.AddBookYear.html
+  name: AddBookYear
+  nameWithType: AddBookYear
+  fullName: AdaSoftLibrary.Infrastructure.Migrations.AddBookYear

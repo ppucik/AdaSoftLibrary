@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Api.Contracts
+  commentId: N:AdaSoftLibrary.Api.Contracts
+  id: AdaSoftLibrary.Api.Contracts
+  children:
+  - AdaSoftLibrary.Api.Contracts.CreateBookRequest
+  - AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  - AdaSoftLibrary.Api.Contracts.UpdateBookRequest
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Api.Contracts
+  nameWithType: AdaSoftLibrary.Api.Contracts
+  fullName: AdaSoftLibrary.Api.Contracts
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Api
+references:
+- uid: AdaSoftLibrary.Api.Contracts.CreateBookRequest
+  commentId: T:AdaSoftLibrary.Api.Contracts.CreateBookRequest
+  href: AdaSoftLibrary.Api.Contracts.CreateBookRequest.html
+  name: CreateBookRequest
+  nameWithType: CreateBookRequest
+  fullName: AdaSoftLibrary.Api.Contracts.CreateBookRequest
+- uid: AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  commentId: T:AdaSoftLibrary.Api.Contracts.GetBooksRequest
+  href: AdaSoftLibrary.Api.Contracts.GetBooksRequest.html
+  name: GetBooksRequest
+  nameWithType: GetBooksRequest
+  fullName: AdaSoftLibrary.Api.Contracts.GetBooksRequest
+- uid: AdaSoftLibrary.Api.Contracts.UpdateBookRequest
+  commentId: T:AdaSoftLibrary.Api.Contracts.UpdateBookRequest
+  href: AdaSoftLibrary.Api.Contracts.UpdateBookRequest.html
+  name: UpdateBookRequest
+  nameWithType: UpdateBookRequest
+  fullName: AdaSoftLibrary.Api.Contracts.UpdateBookRequest

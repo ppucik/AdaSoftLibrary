@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Domain.Entities
+  commentId: N:AdaSoftLibrary.Domain.Entities
+  id: AdaSoftLibrary.Domain.Entities
+  children:
+  - AdaSoftLibrary.Domain.Entities.Book
+  - AdaSoftLibrary.Domain.Entities.Borrowed
+  - AdaSoftLibrary.Domain.Entities.Library
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Domain.Entities
+  nameWithType: AdaSoftLibrary.Domain.Entities
+  fullName: AdaSoftLibrary.Domain.Entities
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Domain
+references:
+- uid: AdaSoftLibrary.Domain.Entities.Book
+  commentId: T:AdaSoftLibrary.Domain.Entities.Book
+  parent: AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.Domain.Entities.Book.html
+  name: Book
+  nameWithType: Book
+  fullName: AdaSoftLibrary.Domain.Entities.Book
+- uid: AdaSoftLibrary.Domain.Entities.Borrowed
+  commentId: T:AdaSoftLibrary.Domain.Entities.Borrowed
+  parent: AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.Domain.Entities.Borrowed.html
+  name: Borrowed
+  nameWithType: Borrowed
+  fullName: AdaSoftLibrary.Domain.Entities.Borrowed
+- uid: AdaSoftLibrary.Domain.Entities.Library
+  commentId: T:AdaSoftLibrary.Domain.Entities.Library
+  parent: AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.Domain.Entities.Library.html
+  name: Library
+  nameWithType: Library
+  fullName: AdaSoftLibrary.Domain.Entities.Library
+- uid: AdaSoftLibrary.Domain.Entities
+  commentId: N:AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Entities
+  nameWithType: AdaSoftLibrary.Domain.Entities
+  fullName: AdaSoftLibrary.Domain.Entities
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Entities
+    name: Entities
+    href: AdaSoftLibrary.Domain.Entities.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Entities
+    name: Entities
+    href: AdaSoftLibrary.Domain.Entities.html

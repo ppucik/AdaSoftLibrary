@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Web.Models
+  commentId: N:AdaSoftLibrary.Web.Models
+  id: AdaSoftLibrary.Web.Models
+  children:
+  - AdaSoftLibrary.Web.Models.AuthorsViewModel
+  - AdaSoftLibrary.Web.Models.BookViewModel
+  - AdaSoftLibrary.Web.Models.BooksViewModel
+  - AdaSoftLibrary.Web.Models.CreateViewModel
+  - AdaSoftLibrary.Web.Models.DeleteViewModel
+  - AdaSoftLibrary.Web.Models.DetailViewModel
+  - AdaSoftLibrary.Web.Models.EditViewModel
+  - AdaSoftLibrary.Web.Models.ErrorViewModel
+  - AdaSoftLibrary.Web.Models.SearchViewModel
+  - AdaSoftLibrary.Web.Models.UserViewModel
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Web.Models
+  nameWithType: AdaSoftLibrary.Web.Models
+  fullName: AdaSoftLibrary.Web.Models
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Web
+references:
+- uid: AdaSoftLibrary.Web.Models.AuthorsViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.AuthorsViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.AuthorsViewModel.html
+  name: AuthorsViewModel
+  nameWithType: AuthorsViewModel
+  fullName: AdaSoftLibrary.Web.Models.AuthorsViewModel
+- uid: AdaSoftLibrary.Web.Models.BooksViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.BooksViewModel
+  href: AdaSoftLibrary.Web.Models.BooksViewModel.html
+  name: BooksViewModel
+  nameWithType: BooksViewModel
+  fullName: AdaSoftLibrary.Web.Models.BooksViewModel
+- uid: AdaSoftLibrary.Web.Models.BookViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.BookViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.BookViewModel.html
+  name: BookViewModel
+  nameWithType: BookViewModel
+  fullName: AdaSoftLibrary.Web.Models.BookViewModel
+- uid: AdaSoftLibrary.Web.Models.CreateViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.CreateViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.CreateViewModel.html
+  name: CreateViewModel
+  nameWithType: CreateViewModel
+  fullName: AdaSoftLibrary.Web.Models.CreateViewModel
+- uid: AdaSoftLibrary.Web.Models.DeleteViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.DeleteViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.DeleteViewModel.html
+  name: DeleteViewModel
+  nameWithType: DeleteViewModel
+  fullName: AdaSoftLibrary.Web.Models.DeleteViewModel
+- uid: AdaSoftLibrary.Web.Models.DetailViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.DetailViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.DetailViewModel.html
+  name: DetailViewModel
+  nameWithType: DetailViewModel
+  fullName: AdaSoftLibrary.Web.Models.DetailViewModel
+- uid: AdaSoftLibrary.Web.Models.EditViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.EditViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.EditViewModel.html
+  name: EditViewModel
+  nameWithType: EditViewModel
+  fullName: AdaSoftLibrary.Web.Models.EditViewModel
+- uid: AdaSoftLibrary.Web.Models.ErrorViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.ErrorViewModel
+  href: AdaSoftLibrary.Web.Models.ErrorViewModel.html
+  name: ErrorViewModel
+  nameWithType: ErrorViewModel
+  fullName: AdaSoftLibrary.Web.Models.ErrorViewModel
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.SearchViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.SearchViewModel.html
+  name: SearchViewModel
+  nameWithType: SearchViewModel
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel
+- uid: AdaSoftLibrary.Web.Models.UserViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.UserViewModel
+  parent: AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.Web.Models.UserViewModel.html
+  name: UserViewModel
+  nameWithType: UserViewModel
+  fullName: AdaSoftLibrary.Web.Models.UserViewModel
+- uid: AdaSoftLibrary.Web.Models
+  commentId: N:AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Web.Models
+  nameWithType: AdaSoftLibrary.Web.Models
+  fullName: AdaSoftLibrary.Web.Models
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Web
+    name: Web
+    href: AdaSoftLibrary.Web.html
+  - name: .
+  - uid: AdaSoftLibrary.Web.Models
+    name: Models
+    href: AdaSoftLibrary.Web.Models.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Web
+    name: Web
+    href: AdaSoftLibrary.Web.html
+  - name: .
+  - uid: AdaSoftLibrary.Web.Models
+    name: Models
+    href: AdaSoftLibrary.Web.Models.html

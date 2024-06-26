@@ -1,0 +1,481 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+  commentId: T:AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+  id: CreateBook.Response
+  parent: AdaSoftLibrary.Application.Books.Commands
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CreateBook.Response
+  nameWithType: CreateBook.Response
+  fullName: AdaSoftLibrary.Application.Books.Commands.CreateBook.Response
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Books/Commands/CreateBook.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Response
+    path: ../src/AdaSoftLibrary.Application/Books/Commands/CreateBook.cs
+    startLine: 22
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Books.Commands
+  syntax:
+    content: 'public class CreateBook.Response : BaseResponse<Book?>'
+    content.vb: Public Class CreateBook.Response Inherits BaseResponse(Of Book)
+  inheritance:
+  - System.Object
+  - AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  inheritedMembers:
+  - AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Success
+  - AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Message
+  - AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.ValidationErrors
+  - AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.ValidationErrorsSummary
+  - AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Data
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+references:
+- uid: AdaSoftLibrary.Application.Books.Commands
+  commentId: N:AdaSoftLibrary.Application.Books.Commands
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Books.Commands
+  nameWithType: AdaSoftLibrary.Application.Books.Commands
+  fullName: AdaSoftLibrary.Application.Books.Commands
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands
+    name: Commands
+    href: AdaSoftLibrary.Application.Books.Commands.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Commands
+    name: Commands
+    href: AdaSoftLibrary.Application.Books.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  commentId: T:AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  parent: AdaSoftLibrary.Domain.Common
+  definition: AdaSoftLibrary.Domain.Common.BaseResponse`1
+  name: BaseResponse<Book>
+  nameWithType: BaseResponse<Book>
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<AdaSoftLibrary.Domain.Entities.Book>
+  nameWithType.vb: BaseResponse(Of Book)
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of AdaSoftLibrary.Domain.Entities.Book)
+  name.vb: BaseResponse(Of Book)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+    name: BaseResponse
+  - name: <
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+  - name: '>'
+  spec.vb:
+  - uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+    name: BaseResponse
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+  - name: )
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Success
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Success
+  parent: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  definition: AdaSoftLibrary.Domain.Common.BaseResponse`1.Success
+  name: Success
+  nameWithType: BaseResponse<Book>.Success
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<AdaSoftLibrary.Domain.Entities.Book>.Success
+  nameWithType.vb: BaseResponse(Of Book).Success
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of AdaSoftLibrary.Domain.Entities.Book).Success
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Message
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Message
+  parent: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  definition: AdaSoftLibrary.Domain.Common.BaseResponse`1.Message
+  name: Message
+  nameWithType: BaseResponse<Book>.Message
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<AdaSoftLibrary.Domain.Entities.Book>.Message
+  nameWithType.vb: BaseResponse(Of Book).Message
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of AdaSoftLibrary.Domain.Entities.Book).Message
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.ValidationErrors
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.ValidationErrors
+  parent: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  definition: AdaSoftLibrary.Domain.Common.BaseResponse`1.ValidationErrors
+  name: ValidationErrors
+  nameWithType: BaseResponse<Book>.ValidationErrors
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<AdaSoftLibrary.Domain.Entities.Book>.ValidationErrors
+  nameWithType.vb: BaseResponse(Of Book).ValidationErrors
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of AdaSoftLibrary.Domain.Entities.Book).ValidationErrors
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.ValidationErrorsSummary
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.ValidationErrorsSummary
+  parent: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  definition: AdaSoftLibrary.Domain.Common.BaseResponse`1.ValidationErrorsSummary
+  name: ValidationErrorsSummary
+  nameWithType: BaseResponse<Book>.ValidationErrorsSummary
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<AdaSoftLibrary.Domain.Entities.Book>.ValidationErrorsSummary
+  nameWithType.vb: BaseResponse(Of Book).ValidationErrorsSummary
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of AdaSoftLibrary.Domain.Entities.Book).ValidationErrorsSummary
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Data
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}.Data
+  parent: AdaSoftLibrary.Domain.Common.BaseResponse{AdaSoftLibrary.Domain.Entities.Book}
+  definition: AdaSoftLibrary.Domain.Common.BaseResponse`1.Data
+  name: Data
+  nameWithType: BaseResponse<Book>.Data
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<AdaSoftLibrary.Domain.Entities.Book>.Data
+  nameWithType.vb: BaseResponse(Of Book).Data
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of AdaSoftLibrary.Domain.Entities.Book).Data
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+  commentId: T:AdaSoftLibrary.Domain.Common.BaseResponse`1
+  href: AdaSoftLibrary.Domain.Common.BaseResponse-1.html
+  name: BaseResponse<T>
+  nameWithType: BaseResponse<T>
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<T>
+  nameWithType.vb: BaseResponse(Of T)
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of T)
+  name.vb: BaseResponse(Of T)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+    name: BaseResponse
+    href: AdaSoftLibrary.Domain.Common.BaseResponse-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+    name: BaseResponse
+    href: AdaSoftLibrary.Domain.Common.BaseResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AdaSoftLibrary.Domain.Common
+  commentId: N:AdaSoftLibrary.Domain.Common
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Common
+  nameWithType: AdaSoftLibrary.Domain.Common
+  fullName: AdaSoftLibrary.Domain.Common
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Common
+    name: Common
+    href: AdaSoftLibrary.Domain.Common.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Common
+    name: Common
+    href: AdaSoftLibrary.Domain.Common.html
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse`1.Success
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse`1.Success
+  name: Success
+  nameWithType: BaseResponse<T>.Success
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<T>.Success
+  nameWithType.vb: BaseResponse(Of T).Success
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of T).Success
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse`1.Message
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse`1.Message
+  name: Message
+  nameWithType: BaseResponse<T>.Message
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<T>.Message
+  nameWithType.vb: BaseResponse(Of T).Message
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of T).Message
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse`1.ValidationErrors
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse`1.ValidationErrors
+  name: ValidationErrors
+  nameWithType: BaseResponse<T>.ValidationErrors
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<T>.ValidationErrors
+  nameWithType.vb: BaseResponse(Of T).ValidationErrors
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of T).ValidationErrors
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse`1.ValidationErrorsSummary
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse`1.ValidationErrorsSummary
+  name: ValidationErrorsSummary
+  nameWithType: BaseResponse<T>.ValidationErrorsSummary
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<T>.ValidationErrorsSummary
+  nameWithType.vb: BaseResponse(Of T).ValidationErrorsSummary
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of T).ValidationErrorsSummary
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse`1.Data
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseResponse`1.Data
+  name: Data
+  nameWithType: BaseResponse<T>.Data
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<T>.Data
+  nameWithType.vb: BaseResponse(Of T).Data
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of T).Data

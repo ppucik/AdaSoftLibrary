@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Domain.Common
+  commentId: N:AdaSoftLibrary.Domain.Common
+  id: AdaSoftLibrary.Domain.Common
+  children:
+  - AdaSoftLibrary.Domain.Common.BaseEntity`1
+  - AdaSoftLibrary.Domain.Common.BaseResponse`1
+  - AdaSoftLibrary.Domain.Common.IHasKey`1
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Domain.Common
+  nameWithType: AdaSoftLibrary.Domain.Common
+  fullName: AdaSoftLibrary.Domain.Common
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Domain
+references:
+- uid: AdaSoftLibrary.Domain.Common.BaseEntity`1
+  commentId: T:AdaSoftLibrary.Domain.Common.BaseEntity`1
+  href: AdaSoftLibrary.Domain.Common.BaseEntity-1.html
+  name: BaseEntity<TKey>
+  nameWithType: BaseEntity<TKey>
+  fullName: AdaSoftLibrary.Domain.Common.BaseEntity<TKey>
+  nameWithType.vb: BaseEntity(Of TKey)
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseEntity(Of TKey)
+  name.vb: BaseEntity(Of TKey)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Domain.Common.BaseEntity`1
+    name: BaseEntity
+    href: AdaSoftLibrary.Domain.Common.BaseEntity-1.html
+  - name: <
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: AdaSoftLibrary.Domain.Common.BaseEntity`1
+    name: BaseEntity
+    href: AdaSoftLibrary.Domain.Common.BaseEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+  commentId: T:AdaSoftLibrary.Domain.Common.BaseResponse`1
+  href: AdaSoftLibrary.Domain.Common.BaseResponse-1.html
+  name: BaseResponse<T>
+  nameWithType: BaseResponse<T>
+  fullName: AdaSoftLibrary.Domain.Common.BaseResponse<T>
+  nameWithType.vb: BaseResponse(Of T)
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseResponse(Of T)
+  name.vb: BaseResponse(Of T)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+    name: BaseResponse
+    href: AdaSoftLibrary.Domain.Common.BaseResponse-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: AdaSoftLibrary.Domain.Common.BaseResponse`1
+    name: BaseResponse
+    href: AdaSoftLibrary.Domain.Common.BaseResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+  commentId: T:AdaSoftLibrary.Domain.Common.IHasKey`1
+  href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  name: IHasKey<T>
+  nameWithType: IHasKey<T>
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<T>
+  nameWithType.vb: IHasKey(Of T)
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of T)
+  name.vb: IHasKey(Of T)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+    name: IHasKey
+    href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+    name: IHasKey
+    href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

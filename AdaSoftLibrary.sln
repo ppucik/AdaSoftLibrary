@@ -5,6 +5,7 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8CC8FC95-4341-4D49-A0D9-C46797A3BB68}"
 	ProjectSection(SolutionItems) = preProject
+		changelog.txt = changelog.txt
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		global.json = global.json
@@ -32,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{615FC152-6
 		data\Library.xml = data\Library.xml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdaSoftLibrary.Application.UnitTests", "tests\AdaSoftLibrary.Application.UnitTests\AdaSoftLibrary.Application.UnitTests.csproj", "{D748C5E6-F2C4-4211-B730-8370E0570DCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdaSoftLibrary.Application.UnitTests", "tests\AdaSoftLibrary.Application.UnitTests\AdaSoftLibrary.Application.UnitTests.csproj", "{D748C5E6-F2C4-4211-B730-8370E0570DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,665 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel
+  commentId: T:AdaSoftLibrary.Web.Models.SearchViewModel
+  id: SearchViewModel
+  parent: AdaSoftLibrary.Web.Models
+  children:
+  - AdaSoftLibrary.Web.Models.SearchViewModel.Author
+  - AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter
+  - AdaSoftLibrary.Web.Models.SearchViewModel.Name
+  - AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable
+  - AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm
+  - AdaSoftLibrary.Web.Models.SearchViewModel.ToString
+  langs:
+  - csharp
+  - vb
+  name: SearchViewModel
+  nameWithType: SearchViewModel
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: SearchViewModel
+    path: ../src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+    startLine: 8
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Models
+  summary: Vyhľadať autora alebo názov knihy
+  example: []
+  syntax:
+    content: public class SearchViewModel
+    content.vb: Public Class SearchViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter
+  commentId: P:AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter
+  id: BookFilter
+  parent: AdaSoftLibrary.Web.Models.SearchViewModel
+  langs:
+  - csharp
+  - vb
+  name: BookFilter
+  nameWithType: SearchViewModel.BookFilter
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: BookFilter
+    path: ../src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+    startLine: 13
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Models
+  summary: Filter zoznamu kníh <xref href="AdaSoftLibrary.Domain.Enums.BookFilterEnum" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: >-
+      [Display(Name = "Filter")]
+
+      public BookFilterEnum BookFilter { get; set; }
+    parameters: []
+    return:
+      type: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+    content.vb: >-
+      <Display(Name:="Filter")>
+
+      Public Property BookFilter As BookFilterEnum
+  overload: AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Filter
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm
+  commentId: P:AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm
+  id: SearchTerm
+  parent: AdaSoftLibrary.Web.Models.SearchViewModel
+  langs:
+  - csharp
+  - vb
+  name: SearchTerm
+  nameWithType: SearchViewModel.SearchTerm
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: SearchTerm
+    path: ../src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+    startLine: 18
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Models
+  summary: Vyhľadať
+  example: []
+  syntax:
+    content: >-
+      [Display(Name = "Vyhľadané")]
+
+      public string? SearchTerm { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Display(Name:="Vyhľadané")>
+
+      Public Property SearchTerm As String
+  overload: AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Vyhľadané
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.Author
+  commentId: P:AdaSoftLibrary.Web.Models.SearchViewModel.Author
+  id: Author
+  parent: AdaSoftLibrary.Web.Models.SearchViewModel
+  langs:
+  - csharp
+  - vb
+  name: Author
+  nameWithType: SearchViewModel.Author
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.Author
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Author
+    path: ../src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+    startLine: 24
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Models
+  summary: Autor
+  example: []
+  syntax:
+    content: >-
+      [Display(Name = "Autor")]
+
+      public string? Author { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Display(Name:="Autor")>
+
+      Public Property Author As String
+  overload: AdaSoftLibrary.Web.Models.SearchViewModel.Author*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Autor
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.Name
+  commentId: P:AdaSoftLibrary.Web.Models.SearchViewModel.Name
+  id: Name
+  parent: AdaSoftLibrary.Web.Models.SearchViewModel
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: SearchViewModel.Name
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.Name
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Name
+    path: ../src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+    startLine: 30
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Models
+  summary: Názov
+  example: []
+  syntax:
+    content: >-
+      [Display(Name = "Názov")]
+
+      public string? Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Display(Name:="Názov")>
+
+      Public Property Name As String
+  overload: AdaSoftLibrary.Web.Models.SearchViewModel.Name*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Názov
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable
+  commentId: P:AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable
+  id: OnlyAvailable
+  parent: AdaSoftLibrary.Web.Models.SearchViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnlyAvailable
+  nameWithType: SearchViewModel.OnlyAvailable
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: OnlyAvailable
+    path: ../src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+    startLine: 36
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Models
+  summary: Len dostupné knihy
+  example: []
+  syntax:
+    content: >-
+      [Display(Name = "Len dostupné knihy")]
+
+      public bool OnlyAvailable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Display(Name:="Len dostupné knihy")>
+
+      Public Property OnlyAvailable As Boolean
+  overload: AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Len dostupné knihy
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.ToString
+  commentId: M:AdaSoftLibrary.Web.Models.SearchViewModel.ToString
+  id: ToString
+  parent: AdaSoftLibrary.Web.Models.SearchViewModel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SearchViewModel.ToString()
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: ToString
+    path: ../src/AdaSoftLibrary.Web/Models/SearchViewModel.cs
+    startLine: 39
+  assemblies:
+  - AdaSoftLibrary.Web
+  namespace: AdaSoftLibrary.Web.Models
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: AdaSoftLibrary.Web.Models.SearchViewModel.ToString*
+references:
+- uid: AdaSoftLibrary.Web.Models
+  commentId: N:AdaSoftLibrary.Web.Models
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Web.Models
+  nameWithType: AdaSoftLibrary.Web.Models
+  fullName: AdaSoftLibrary.Web.Models
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Web
+    name: Web
+    href: AdaSoftLibrary.Web.html
+  - name: .
+  - uid: AdaSoftLibrary.Web.Models
+    name: Models
+    href: AdaSoftLibrary.Web.Models.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Web
+    name: Web
+    href: AdaSoftLibrary.Web.html
+  - name: .
+  - uid: AdaSoftLibrary.Web.Models
+    name: Models
+    href: AdaSoftLibrary.Web.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  commentId: T:AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  parent: AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.Domain.Enums.BookFilterEnum.html
+  name: BookFilterEnum
+  nameWithType: BookFilterEnum
+  fullName: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter*
+  commentId: Overload:AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter
+  href: AdaSoftLibrary.Web.Models.SearchViewModel.html#AdaSoftLibrary_Web_Models_SearchViewModel_BookFilter
+  name: BookFilter
+  nameWithType: SearchViewModel.BookFilter
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.BookFilter
+- uid: AdaSoftLibrary.Domain.Enums
+  commentId: N:AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Enums
+  nameWithType: AdaSoftLibrary.Domain.Enums
+  fullName: AdaSoftLibrary.Domain.Enums
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm*
+  commentId: Overload:AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm
+  href: AdaSoftLibrary.Web.Models.SearchViewModel.html#AdaSoftLibrary_Web_Models_SearchViewModel_SearchTerm
+  name: SearchTerm
+  nameWithType: SearchViewModel.SearchTerm
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.SearchTerm
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.Author*
+  commentId: Overload:AdaSoftLibrary.Web.Models.SearchViewModel.Author
+  href: AdaSoftLibrary.Web.Models.SearchViewModel.html#AdaSoftLibrary_Web_Models_SearchViewModel_Author
+  name: Author
+  nameWithType: SearchViewModel.Author
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.Author
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.Name*
+  commentId: Overload:AdaSoftLibrary.Web.Models.SearchViewModel.Name
+  href: AdaSoftLibrary.Web.Models.SearchViewModel.html#AdaSoftLibrary_Web_Models_SearchViewModel_Name
+  name: Name
+  nameWithType: SearchViewModel.Name
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.Name
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable*
+  commentId: Overload:AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable
+  href: AdaSoftLibrary.Web.Models.SearchViewModel.html#AdaSoftLibrary_Web_Models_SearchViewModel_OnlyAvailable
+  name: OnlyAvailable
+  nameWithType: SearchViewModel.OnlyAvailable
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.OnlyAvailable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: AdaSoftLibrary.Web.Models.SearchViewModel.ToString*
+  commentId: Overload:AdaSoftLibrary.Web.Models.SearchViewModel.ToString
+  href: AdaSoftLibrary.Web.Models.SearchViewModel.html#AdaSoftLibrary_Web_Models_SearchViewModel_ToString
+  name: ToString
+  nameWithType: SearchViewModel.ToString
+  fullName: AdaSoftLibrary.Web.Models.SearchViewModel.ToString

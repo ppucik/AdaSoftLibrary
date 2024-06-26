@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  id: IUserAuthenticationService
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  children:
+  - AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  langs:
+  - csharp
+  - vb
+  name: IUserAuthenticationService
+  nameWithType: IUserAuthenticationService
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  type: Interface
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IUserAuthenticationService.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: IUserAuthenticationService
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IUserAuthenticationService.cs
+    startLine: 4
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  syntax:
+    content: public interface IUserAuthenticationService
+    content.vb: Public Interface IUserAuthenticationService
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  id: AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: AuthenticateAsync(AuthenticationRequest)
+  nameWithType: IUserAuthenticationService.AuthenticateAsync(AuthenticationRequest)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync(AdaSoftLibrary.Domain.Authentication.AuthenticationRequest)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IUserAuthenticationService.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: AuthenticateAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IUserAuthenticationService.cs
+    startLine: 6
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  syntax:
+    content: Task<AuthenticationResponse> AuthenticateAsync(AuthenticationRequest request)
+    parameters:
+    - id: request
+      type: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+    return:
+      type: System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Authentication.AuthenticationResponse}
+    content.vb: Function AuthenticateAsync(request As AuthenticationRequest) As Task(Of AuthenticationResponse)
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync*
+references:
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.html#AdaSoftLibrary_Application_Common_Interfaces_IUserAuthenticationService_AuthenticateAsync_AdaSoftLibrary_Domain_Authentication_AuthenticationRequest_
+  name: AuthenticateAsync
+  nameWithType: IUserAuthenticationService.AuthenticateAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.AuthenticateAsync
+- uid: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+  commentId: T:AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+  parent: AdaSoftLibrary.Domain.Authentication
+  href: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest.html
+  name: AuthenticationRequest
+  nameWithType: AuthenticationRequest
+  fullName: AdaSoftLibrary.Domain.Authentication.AuthenticationRequest
+- uid: System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Authentication.AuthenticationResponse}
+  commentId: T:System.Threading.Tasks.Task{AdaSoftLibrary.Domain.Authentication.AuthenticationResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AuthenticationResponse>
+  nameWithType: Task<AuthenticationResponse>
+  fullName: System.Threading.Tasks.Task<AdaSoftLibrary.Domain.Authentication.AuthenticationResponse>
+  nameWithType.vb: Task(Of AuthenticationResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of AdaSoftLibrary.Domain.Authentication.AuthenticationResponse)
+  name.vb: Task(Of AuthenticationResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+    name: AuthenticationResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Domain.Authentication.AuthenticationResponse
+    name: AuthenticationResponse
+  - name: )
+- uid: AdaSoftLibrary.Domain.Authentication
+  commentId: N:AdaSoftLibrary.Domain.Authentication
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Authentication
+  nameWithType: AdaSoftLibrary.Domain.Authentication
+  fullName: AdaSoftLibrary.Domain.Authentication
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Authentication
+    name: Authentication
+    href: AdaSoftLibrary.Domain.Authentication.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Authentication
+    name: Authentication
+    href: AdaSoftLibrary.Domain.Authentication.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

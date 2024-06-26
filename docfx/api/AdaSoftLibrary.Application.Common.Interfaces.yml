@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  id: AdaSoftLibrary.Application.Common.Interfaces
+  children:
+  - AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  - AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  - AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+  - AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.html
+  name: IAppDataContext
+  nameWithType: IAppDataContext
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+  href: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider.html
+  name: IDateTimeProvider
+  nameWithType: IDateTimeProvider
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IDateTimeProvider
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService.html
+  name: IUserAuthenticationService
+  nameWithType: IUserAuthenticationService
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IUserAuthenticationService
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html

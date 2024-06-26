@@ -1,0 +1,511 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  id: IAppDataContext
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  children:
+  - AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList
+  - AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library
+  - AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges
+  - AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IAppDataContext
+  nameWithType: IAppDataContext
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  type: Interface
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: IAppDataContext
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+    startLine: 4
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  syntax:
+    content: public interface IAppDataContext
+    content.vb: Public Interface IAppDataContext
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library
+  commentId: P:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library
+  id: Library
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  langs:
+  - csharp
+  - vb
+  name: Library
+  nameWithType: IAppDataContext.Library
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Library
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+    startLine: 9
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Data knižnice
+  example: []
+  syntax:
+    content: Library Library { get; init; }
+    parameters: []
+    return:
+      type: AdaSoftLibrary.Domain.Entities.Library
+    content.vb: Property Library As Library
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library*
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList
+  commentId: P:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList
+  id: BookList
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  langs:
+  - csharp
+  - vb
+  name: BookList
+  nameWithType: IAppDataContext.BookList
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: BookList
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+    startLine: 14
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Zoznam kníh
+  example: []
+  syntax:
+    content: List<Book> BookList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{AdaSoftLibrary.Domain.Entities.Book}
+    content.vb: ReadOnly Property BookList As List(Of Book)
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList*
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges
+  id: SaveChanges
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChanges()
+  nameWithType: IAppDataContext.SaveChanges()
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges()
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: SaveChanges
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+    startLine: 20
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Uloží všetky zmeny v danom kontexte do súboru
+  example: []
+  syntax:
+    content: int SaveChanges()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Function SaveChanges() As Integer
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges*
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync(System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync(System.Threading.CancellationToken)
+  id: SaveChangesAsync(System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext
+  langs:
+  - csharp
+  - vb
+  name: SaveChangesAsync(CancellationToken)
+  nameWithType: IAppDataContext.SaveChangesAsync(CancellationToken)
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: SaveChangesAsync
+    path: ../src/AdaSoftLibrary.Application/Common/Interfaces/IAppDataContext.cs
+    startLine: 27
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Interfaces
+  summary: Uloží asynchrónne všetky zmeny v danom kontexte do databázy
+  example: []
+  syntax:
+    content: Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: ''
+    content.vb: Function SaveChangesAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Integer)
+  overload: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync*
+references:
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library
+  href: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.html#AdaSoftLibrary_Application_Common_Interfaces_IAppDataContext_Library
+  name: Library
+  nameWithType: IAppDataContext.Library
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.Library
+- uid: AdaSoftLibrary.Domain.Entities.Library
+  commentId: T:AdaSoftLibrary.Domain.Entities.Library
+  parent: AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.Domain.Entities.Library.html
+  name: Library
+  nameWithType: Library
+  fullName: AdaSoftLibrary.Domain.Entities.Library
+- uid: AdaSoftLibrary.Domain.Entities
+  commentId: N:AdaSoftLibrary.Domain.Entities
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Entities
+  nameWithType: AdaSoftLibrary.Domain.Entities
+  fullName: AdaSoftLibrary.Domain.Entities
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Entities
+    name: Entities
+    href: AdaSoftLibrary.Domain.Entities.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Entities
+    name: Entities
+    href: AdaSoftLibrary.Domain.Entities.html
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList
+  href: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.html#AdaSoftLibrary_Application_Common_Interfaces_IAppDataContext_BookList
+  name: BookList
+  nameWithType: IAppDataContext.BookList
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.BookList
+- uid: System.Collections.Generic.List{AdaSoftLibrary.Domain.Entities.Book}
+  commentId: T:System.Collections.Generic.List{AdaSoftLibrary.Domain.Entities.Book}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Book>
+  nameWithType: List<Book>
+  fullName: System.Collections.Generic.List<AdaSoftLibrary.Domain.Entities.Book>
+  nameWithType.vb: List(Of Book)
+  fullName.vb: System.Collections.Generic.List(Of AdaSoftLibrary.Domain.Entities.Book)
+  name.vb: List(Of Book)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+    href: AdaSoftLibrary.Domain.Entities.Book.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Domain.Entities.Book
+    name: Book
+    href: AdaSoftLibrary.Domain.Entities.Book.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges
+  href: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.html#AdaSoftLibrary_Application_Common_Interfaces_IAppDataContext_SaveChanges
+  name: SaveChanges
+  nameWithType: IAppDataContext.SaveChanges
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChanges
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync*
+  commentId: Overload:AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync
+  href: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.html#AdaSoftLibrary_Application_Common_Interfaces_IAppDataContext_SaveChangesAsync_System_Threading_CancellationToken_
+  name: SaveChangesAsync
+  nameWithType: IAppDataContext.SaveChangesAsync
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IAppDataContext.SaveChangesAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

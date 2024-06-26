@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+  commentId: T:AdaSoftLibrary.Domain.Common.IHasKey`1
+  id: IHasKey`1
+  parent: AdaSoftLibrary.Domain.Common
+  children:
+  - AdaSoftLibrary.Domain.Common.IHasKey`1.Id
+  langs:
+  - csharp
+  - vb
+  name: IHasKey<T>
+  nameWithType: IHasKey<T>
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<T>
+  type: Interface
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Domain/Common/IHasKey.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: IHasKey
+    path: ../src/AdaSoftLibrary.Domain/Common/IHasKey.cs
+    startLine: 2
+  assemblies:
+  - AdaSoftLibrary.Domain
+  namespace: AdaSoftLibrary.Domain.Common
+  syntax:
+    content: public interface IHasKey<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Interface IHasKey(Of T)
+  nameWithType.vb: IHasKey(Of T)
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of T)
+  name.vb: IHasKey(Of T)
+- uid: AdaSoftLibrary.Domain.Common.IHasKey`1.Id
+  commentId: P:AdaSoftLibrary.Domain.Common.IHasKey`1.Id
+  id: Id
+  parent: AdaSoftLibrary.Domain.Common.IHasKey`1
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IHasKey<T>.Id
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<T>.Id
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Domain/Common/IHasKey.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Id
+    path: ../src/AdaSoftLibrary.Domain/Common/IHasKey.cs
+    startLine: 4
+  assemblies:
+  - AdaSoftLibrary.Domain
+  namespace: AdaSoftLibrary.Domain.Common
+  syntax:
+    content: T Id { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Property Id As T
+  overload: AdaSoftLibrary.Domain.Common.IHasKey`1.Id*
+  nameWithType.vb: IHasKey(Of T).Id
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of T).Id
+references:
+- uid: AdaSoftLibrary.Domain.Common
+  commentId: N:AdaSoftLibrary.Domain.Common
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Common
+  nameWithType: AdaSoftLibrary.Domain.Common
+  fullName: AdaSoftLibrary.Domain.Common
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Common
+    name: Common
+    href: AdaSoftLibrary.Domain.Common.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Common
+    name: Common
+    href: AdaSoftLibrary.Domain.Common.html
+- uid: AdaSoftLibrary.Domain.Common.IHasKey`1.Id*
+  commentId: Overload:AdaSoftLibrary.Domain.Common.IHasKey`1.Id
+  href: AdaSoftLibrary.Domain.Common.IHasKey-1.html#AdaSoftLibrary_Domain_Common_IHasKey_1_Id
+  name: Id
+  nameWithType: IHasKey<T>.Id
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<T>.Id
+  nameWithType.vb: IHasKey(Of T).Id
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of T).Id
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

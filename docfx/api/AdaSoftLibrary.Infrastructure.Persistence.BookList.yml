@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Infrastructure.Persistence.BookList
+  commentId: N:AdaSoftLibrary.Infrastructure.Persistence.BookList
+  id: AdaSoftLibrary.Infrastructure.Persistence.BookList
+  children:
+  - AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Infrastructure.Persistence.BookList
+  nameWithType: AdaSoftLibrary.Infrastructure.Persistence.BookList
+  fullName: AdaSoftLibrary.Infrastructure.Persistence.BookList
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Infrastructure
+references:
+- uid: AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository
+  commentId: T:AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository
+  href: AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository.html
+  name: BookXmlRepository
+  nameWithType: BookXmlRepository
+  fullName: AdaSoftLibrary.Infrastructure.Persistence.BookList.BookXmlRepository

@@ -1,0 +1,450 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Domain.Common.BaseEntity`1
+  commentId: T:AdaSoftLibrary.Domain.Common.BaseEntity`1
+  id: BaseEntity`1
+  parent: AdaSoftLibrary.Domain.Common
+  children:
+  - AdaSoftLibrary.Domain.Common.BaseEntity`1.Id
+  langs:
+  - csharp
+  - vb
+  name: BaseEntity<TKey>
+  nameWithType: BaseEntity<TKey>
+  fullName: AdaSoftLibrary.Domain.Common.BaseEntity<TKey>
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Domain/Common/BaseEntity.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: BaseEntity
+    path: ../src/AdaSoftLibrary.Domain/Common/BaseEntity.cs
+    startLine: 5
+  assemblies:
+  - AdaSoftLibrary.Domain
+  namespace: AdaSoftLibrary.Domain.Common
+  syntax:
+    content: 'public abstract class BaseEntity<TKey> : IHasKey<TKey>'
+    typeParameters:
+    - id: TKey
+    content.vb: Public MustInherit Class BaseEntity(Of TKey) Implements IHasKey(Of TKey)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - AdaSoftLibrary.Domain.Entities.Book
+  implements:
+  - AdaSoftLibrary.Domain.Common.IHasKey{{TKey}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: BaseEntity(Of TKey)
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseEntity(Of TKey)
+  name.vb: BaseEntity(Of TKey)
+- uid: AdaSoftLibrary.Domain.Common.BaseEntity`1.Id
+  commentId: P:AdaSoftLibrary.Domain.Common.BaseEntity`1.Id
+  id: Id
+  parent: AdaSoftLibrary.Domain.Common.BaseEntity`1
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: BaseEntity<TKey>.Id
+  fullName: AdaSoftLibrary.Domain.Common.BaseEntity<TKey>.Id
+  type: Property
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Domain/Common/BaseEntity.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Id
+    path: ../src/AdaSoftLibrary.Domain/Common/BaseEntity.cs
+    startLine: 10
+  assemblies:
+  - AdaSoftLibrary.Domain
+  namespace: AdaSoftLibrary.Domain.Common
+  summary: ID
+  example: []
+  syntax:
+    content: >-
+      [Key]
+
+      public TKey Id { get; set; }
+    parameters: []
+    return:
+      type: '{TKey}'
+    content.vb: >-
+      <Key>
+
+      Public Property Id As TKey
+  overload: AdaSoftLibrary.Domain.Common.BaseEntity`1.Id*
+  implements:
+  - AdaSoftLibrary.Domain.Common.IHasKey{{TKey}}.Id
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+  nameWithType.vb: BaseEntity(Of TKey).Id
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseEntity(Of TKey).Id
+references:
+- uid: AdaSoftLibrary.Domain.Common
+  commentId: N:AdaSoftLibrary.Domain.Common
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Common
+  nameWithType: AdaSoftLibrary.Domain.Common
+  fullName: AdaSoftLibrary.Domain.Common
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Common
+    name: Common
+    href: AdaSoftLibrary.Domain.Common.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Common
+    name: Common
+    href: AdaSoftLibrary.Domain.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AdaSoftLibrary.Domain.Common.IHasKey{{TKey}}
+  commentId: T:AdaSoftLibrary.Domain.Common.IHasKey{`0}
+  parent: AdaSoftLibrary.Domain.Common
+  definition: AdaSoftLibrary.Domain.Common.IHasKey`1
+  href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  name: IHasKey<TKey>
+  nameWithType: IHasKey<TKey>
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<TKey>
+  nameWithType.vb: IHasKey(Of TKey)
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of TKey)
+  name.vb: IHasKey(Of TKey)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+    name: IHasKey
+    href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  - name: <
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+    name: IHasKey
+    href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+  commentId: T:AdaSoftLibrary.Domain.Common.IHasKey`1
+  href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  name: IHasKey<T>
+  nameWithType: IHasKey<T>
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<T>
+  nameWithType.vb: IHasKey(Of T)
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of T)
+  name.vb: IHasKey(Of T)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+    name: IHasKey
+    href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: AdaSoftLibrary.Domain.Common.IHasKey`1
+    name: IHasKey
+    href: AdaSoftLibrary.Domain.Common.IHasKey-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AdaSoftLibrary.Domain.Common.BaseEntity`1.Id*
+  commentId: Overload:AdaSoftLibrary.Domain.Common.BaseEntity`1.Id
+  href: AdaSoftLibrary.Domain.Common.BaseEntity-1.html#AdaSoftLibrary_Domain_Common_BaseEntity_1_Id
+  name: Id
+  nameWithType: BaseEntity<TKey>.Id
+  fullName: AdaSoftLibrary.Domain.Common.BaseEntity<TKey>.Id
+  nameWithType.vb: BaseEntity(Of TKey).Id
+  fullName.vb: AdaSoftLibrary.Domain.Common.BaseEntity(Of TKey).Id
+- uid: AdaSoftLibrary.Domain.Common.IHasKey{{TKey}}.Id
+  commentId: P:AdaSoftLibrary.Domain.Common.IHasKey{`0}.Id
+  parent: AdaSoftLibrary.Domain.Common.IHasKey{{TKey}}
+  definition: AdaSoftLibrary.Domain.Common.IHasKey`1.Id
+  href: AdaSoftLibrary.Domain.Common.IHasKey-1.html#AdaSoftLibrary_Domain_Common_IHasKey_1_Id
+  name: Id
+  nameWithType: IHasKey<TKey>.Id
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<TKey>.Id
+  nameWithType.vb: IHasKey(Of TKey).Id
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of TKey).Id
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: AdaSoftLibrary.Domain.Common.IHasKey`1.Id
+  commentId: P:AdaSoftLibrary.Domain.Common.IHasKey`1.Id
+  href: AdaSoftLibrary.Domain.Common.IHasKey-1.html#AdaSoftLibrary_Domain_Common_IHasKey_1_Id
+  name: Id
+  nameWithType: IHasKey<T>.Id
+  fullName: AdaSoftLibrary.Domain.Common.IHasKey<T>.Id
+  nameWithType.vb: IHasKey(Of T).Id
+  fullName.vb: AdaSoftLibrary.Domain.Common.IHasKey(Of T).Id
+- uid: TKey
+  commentId: '!:TKey'
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey

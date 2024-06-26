@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Books.Queries
+  commentId: N:AdaSoftLibrary.Application.Books.Queries
+  id: AdaSoftLibrary.Application.Books.Queries
+  children:
+  - AdaSoftLibrary.Application.Books.Queries.GetAuthors
+  - AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query
+  - AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler
+  - AdaSoftLibrary.Application.Books.Queries.GetBook
+  - AdaSoftLibrary.Application.Books.Queries.GetBook.Query
+  - AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler
+  - AdaSoftLibrary.Application.Books.Queries.GetBooks
+  - AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+  - AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Books.Queries
+  nameWithType: AdaSoftLibrary.Application.Books.Queries
+  fullName: AdaSoftLibrary.Application.Books.Queries
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetAuthors
+  href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.html
+  name: GetAuthors
+  nameWithType: GetAuthors
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetAuthors
+- uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query
+  parent: AdaSoftLibrary.Application.Books.Queries
+  href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.html
+  name: GetAuthors.Query
+  nameWithType: GetAuthors.Query
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors
+    name: GetAuthors
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors
+    name: GetAuthors
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.Query.html
+- uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler
+  href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.html
+  name: GetAuthors.QueryHandler
+  nameWithType: GetAuthors.QueryHandler
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors
+    name: GetAuthors
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler
+    name: QueryHandler
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors
+    name: GetAuthors
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler
+    name: QueryHandler
+    href: AdaSoftLibrary.Application.Books.Queries.GetAuthors.QueryHandler.html
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBook
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBook
+  href: AdaSoftLibrary.Application.Books.Queries.GetBook.html
+  name: GetBook
+  nameWithType: GetBook
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBook
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBook.Query
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBook.Query
+  parent: AdaSoftLibrary.Application.Books.Queries
+  href: AdaSoftLibrary.Application.Books.Queries.GetBook.html
+  name: GetBook.Query
+  nameWithType: GetBook.Query
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBook.Query
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook
+    name: GetBook
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.Query.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook
+    name: GetBook
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.Query.html
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler
+  href: AdaSoftLibrary.Application.Books.Queries.GetBook.html
+  name: GetBook.QueryHandler
+  nameWithType: GetBook.QueryHandler
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook
+    name: GetBook
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler
+    name: QueryHandler
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook
+    name: GetBook
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler
+    name: QueryHandler
+    href: AdaSoftLibrary.Application.Books.Queries.GetBook.QueryHandler.html
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBooks
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  name: GetBooks
+  nameWithType: GetBooks
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+  parent: AdaSoftLibrary.Application.Books.Queries
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  name: GetBooks.Query
+  nameWithType: GetBooks.Query
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  name: GetBooks.QueryHandler
+  nameWithType: GetBooks.QueryHandler
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+    name: QueryHandler
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+    name: QueryHandler
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.html
+- uid: AdaSoftLibrary.Application.Books.Queries
+  commentId: N:AdaSoftLibrary.Application.Books.Queries
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Books.Queries
+  nameWithType: AdaSoftLibrary.Application.Books.Queries
+  fullName: AdaSoftLibrary.Application.Books.Queries
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries
+    name: Queries
+    href: AdaSoftLibrary.Application.Books.Queries.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries
+    name: Queries
+    href: AdaSoftLibrary.Application.Books.Queries.html

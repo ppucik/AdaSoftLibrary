@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  commentId: T:AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  id: DataSourceTypeEnum
+  parent: AdaSoftLibrary.Application.Common.Configurations
+  children:
+  - AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.SQLite
+  - AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.XML
+  langs:
+  - csharp
+  - vb
+  name: DataSourceTypeEnum
+  nameWithType: DataSourceTypeEnum
+  fullName: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Configurations/DataSourceTypeEnum.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: DataSourceTypeEnum
+    path: ../src/AdaSoftLibrary.Application/Common/Configurations/DataSourceTypeEnum.cs
+    startLine: 5
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Configurations
+  summary: Typ zdroja dát
+  example: []
+  syntax:
+    content: public enum DataSourceTypeEnum
+    content.vb: Public Enum DataSourceTypeEnum
+  extensionMethods:
+  - System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName
+  - System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription
+  - System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.String)
+  - System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName
+  - System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo
+- uid: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.XML
+  commentId: F:AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.XML
+  id: XML
+  parent: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: XML
+  nameWithType: DataSourceTypeEnum.XML
+  fullName: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.XML
+  type: Field
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Configurations/DataSourceTypeEnum.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: XML
+    path: ../src/AdaSoftLibrary.Application/Common/Configurations/DataSourceTypeEnum.cs
+    startLine: 10
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Configurations
+  summary: XML súbor - potrebné nastaviť súčasne hodnotu <xref href="AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.XmlFilePath" data-throw-if-not-resolved="false"></xref> (default)
+  example: []
+  syntax:
+    content: XML = 0
+    return:
+      type: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+- uid: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.SQLite
+  commentId: F:AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.SQLite
+  id: SQLite
+  parent: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: SQLite
+  nameWithType: DataSourceTypeEnum.SQLite
+  fullName: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.SQLite
+  type: Field
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Common/Configurations/DataSourceTypeEnum.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: SQLite
+    path: ../src/AdaSoftLibrary.Application/Common/Configurations/DataSourceTypeEnum.cs
+    startLine: 15
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Common.Configurations
+  summary: SQLite databáza - potrebné je nastaviť tiež hodnotu "DefaultConnection" v konfigurácii
+  example: []
+  syntax:
+    content: SQLite = 1
+    return:
+      type: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+references:
+- uid: AdaSoftLibrary.Application.Common.Configurations
+  commentId: N:AdaSoftLibrary.Application.Common.Configurations
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Configurations
+  nameWithType: AdaSoftLibrary.Application.Common.Configurations
+  fullName: AdaSoftLibrary.Application.Common.Configurations
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Configurations
+    name: Configurations
+    href: AdaSoftLibrary.Application.Common.Configurations.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Configurations
+    name: Configurations
+    href: AdaSoftLibrary.Application.Common.Configurations.html
+- uid: System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+  parent: AdaSoftLibrary.Application.Extensions.EnumExtensions
+  definition: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetDisplayName_System_Enum_
+  name: GetDisplayName(Enum)
+  nameWithType: EnumExtensions.GetDisplayName(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+  parent: AdaSoftLibrary.Application.Extensions.EnumExtensions
+  definition: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetEnumDescription_System_Enum_
+  name: GetEnumDescription(Enum)
+  nameWithType: EnumExtensions.GetEnumDescription(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+    name: GetEnumDescription
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetEnumDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+    name: GetEnumDescription
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetEnumDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.String)
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+  parent: AdaSoftLibrary.Application.Extensions.EnumExtensions
+  definition: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetPropertyValue__1_System_Enum_System_String_
+  name: GetPropertyValue<T>(Enum, string)
+  nameWithType: EnumExtensions.GetPropertyValue<T>(Enum, string)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue<T>(System.Enum, string)
+  nameWithType.vb: EnumExtensions.GetPropertyValue(Of T)(Enum, String)
+  fullName.vb: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue(Of T)(System.Enum, String)
+  name.vb: GetPropertyValue(Of T)(Enum, String)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+    name: GetPropertyValue
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetPropertyValue__1_System_Enum_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+    name: GetPropertyValue
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetPropertyValue__1_System_Enum_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+  parent: AdaSoftLibrary.Application.Extensions.EnumExtensions
+  definition: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetShortName_System_Enum_
+  name: GetShortName(Enum)
+  nameWithType: EnumExtensions.GetShortName(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+    name: GetShortName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetShortName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+    name: GetShortName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetShortName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: System.Enum.AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+  parent: AdaSoftLibrary.Application.Extensions.EnumExtensions
+  definition: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_ToEntryInfo_System_Enum_
+  name: ToEntryInfo(Enum)
+  nameWithType: EnumExtensions.ToEntryInfo(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+    name: ToEntryInfo
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_ToEntryInfo_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+    name: ToEntryInfo
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_ToEntryInfo_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+  isExternal: true
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetDisplayName_System_Enum_
+  name: GetDisplayName(Enum)
+  nameWithType: EnumExtensions.GetDisplayName(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetDisplayName(System.Enum)
+    name: GetDisplayName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetDisplayName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions
+  commentId: T:AdaSoftLibrary.Application.Extensions.EnumExtensions
+  parent: AdaSoftLibrary.Application.Extensions
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+  isExternal: true
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetEnumDescription_System_Enum_
+  name: GetEnumDescription(Enum)
+  nameWithType: EnumExtensions.GetEnumDescription(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+    name: GetEnumDescription
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetEnumDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetEnumDescription(System.Enum)
+    name: GetEnumDescription
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetEnumDescription_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+  isExternal: true
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetPropertyValue__1_System_Enum_System_String_
+  name: GetPropertyValue<T>(Enum, string)
+  nameWithType: EnumExtensions.GetPropertyValue<T>(Enum, string)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue<T>(System.Enum, string)
+  nameWithType.vb: EnumExtensions.GetPropertyValue(Of T)(Enum, String)
+  fullName.vb: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue(Of T)(System.Enum, String)
+  name.vb: GetPropertyValue(Of T)(Enum, String)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+    name: GetPropertyValue
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetPropertyValue__1_System_Enum_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetPropertyValue``1(System.Enum,System.String)
+    name: GetPropertyValue
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetPropertyValue__1_System_Enum_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+  isExternal: true
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetShortName_System_Enum_
+  name: GetShortName(Enum)
+  nameWithType: EnumExtensions.GetShortName(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+    name: GetShortName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetShortName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.GetShortName(System.Enum)
+    name: GetShortName
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_GetShortName_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+  commentId: M:AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+  isExternal: true
+  href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_ToEntryInfo_System_Enum_
+  name: ToEntryInfo(Enum)
+  nameWithType: EnumExtensions.ToEntryInfo(Enum)
+  fullName: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+    name: ToEntryInfo
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_ToEntryInfo_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Extensions.EnumExtensions.ToEntryInfo(System.Enum)
+    name: ToEntryInfo
+    href: AdaSoftLibrary.Application.Extensions.EnumExtensions.html#AdaSoftLibrary_Application_Extensions_EnumExtensions_ToEntryInfo_System_Enum_
+  - name: (
+  - uid: System.Enum
+    name: Enum
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.enum
+  - name: )
+- uid: AdaSoftLibrary.Application.Extensions
+  commentId: N:AdaSoftLibrary.Application.Extensions
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Extensions
+  nameWithType: AdaSoftLibrary.Application.Extensions
+  fullName: AdaSoftLibrary.Application.Extensions
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions
+    name: Extensions
+    href: AdaSoftLibrary.Application.Extensions.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Extensions
+    name: Extensions
+    href: AdaSoftLibrary.Application.Extensions.html
+- uid: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.XmlFilePath
+  commentId: P:AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.XmlFilePath
+  href: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.html#AdaSoftLibrary_Application_Common_Configurations_ApplicationOptions_XmlFilePath
+  name: XmlFilePath
+  nameWithType: ApplicationOptions.XmlFilePath
+  fullName: AdaSoftLibrary.Application.Common.Configurations.ApplicationOptions.XmlFilePath
+- uid: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  commentId: T:AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum
+  parent: AdaSoftLibrary.Application.Common.Configurations
+  href: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum.html
+  name: DataSourceTypeEnum
+  nameWithType: DataSourceTypeEnum
+  fullName: AdaSoftLibrary.Application.Common.Configurations.DataSourceTypeEnum

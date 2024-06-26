@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Books.Validation
+  commentId: N:AdaSoftLibrary.Application.Books.Validation
+  id: AdaSoftLibrary.Application.Books.Validation
+  children:
+  - AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator
+  - AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator
+  - AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator
+  - AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Application.Books.Validation
+  nameWithType: AdaSoftLibrary.Application.Books.Validation
+  fullName: AdaSoftLibrary.Application.Books.Validation
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Application
+references:
+- uid: AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator
+  commentId: T:AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator
+  href: AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator.html
+  name: BorrowBookCommandValidator
+  nameWithType: BorrowBookCommandValidator
+  fullName: AdaSoftLibrary.Application.Books.Validation.BorrowBookCommandValidator
+- uid: AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator
+  commentId: T:AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator
+  href: AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator.html
+  name: CreateBookCommandValidator
+  nameWithType: CreateBookCommandValidator
+  fullName: AdaSoftLibrary.Application.Books.Validation.CreateBookCommandValidator
+- uid: AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator
+  commentId: T:AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator
+  href: AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator.html
+  name: ReturnBookCommandValidator
+  nameWithType: ReturnBookCommandValidator
+  fullName: AdaSoftLibrary.Application.Books.Validation.ReturnBookCommandValidator
+- uid: AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator
+  commentId: T:AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator
+  href: AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator.html
+  name: UpdateBookCommandValidator
+  nameWithType: UpdateBookCommandValidator
+  fullName: AdaSoftLibrary.Application.Books.Validation.UpdateBookCommandValidator

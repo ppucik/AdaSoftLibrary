@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Web.Helpers
+  commentId: N:AdaSoftLibrary.Web.Helpers
+  id: AdaSoftLibrary.Web.Helpers
+  children:
+  - AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Web.Helpers
+  nameWithType: AdaSoftLibrary.Web.Helpers
+  fullName: AdaSoftLibrary.Web.Helpers
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Web
+references:
+- uid: AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper
+  commentId: T:AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper
+  href: AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper.html
+  name: LabelRequiredTagHelper
+  nameWithType: LabelRequiredTagHelper
+  fullName: AdaSoftLibrary.Web.Helpers.LabelRequiredTagHelper

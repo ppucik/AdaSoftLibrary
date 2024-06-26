@@ -3,7 +3,8 @@
   <Book id="1">
     <Author>Ernest Hemingway</Author>
     <Name>Starec a more</Name>
-    <Year>1952</Year>
+    <Year>2014</Year>
+    <Description>Bratislava, IKAR</Description>
     <Borrowed>
       <FirstName>Peter</FirstName>
       <LastName>Prvý</LastName>
@@ -13,7 +14,8 @@
   <Book id="2">
     <Author>William Shakespeare</Author>
     <Name>Rómeo a Júlia</Name>
-    <Year xsi:nil="true" />
+    <Year>2016</Year>
+    <Description>Bratislava: IKAR, ODEON</Description>
     <Borrowed>
       <FirstName>Lukáš</FirstName>
       <LastName>Druhý</LastName>
@@ -23,7 +25,8 @@
   <Book id="3">
     <Author>Pavol Országh Hviezdoslav</Author>
     <Name>Krvavé sonety</Name>
-    <Year xsi:nil="true" />
+    <Year>2006</Year>
+    <Description>Bratislava, Petit Press</Description>
     <Borrowed>
       <FirstName>Matej</FirstName>
       <LastName>Tretí</LastName>
@@ -33,7 +36,8 @@
   <Book id="4">
     <Author>Pavol Országh Hviezdoslav</Author>
     <Name>Hájniková žena</Name>
-    <Year xsi:nil="true" />
+    <Year>2017</Year>
+    <Description>Dolny Kubin: ORAVSKE MÚZEUM P.O.Hviezdoslava</Description>
     <Borrowed>
       <FirstName />
       <LastName />
@@ -43,7 +47,8 @@
   <Book id="5">
     <Author>William Shakespeare</Author>
     <Name>Hamlet</Name>
-    <Year xsi:nil="true" />
+    <Year>2016</Year>
+    <Description>Bratislava: Ikar, Odeon</Description>
     <Borrowed>
       <FirstName>Jozef</FirstName>
       <LastName>Štvrtý</LastName>
@@ -53,7 +58,8 @@
   <Book id="6">
     <Author>Milo Urban</Author>
     <Name>Živý bič</Name>
-    <Year xsi:nil="true" />
+    <Year>2014</Year>
+    <Description>Bratislava: Literárne informačné centrum</Description>
     <Borrowed>
       <FirstName />
       <LastName />

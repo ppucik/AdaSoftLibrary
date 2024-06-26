@@ -1,0 +1,809 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  id: GetBooks.QueryHandler
+  parent: AdaSoftLibrary.Application.Books.Queries
+  children:
+  - AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.#ctor(AdaSoftLibrary.Application.Common.Interfaces.IBookRepository,AutoMapper.IMapper)
+  - AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: GetBooks.QueryHandler
+  nameWithType: GetBooks.QueryHandler
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  type: Class
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Books/Queries/GetBooks.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: QueryHandler
+    path: ../src/AdaSoftLibrary.Application/Books/Queries/GetBooks.cs
+    startLine: 36
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Books.Queries
+  syntax:
+    content: 'public class GetBooks.QueryHandler : IRequestHandler<GetBooks.Query, IReadOnlyCollection<GetBookResponse>>'
+    content.vb: Public Class GetBooks.QueryHandler Implements IRequestHandler(Of GetBooks.Query, IReadOnlyCollection(Of GetBookResponse))
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.#ctor(AdaSoftLibrary.Application.Common.Interfaces.IBookRepository,AutoMapper.IMapper)
+  commentId: M:AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.#ctor(AdaSoftLibrary.Application.Common.Interfaces.IBookRepository,AutoMapper.IMapper)
+  id: '#ctor(AdaSoftLibrary.Application.Common.Interfaces.IBookRepository,AutoMapper.IMapper)'
+  parent: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  langs:
+  - csharp
+  - vb
+  name: QueryHandler(IBookRepository, IMapper)
+  nameWithType: GetBooks.QueryHandler.QueryHandler(IBookRepository, IMapper)
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.QueryHandler(AdaSoftLibrary.Application.Common.Interfaces.IBookRepository, AutoMapper.IMapper)
+  type: Constructor
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Books/Queries/GetBooks.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: .ctor
+    path: ../src/AdaSoftLibrary.Application/Books/Queries/GetBooks.cs
+    startLine: 41
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Books.Queries
+  syntax:
+    content: public QueryHandler(IBookRepository bookRepository, IMapper mapper)
+    parameters:
+    - id: bookRepository
+      type: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+    - id: mapper
+      type: AutoMapper.IMapper
+    content.vb: Public Sub New(bookRepository As IBookRepository, mapper As IMapper)
+  overload: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.#ctor*
+  nameWithType.vb: GetBooks.QueryHandler.New(IBookRepository, IMapper)
+  fullName.vb: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.New(AdaSoftLibrary.Application.Common.Interfaces.IBookRepository, AutoMapper.IMapper)
+  name.vb: New(IBookRepository, IMapper)
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+  commentId: M:AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+  id: Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+  parent: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(Query, CancellationToken)
+  nameWithType: GetBooks.QueryHandler.Handle(GetBooks.Query, CancellationToken)
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/AdaSoftLibrary.Application/Books/Queries/GetBooks.cs
+      branch: master
+      repo: https://github.com/ppucik/AdaSoftLibrary.git
+    id: Handle
+    path: ../src/AdaSoftLibrary.Application/Books/Queries/GetBooks.cs
+    startLine: 47
+  assemblies:
+  - AdaSoftLibrary.Application
+  namespace: AdaSoftLibrary.Application.Books.Queries
+  summary: Handles a request
+  example: []
+  syntax:
+    content: public Task<IReadOnlyCollection<GetBookResponse>> Handle(GetBooks.Query query, CancellationToken cancellationToken)
+    parameters:
+    - id: query
+      type: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}
+      description: Response from the request
+    content.vb: Public Function Handle(query As GetBooks.Query, cancellationToken As CancellationToken) As Task(Of IReadOnlyCollection(Of GetBookResponse))
+  overload: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+references:
+- uid: AdaSoftLibrary.Application.Books.Queries
+  commentId: N:AdaSoftLibrary.Application.Books.Queries
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Books.Queries
+  nameWithType: AdaSoftLibrary.Application.Books.Queries
+  fullName: AdaSoftLibrary.Application.Books.Queries
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries
+    name: Queries
+    href: AdaSoftLibrary.Application.Books.Queries.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books
+    name: Books
+    href: AdaSoftLibrary.Application.Books.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries
+    name: Queries
+    href: AdaSoftLibrary.Application.Books.Queries.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}
+  commentId: T:MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  name: IRequestHandler<GetBooks.Query, IReadOnlyCollection<GetBookResponse>>
+  nameWithType: IRequestHandler<GetBooks.Query, IReadOnlyCollection<GetBookResponse>>
+  fullName: MediatR.IRequestHandler<AdaSoftLibrary.Application.Books.Queries.GetBooks.Query, System.Collections.Generic.IReadOnlyCollection<AdaSoftLibrary.Application.Books.Contracts.GetBookResponse>>
+  nameWithType.vb: IRequestHandler(Of GetBooks.Query, IReadOnlyCollection(Of GetBookResponse))
+  fullName.vb: MediatR.IRequestHandler(Of AdaSoftLibrary.Application.Books.Queries.GetBooks.Query, System.Collections.Generic.IReadOnlyCollection(Of AdaSoftLibrary.Application.Books.Contracts.GetBookResponse))
+  name.vb: IRequestHandler(Of GetBooks.Query, IReadOnlyCollection(Of GetBookResponse))
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+    name: GetBookResponse
+    href: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+    name: GetBookResponse
+    href: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse.html
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.#ctor*
+  commentId: Overload:AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.#ctor
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.html#AdaSoftLibrary_Application_Books_Queries_GetBooks_QueryHandler__ctor_AdaSoftLibrary_Application_Common_Interfaces_IBookRepository_AutoMapper_IMapper_
+  name: QueryHandler
+  nameWithType: GetBooks.QueryHandler.QueryHandler
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.QueryHandler
+  nameWithType.vb: GetBooks.QueryHandler.New
+  fullName.vb: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.New
+  name.vb: New
+- uid: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  commentId: T:AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+  parent: AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository.html
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: AdaSoftLibrary.Application.Common.Interfaces.IBookRepository
+- uid: AutoMapper.IMapper
+  commentId: T:AutoMapper.IMapper
+  parent: AutoMapper
+  isExternal: true
+  name: IMapper
+  nameWithType: IMapper
+  fullName: AutoMapper.IMapper
+- uid: AdaSoftLibrary.Application.Common.Interfaces
+  commentId: N:AdaSoftLibrary.Application.Common.Interfaces
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Application.Common.Interfaces
+  nameWithType: AdaSoftLibrary.Application.Common.Interfaces
+  fullName: AdaSoftLibrary.Application.Common.Interfaces
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Application
+    name: Application
+    href: AdaSoftLibrary.Application.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common
+    name: Common
+    href: AdaSoftLibrary.Application.Common.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Common.Interfaces
+    name: Interfaces
+    href: AdaSoftLibrary.Application.Common.Interfaces.html
+- uid: AutoMapper
+  commentId: N:AutoMapper
+  isExternal: true
+  name: AutoMapper
+  nameWithType: AutoMapper
+  fullName: AutoMapper
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle*
+  commentId: Overload:AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.html#AdaSoftLibrary_Application_Books_Queries_GetBooks_QueryHandler_Handle_AdaSoftLibrary_Application_Books_Queries_GetBooks_Query_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: GetBooks.QueryHandler.Handle
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.QueryHandler.Handle
+- uid: MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+  name: Handle(Query, CancellationToken)
+  nameWithType: IRequestHandler<GetBooks.Query, IReadOnlyCollection<GetBookResponse>>.Handle(GetBooks.Query, CancellationToken)
+  fullName: MediatR.IRequestHandler<AdaSoftLibrary.Application.Books.Queries.GetBooks.Query, System.Collections.Generic.IReadOnlyCollection<AdaSoftLibrary.Application.Books.Contracts.GetBookResponse>>.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of GetBooks.Query, IReadOnlyCollection(Of GetBookResponse)).Handle(GetBooks.Query, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of AdaSoftLibrary.Application.Books.Queries.GetBooks.Query, System.Collections.Generic.IReadOnlyCollection(Of AdaSoftLibrary.Application.Books.Contracts.GetBookResponse)).Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}.Handle(AdaSoftLibrary.Application.Books.Queries.GetBooks.Query,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+  commentId: T:AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+  parent: AdaSoftLibrary.Application.Books.Queries
+  href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  name: GetBooks.Query
+  nameWithType: GetBooks.Query
+  fullName: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+  spec.csharp:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+  spec.vb:
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks
+    name: GetBooks
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.html
+  - name: .
+  - uid: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query
+    name: Query
+    href: AdaSoftLibrary.Application.Books.Queries.GetBooks.Query.html
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{AdaSoftLibrary.Application.Books.Contracts.GetBookResponse}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyCollection<GetBookResponse>>
+  nameWithType: Task<IReadOnlyCollection<GetBookResponse>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyCollection<AdaSoftLibrary.Application.Books.Contracts.GetBookResponse>>
+  nameWithType.vb: Task(Of IReadOnlyCollection(Of GetBookResponse))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyCollection(Of AdaSoftLibrary.Application.Books.Contracts.GetBookResponse))
+  name.vb: Task(Of IReadOnlyCollection(Of GetBookResponse))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+    name: GetBookResponse
+    href: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse
+    name: GetBookResponse
+    href: AdaSoftLibrary.Application.Books.Contracts.GetBookResponse.html
+  - name: )
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: AdaSoftLibrary.Domain.Enums
+  commentId: N:AdaSoftLibrary.Domain.Enums
+  id: AdaSoftLibrary.Domain.Enums
+  children:
+  - AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  langs:
+  - csharp
+  - vb
+  name: AdaSoftLibrary.Domain.Enums
+  nameWithType: AdaSoftLibrary.Domain.Enums
+  fullName: AdaSoftLibrary.Domain.Enums
+  type: Namespace
+  assemblies:
+  - AdaSoftLibrary.Domain
+references:
+- uid: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  commentId: T:AdaSoftLibrary.Domain.Enums.BookFilterEnum
+  parent: AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.Domain.Enums.BookFilterEnum.html
+  name: BookFilterEnum
+  nameWithType: BookFilterEnum
+  fullName: AdaSoftLibrary.Domain.Enums.BookFilterEnum
+- uid: AdaSoftLibrary.Domain.Enums
+  commentId: N:AdaSoftLibrary.Domain.Enums
+  href: AdaSoftLibrary.html
+  name: AdaSoftLibrary.Domain.Enums
+  nameWithType: AdaSoftLibrary.Domain.Enums
+  fullName: AdaSoftLibrary.Domain.Enums
+  spec.csharp:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
+  spec.vb:
+  - uid: AdaSoftLibrary
+    name: AdaSoftLibrary
+    href: AdaSoftLibrary.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain
+    name: Domain
+    href: AdaSoftLibrary.Domain.html
+  - name: .
+  - uid: AdaSoftLibrary.Domain.Enums
+    name: Enums
+    href: AdaSoftLibrary.Domain.Enums.html
