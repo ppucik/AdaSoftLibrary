@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AdaSoftLibrary.Domain.Constants;
+using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;
 
@@ -11,14 +12,14 @@ public class UserViewModel
     /// Použivateľské meno
     /// </summary>
     [Display(Name = "Použivateľské meno")]
-    [Required(ErrorMessage = "Použivateľské meno je povinné")]
+    [Required(ErrorMessage = MessageConstants.UserNameCannotBeEmpty)]
     public string UserName { get; set; } = null!;
 
     /// <summary>
     /// Heslo
     /// </summary>
     [Display(Name = "Heslo")]
-    [Required(ErrorMessage = "Heslo je povinné")]
+    [Required(ErrorMessage = MessageConstants.PasswordCannotBeEmpty)]
     [DataType(DataType.Password)]
     public string Password { get; set; } = null!;
 

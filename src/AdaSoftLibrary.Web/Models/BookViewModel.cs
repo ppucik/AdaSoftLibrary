@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AdaSoftLibrary.Domain.Constants;
+using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;
 
@@ -11,23 +12,23 @@ public class BookViewModel
     /// Autor
     /// </summary>
     [Display(Name = "Autor")]
-    [Required(ErrorMessage = "Autor je povinný")]
-    [StringLength(15, ErrorMessage = "Autor nesmie presiahnuť 15 znakov")] // <= 250 znakov
+    [Required(ErrorMessage = MessageConstants.AuthorCannotBeEmpty)]
+    [StringLength(15, ErrorMessage = MessageConstants.AuthorCannotExceed15Char)]
     public string Author { get; set; } = null!;
 
     /// <summary>
     /// Názov
     /// </summary>
     [Display(Name = "Názov")]
-    [Required(ErrorMessage = "Názov je povinný")]
-    [StringLength(15, ErrorMessage = "Názov nesmie presiahnuť 15 znakov")] // <= 1000 znakov
+    [Required(ErrorMessage = MessageConstants.NameCannotBeEmpty)]
+    [StringLength(15, ErrorMessage = MessageConstants.NameCannotExceed15Char)]
     public string Name { get; set; } = null!;
 
     /// <summary>
     /// Rok
     /// </summary>
     [Display(Name = "Rok")]
-    [Range(0, 9999, ErrorMessage = "Rok musí byť v rozsahu 0 až 9999")]
+    [Range(1900, 2100, ErrorMessage = MessageConstants.YearOutOfRange)]
     public int? Year { get; set; }
 
     /// <summary>

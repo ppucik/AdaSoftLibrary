@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AdaSoftLibrary.Domain.Constants;
+using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;
 
@@ -10,7 +11,7 @@ public class DeleteViewModel
     /// <summary>
     /// ID
     /// </summary>
-    [Required]
+    [Required(ErrorMessage = MessageConstants.IdCannotBeEmpty)]
     public int Id { get; set; }
 
     /// <summary>

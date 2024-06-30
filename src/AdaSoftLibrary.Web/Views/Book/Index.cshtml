@@ -55,14 +55,14 @@
             {
                 <tr>
                     <td width="25%">@book.Author</td>
-                    <td width="25%">@book.Name</td>
+                    <td width="auto">@book.Name</td>
                     <td width="5%">@book.Year</td>
                     @if (Model.IsAuthenticated)
                     {
                         <td width="20%">@book.Reader</td>
                     }
                     <td width="15%">@book.BorrowedFrom</td>
-                    <td width="10%" class="text-center">
+                    <td width="125px" class="text-center">
                         <div>
                             @if (Model.IsAuthenticated)
                             {

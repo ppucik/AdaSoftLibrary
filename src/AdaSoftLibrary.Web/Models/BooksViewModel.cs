@@ -11,7 +11,7 @@ public class BooksViewModel
     public IReadOnlyCollection<GetBookResponse> Books { get; set; } = null!;
 
     /// <summary>
-    /// Podmienky vyhľadávania
+    /// Podmienky vyhľadávania <see cref="SearchViewModel" />
     /// </summary>
     public SearchViewModel Search { get; set; } = new();
 

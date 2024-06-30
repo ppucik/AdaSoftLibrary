@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
+using AdaSoftLibrary.Domain.Constants;
 using FluentValidation;
 
 namespace AdaSoftLibrary.Application.Books.Validation;
@@ -12,19 +13,19 @@ public class CreateBookCommandValidator : AbstractValidator<CreateBook.Command>
         //_bookRepository = bookRepository;
 
         RuleFor(b => b.Author)
-            .NotEmpty().WithMessage("{PropertyName} je povinný.")
+            .NotEmpty().WithMessage(MessageConstants.AuthorCannotBeEmpty)
             .NotNull()
-            .MaximumLength(250).WithMessage("{PropertyName} nesmie presiahnuť 250 znakov.")
+            .MaximumLength(15).WithMessage(MessageConstants.AuthorCannotExceed15Char)
             ;
 
         RuleFor(b => b.Name)
-            .NotEmpty().WithMessage("{PropertyName} je povinný.")
+            .NotEmpty().WithMessage(MessageConstants.NameCannotBeEmpty)
             .NotNull()
-            .MaximumLength(1000).WithMessage("{PropertyName} nesmie presiahnuť 1000 znakov.")
+            .MaximumLength(15).WithMessage(MessageConstants.NameCannotExceed15Char)
             ;
 
         RuleFor(b => b.Year)
-            .ExclusiveBetween(0, 9999).WithMessage("{PropertyName} musí byť v rozsahu 0 až 9999.")
+            .ExclusiveBetween(1900, 2100).WithMessage(MessageConstants.YearOutOfRange)
             ;
     }
 

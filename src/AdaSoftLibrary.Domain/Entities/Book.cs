@@ -15,7 +15,7 @@ public class Book : BaseEntity<int>
     /// Autor (max. 250 znakov)
     /// </summary>
     [Required]
-    [MaxLength(250)]
+    [MaxLength(15)]
     [XmlElement("Author")]
     public string Author { get; set; } = null!;
 
@@ -23,7 +23,7 @@ public class Book : BaseEntity<int>
     /// Názov (max. 1000 znakov)
     /// </summary>
     [Required]
-    [MaxLength(1000)]
+    [MaxLength(15)]
     [XmlElement("Name")]
     public string Name { get; set; } = null!;
 
@@ -31,7 +31,7 @@ public class Book : BaseEntity<int>
     /// Rok
     /// </summary>
     [XmlElement("Year")]
-    [Range(0, 9999)]
+    [Range(1900, 2100)]
     public int? Year { get; set; }
 
     /// <summary>
