@@ -19,16 +19,20 @@ public class BorrowBookCommandValidator : AbstractValidator<BorrowBook.Command>
             ;
 
         RuleFor(b => b.FirstName)
+            .Cascade(CascadeMode.Stop)
             .NotEmpty().WithMessage(MessageConstants.FirstNameCannotBeEmpty)
             .NotNull()
             .Length(3, 100).WithMessage(MessageConstants.FirstNameOutOfRange)
             ;
+        ;
 
         RuleFor(b => b.LastName)
+            .Cascade(CascadeMode.Stop)
             .NotEmpty().WithMessage(MessageConstants.LastNameCannotBeEmpty)
             .NotNull()
             .Length(3, 100).WithMessage(MessageConstants.LastNameOutOfRange)
             ;
+        ;
     }
 
     // kniha musí byť NEOBJEDNANÁ

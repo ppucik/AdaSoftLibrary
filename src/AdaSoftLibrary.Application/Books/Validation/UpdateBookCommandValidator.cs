@@ -32,18 +32,22 @@ public class UpdateBookCommandValidator : AbstractValidator<UpdateBook.Command>
         if (isBorrowed == true)
         {
             RuleFor(b => b.FirstName)
+                .Cascade(CascadeMode.Stop)
                 .NotEmpty().WithMessage(MessageConstants.FirstNameCannotBeEmpty)
                 .NotNull()
                 .Length(3, 100).WithMessage(MessageConstants.FirstNameOutOfRange)
                 ;
+            ;
 
             RuleFor(b => b.LastName)
+                .Cascade(CascadeMode.Stop)
                 .NotEmpty().WithMessage(MessageConstants.LastNameCannotBeEmpty)
                 .NotNull()
                 .Length(3, 100).WithMessage(MessageConstants.LastNameOutOfRange)
                 ;
 
             RuleFor(b => b.BorrowedFrom)
+                .Cascade(CascadeMode.Stop)
                 .NotEmpty().WithMessage(MessageConstants.FromDateCannotBeEmpty)
                 .NotNull()
                 .LessThanOrEqualTo(DateOnly.FromDateTime(DateTime.Now)).WithMessage(MessageConstants.FromDateCurrentOrInPast)

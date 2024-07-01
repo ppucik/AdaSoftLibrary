@@ -46,8 +46,8 @@ public class BorrowBook
             // Persistencia
             book.Borrowed = new Borrowed
             {
-                FirstName = command.FirstName,
-                LastName = command.LastName,
+                FirstName = command.FirstName.Trim(),
+                LastName = command.LastName.Trim(),
                 FromDate = DateOnly.FromDateTime(DateTime.Now)
             };
 

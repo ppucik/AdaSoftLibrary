@@ -65,8 +65,8 @@ public class UpdateBook
 
                 if (book.Borrowed is not null)
                 {
-                    book.Borrowed.FirstName = command.FirstName!;
-                    book.Borrowed.LastName = command.LastName!;
+                    book.Borrowed.FirstName = command.FirstName!.Trim();
+                    book.Borrowed.LastName = command.LastName!.Trim();
                     book.Borrowed.FromDate = command.BorrowedFrom;
                 }
 

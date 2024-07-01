@@ -1,16 +1,14 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Books.Mapping;
 using AdaSoftLibrary.Application.Common.Interfaces;
+using AdaSoftLibrary.Application.Exceptions;
 using AdaSoftLibrary.Application.UnitTests.Mocks;
+using AdaSoftLibrary.Domain.Enums;
 using AutoMapper;
 using Moq;
 using Shouldly;
 
 namespace AdaSoftLibrary.Application.UnitTests.Books.Commands;
-
-/*==========================================================
- * TODO: Nedokoncene, potrebne je este dopracovat !!!
- ==========================================================*/
 
 public class DeleteBookTests
 {
@@ -30,18 +28,42 @@ public class DeleteBookTests
     }
 
     [Fact]
-    public async Task DeleteBook_CommandHandler_WhenValidQuery()
+    public async Task DeleteBook_WhenValidID_RemoveBook()
     {
         // Arrange
+        const int bookId = 1;
         var handler = new DeleteBook.CommandHandler(_bookRepository.Object, _mapper);
 
         // Act
-        var command = new DeleteBook.Command(1);
+        var command = new DeleteBook.Command(bookId);
         var result = await handler.Handle(command, CancellationToken.None);
+        var count = await GetAllBooksCount();
 
         // Assert
         result.ShouldBeOfType<Unit>();
 
-        // pocet knih = 6
+        Assert.Equal(5, count);
+    }
+
+    [Fact]
+    public async Task DeleteBook_WhenNotValidID_ThrowNotFoundException()
+    {
+        // Arrange
+        const int bookId = 10;
+        var handler = new DeleteBook.CommandHandler(_bookRepository.Object, _mapper);
+
+        // Act
+        var command = new DeleteBook.Command(bookId);
+        var count = await GetAllBooksCount();
+
+        // Assert
+        await Assert.ThrowsAsync<NotFoundException>(() => handler.Handle(command, CancellationToken.None));
+
+        Assert.Equal(6, count);
+    }
+
+    private async Task<int> GetAllBooksCount()
+    {
+        return (await _bookRepository.Object.GetListAsync(BookFilterEnum.AllBooks)).Count();
     }
 }

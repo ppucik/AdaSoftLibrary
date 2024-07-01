@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Common.Interfaces;
+using AdaSoftLibrary.Application.Extensions;
 using AdaSoftLibrary.Domain.Entities;
 using AdaSoftLibrary.Domain.Enums;
 using Moq;
@@ -94,13 +95,34 @@ public class MockBookRepository
                 string? author, string? name, string? searchTerm,
                 CancellationToken cancellationToken) =>
             {
-                return bookFilter switch
+                var result = (bookFilter switch
                 {
                     BookFilterEnum.AllBooks => books,
                     BookFilterEnum.FreeBooks => books.Where(x => !x.IsBorrowed),
                     BookFilterEnum.BorrowedBooks => books.Where(x => x.IsBorrowed),
                     _ => books
-                };
+                }).AsEnumerable();
+
+                if (!string.IsNullOrEmpty(author))
+                {
+                    result = result.Where(book => book.Author.Equals(author, StringComparison.OrdinalIgnoreCase));
+                }
+
+                if (!string.IsNullOrEmpty(name))
+                {
+                    result = result.Where(book => book.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+                }
+
+                if (!string.IsNullOrEmpty(searchTerm))
+                {
+                    string text = searchTerm.RemoveDiacritics();
+
+                    result = result.Where(book =>
+                        book.Author.RemoveDiacritics().Contains(text, StringComparison.OrdinalIgnoreCase) ||
+                        book.Name.RemoveDiacritics().Contains(text, StringComparison.OrdinalIgnoreCase));
+                }
+
+                return result;
             });
 
         mockBookRepository

@@ -22,16 +22,16 @@ public class BookMappingProfile : Profile
             ;
 
         CreateMap<CreateBook.Command, Book>()
-            .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
-            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author.Trim()))
+            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name.Trim()))
             .ForMember(dest => dest.Year, opt => opt.MapFrom(src => src.Year))
             .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
             ;
 
         CreateMap<UpdateBook.Command, Book>()
             .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
-            .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author))
-            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.Author, opt => opt.MapFrom(src => src.Author.Trim()))
+            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name.Trim()))
             .ForMember(dest => dest.Year, opt => opt.MapFrom(src => src.Year))
             .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
             ;

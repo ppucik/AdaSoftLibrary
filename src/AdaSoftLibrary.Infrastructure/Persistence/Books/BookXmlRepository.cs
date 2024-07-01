@@ -37,7 +37,7 @@ public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
 
         if (!string.IsNullOrEmpty(searchTerm))
         {
-            // Fulltext vyhľadanie časti mena autora alebo slova v názve CI AS
+            // Fulltext vyhľadanie časti mena autora alebo slova v názve CI AI
             string text = searchTerm.RemoveDiacritics().ToUpper();
 
             books = books.Where(x =>
