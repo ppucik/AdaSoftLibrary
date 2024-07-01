@@ -66,4 +66,14 @@
       <From />
     </Borrowed>
   </Book>
+  <Book id="7">
+    <Author>a</Author>
+    <Name>a</Name>
+    <Year xsi:nil="true" />
+    <Borrowed>
+      <FirstName>aaa</FirstName>
+      <LastName>aaa</LastName>
+      <From>1.7.2024</From>
+    </Borrowed>
+  </Book>
 </Library>
