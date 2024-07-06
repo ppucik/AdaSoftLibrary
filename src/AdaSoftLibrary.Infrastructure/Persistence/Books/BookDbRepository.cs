@@ -43,6 +43,7 @@ public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
     {
         return await _dbContext.Books
             .AsNoTracking()
+            .Where(x => string.IsNullOrEmpty(searchAuthor) || x.Author.Contains(searchAuthor))
             .OrderBy(x => x.Author)
             .Select(x => x.Author)
             .Distinct()

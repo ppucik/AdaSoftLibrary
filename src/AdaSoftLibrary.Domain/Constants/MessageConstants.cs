@@ -17,6 +17,7 @@ public static class MessageConstants
     public const string LastNameOutOfRange = "Priezvisko musí byť v rozsahu 3 až 100 znakov";
     public const string FromDateCannotBeEmpty = "Dátum požičania je povinný";
     public const string FromDateCurrentOrInPast = "Dátum požičania nemôže byť v budúcnosti";
-    public const string BookCannotBeBorrowed = "Kniha je už požičaná !";
-    public const string BookMustBeBorrowed = "Kniha nie je požičaná !";
+    public const string BookCannotBeBorrowed = "Kniha je už požičaná";
+    public const string BookMustBeBorrowed = "Kniha nie je požičaná";
+    public const string AuthorAndNameMustBeUnique = "Autor a názov knihy musí byť unikátný";
 }

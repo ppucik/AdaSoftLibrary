@@ -25,7 +25,7 @@ public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
 
         if (!string.IsNullOrEmpty(author))
         {
-            // Levenshtein distance algoritmus vyhľadanie autora s 90% zhodou 
+            // Levenshtein distance algoritmus vyhľadanie autora s 85% zhodou 
             books = books.Where(x => LevenshteinMatch(x.Author, author, 85));
         }
 
@@ -53,6 +53,7 @@ public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
     {
         int distance = Levenshtein.Distance(originalStr, searchText);
         double similarity = 100.0 - (distance * 100.0 / Math.Max(originalStr.Length, searchText.Length));
+
         return similarity >= threshold;
     }
 
@@ -65,6 +66,7 @@ public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
 
     public Task<IEnumerable<string>> GetAuthorsAsync(string? searchAuthor, CancellationToken cancellationToken = default)
     {
+        // Levenshtein distance algoritmus vyhľadanie autora s 50% zhodou 
         var authors = _xmlContext.BookList
             .Where(x => string.IsNullOrEmpty(searchAuthor) || LevenshteinMatch(x.Author, searchAuthor, 50))
             .OrderBy(x => x.Author)

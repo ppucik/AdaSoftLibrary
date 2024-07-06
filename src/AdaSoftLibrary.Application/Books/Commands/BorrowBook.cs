@@ -43,7 +43,7 @@ public class BorrowBook
                 throw new NotFoundException(nameof(Book), command.Id);
 
             // Validácia údajov
-            var validator = new BorrowBookCommandValidator(book.IsBorrowed);
+            var validator = new BorrowBookCommandValidator(_bookRepository);
             var validationResult = await validator.ValidateAsync(command);
 
             if (validationResult.Errors.Any())

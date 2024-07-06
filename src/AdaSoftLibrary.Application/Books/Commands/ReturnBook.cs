@@ -42,7 +42,7 @@ public class ReturnBook
                 throw new NotFoundException(nameof(Book), command.Id);
 
             // Validácia údajov
-            var validator = new ReturnBookCommandValidator(book.IsBorrowed);
+            var validator = new ReturnBookCommandValidator(_bookRepository);
             var validationResult = await validator.ValidateAsync(command);
 
             if (validationResult.Errors.Any())

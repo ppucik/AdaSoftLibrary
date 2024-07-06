@@ -215,7 +215,7 @@ public class BookController : Controller
         else
         {
             // Backhand error message
-            _notyf.Error(result.Message);
+            _notyf.Error(result.ValidationErrorsSummary);
             TempData["msg"] = result.ValidationErrorsSummary;
         }
 
@@ -254,8 +254,7 @@ public class BookController : Controller
         else
         {
             // Backhand error message
-            _notyf.Error(result.Message);
-            TempData["msg"] = result.ValidationErrorsSummary;
+            _notyf.Error(result.ValidationErrorsSummary);
         }
 
         return View(ACTION_DETAIL, model);
@@ -282,8 +281,7 @@ public class BookController : Controller
         else
         {
             // Backhand error message
-            _notyf.Error(result.Message);
-            TempData["msg"] = result.ValidationErrorsSummary;
+            _notyf.Error(result.ValidationErrorsSummary);
         }
 
         return View(ACTION_DETAIL, model);

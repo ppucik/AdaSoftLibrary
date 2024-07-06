@@ -62,6 +62,35 @@ public class CreateBookTests
     }
 
     [Fact]
+    public async Task CreateBook_WhenAuthorAndNameDuplicity_ReturnValidationError()
+    {
+        // Arrange
+        var handler = new CreateBook.CommandHandler(_bookRepository.Object, _mapper);
+
+        // Act
+        var command = new CreateBook.Command
+        {
+            Author = "Milo Urban",
+            Name = "Živý bič"
+        };
+
+        var result = await handler.Handle(command, CancellationToken.None);
+        var count = await GetBooksCount();
+
+        // Assert
+        result.ShouldBeOfType<CreateBook.Response>();
+
+        Assert.False(result.Success);
+        Assert.False(string.IsNullOrEmpty(result.Message));
+        Assert.NotNull(result.ValidationErrors);
+        Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
+        Assert.Equal(MessageConstants.AuthorAndNameMustBeUnique, result.ValidationErrors?.FirstOrDefault());
+        Assert.Null(result.Data);
+
+        Assert.Equal(6, count);
+    }
+
+    [Fact]
     public async Task CreateBook_WithAuthorCannotBeEmpty_RetrunValidationError()
     {
         // Arrange

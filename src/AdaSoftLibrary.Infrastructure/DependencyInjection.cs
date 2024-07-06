@@ -30,9 +30,8 @@ public static class DependencyInjection
         else
         {
             // Add XML data context
-            services.AddSingleton<AppXmlContext>();
-            services.AddScoped<IAppDataContext, AppXmlContext>();
-            services.AddScoped<IBookRepository, BookXmlRepository>();
+            services.AddSingleton<IAppDataContext, AppXmlContext>();
+            services.AddSingleton<IBookRepository, BookXmlRepository>();
         }
 
         #endregion

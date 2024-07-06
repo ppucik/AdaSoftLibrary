@@ -3,6 +3,7 @@ using AdaSoftLibrary.Application.Common.Configurations;
 using AdaSoftLibrary.Application.Extensions;
 using AdaSoftLibrary.Infrastructure;
 using Carter;
+using FluentValidation;
 using Microsoft.AspNetCore.Http.Json;
 using Serilog;
 using System.Text.Json;
@@ -17,6 +18,9 @@ builder.Services.Configure<JsonOptions>(options => new JsonSerializerOptions(Jso
 
 // Logging
 builder.Host.UseSerilog((context, config) => { config.ReadFrom.Configuration(context.Configuration); });
+
+// Add validation
+builder.Services.AddValidatorsFromAssemblyContaining<Program>(ServiceLifetime.Singleton);
 
 // Add services to the container
 builder.Services

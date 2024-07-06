@@ -38,7 +38,7 @@ public class CreateBook
             var response = new Response();
 
             // Validácia 
-            var validator = new CreateBookCommandValidator();
+            var validator = new CreateBookCommandValidator(_bookRepository);
             var validationResult = await validator.ValidateAsync(command);
 
             if (validationResult.Errors.Any())
