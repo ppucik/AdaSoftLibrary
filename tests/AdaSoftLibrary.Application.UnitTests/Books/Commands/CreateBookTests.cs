@@ -52,6 +52,7 @@ public class CreateBookTests
         Assert.True(string.IsNullOrEmpty(result.Message));
         Assert.Equal(0, result.ValidationErrors?.Count() ?? 0);
         Assert.Equal(7, result.Data?.Id);
+        Assert.NotNull(result.Data);
         Assert.Equal("Autor", result.Data?.Author);
         Assert.Equal("Názov", result.Data?.Name);
         Assert.Equal(2024, result.Data?.Year);

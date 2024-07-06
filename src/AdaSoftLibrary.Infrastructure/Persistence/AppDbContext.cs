@@ -16,7 +16,7 @@ public class AppDbContext : DbContext, IAppDataContext
     }
 
     public Library Library { get; init; } = new();
-    public List<Book> BookList { get; } = new();
+    public List<Book> BookList => this.Books.Include(e => e.Borrowed).ToList();
 
     // Specify DbSet properties
     public virtual DbSet<Book> Books { get; set; } = null!;

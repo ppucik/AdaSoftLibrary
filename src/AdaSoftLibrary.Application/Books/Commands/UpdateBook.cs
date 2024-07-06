@@ -70,9 +70,9 @@ public class UpdateBook
                     book.Borrowed.FromDate = command.BorrowedFrom;
                 }
 
-                response.Data = book;
-
                 await _bookRepository.UpdateAsync(book, cancellationToken);
+
+                response.Data = book;
             }
 
             return response;

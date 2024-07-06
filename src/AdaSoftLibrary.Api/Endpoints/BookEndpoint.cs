@@ -122,7 +122,9 @@ public class BookEndpoint : ICarterModule
 
         var result = await mediator.Send(command);
 
-        return TypedResults.Ok();
+        return result.Success
+            ? TypedResults.Ok()
+            : TypedResults.BadRequest(result.ValidationErrorsSummary);
     }
 
     private async Task<IResult> ReturnBook([FromRoute] int id, IMediator mediator)
@@ -130,7 +132,9 @@ public class BookEndpoint : ICarterModule
         var command = new ReturnBook.Command(id);
         var result = await mediator.Send(command);
 
-        return TypedResults.Ok();
+        return result.Success
+            ? TypedResults.Ok()
+            : TypedResults.BadRequest(result.ValidationErrorsSummary);
     }
 
     private async Task<IResult> DeleteBook([FromRoute] int id, IMediator mediator)

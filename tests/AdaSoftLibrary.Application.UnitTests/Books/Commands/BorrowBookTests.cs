@@ -5,6 +5,7 @@ using AdaSoftLibrary.Application.Books.Queries;
 using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.Exceptions;
 using AdaSoftLibrary.Application.UnitTests.Mocks;
+using AdaSoftLibrary.Domain.Constants;
 using AutoMapper;
 using Moq;
 using Shouldly;
@@ -48,7 +49,12 @@ public class BorrowBookTests
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        result.ShouldBeOfType<Unit>();
+        result.ShouldBeOfType<BorrowBook.Response>();
+
+        Assert.True(result.Success);
+        Assert.True(string.IsNullOrEmpty(result.Message));
+        Assert.Equal(0, result.ValidationErrors?.Count() ?? 0);
+        Assert.NotNull(result.Data);
 
         Assert.True(book?.IsBorrowed);
         Assert.Equal("Peter", book?.FirstName);
@@ -57,7 +63,7 @@ public class BorrowBookTests
     }
 
     [Fact]
-    public async Task BorrowBook_WhenNotValidID_ThrowsValidationException()
+    public async Task BorrowBook_WhenNotValidID_ThrowsNotFoundException()
     {
         // Arrange
         const int bookId = 10;
@@ -71,7 +77,7 @@ public class BorrowBookTests
     }
 
     [Fact]
-    public async Task BorrowBook_WithEmptyFirstName_ThrowsValidationException()
+    public async Task BorrowBook_WithEmptyFirstName_RetrunValidationError()
     {
         // Arrange
         const int bookId = 6;
@@ -85,10 +91,18 @@ public class BorrowBookTests
             LastName = "Púčik"
         };
 
+        var result = await handler.Handle(command, CancellationToken.None);
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        await Assert.ThrowsAsync<ValidationException>(() => handler.Handle(command, CancellationToken.None));
+        result.ShouldBeOfType<BorrowBook.Response>();
+
+        Assert.False(result.Success);
+        Assert.False(string.IsNullOrEmpty(result.Message));
+        Assert.NotNull(result.ValidationErrors);
+        Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
+        Assert.Equal(MessageConstants.FirstNameCannotBeEmpty, result.ValidationErrors?.FirstOrDefault());
+        Assert.Null(result.Data);
 
         Assert.False(book?.IsBorrowed);
         Assert.Null(book?.FirstName);
@@ -96,7 +110,7 @@ public class BorrowBookTests
     }
 
     [Fact]
-    public async Task BorrowBook_WithFirstNameOutOfRange_ThrowsValidationException()
+    public async Task BorrowBook_WithFirstNameOutOfRange_RetrunValidationError()
     {
         // Arrange
         const int bookId = 6;
@@ -110,10 +124,16 @@ public class BorrowBookTests
             LastName = "Púčik"
         };
 
+        var result = await handler.Handle(command, CancellationToken.None);
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        await Assert.ThrowsAsync<ValidationException>(() => handler.Handle(command, CancellationToken.None));
+        Assert.False(result.Success);
+        Assert.False(string.IsNullOrEmpty(result.Message));
+        Assert.NotNull(result.ValidationErrors);
+        Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
+        Assert.Equal(MessageConstants.FirstNameOutOfRange, result.ValidationErrors?.FirstOrDefault());
+        Assert.Null(result.Data);
 
         Assert.False(book?.IsBorrowed);
         Assert.Null(book?.FirstName);
@@ -121,7 +141,7 @@ public class BorrowBookTests
     }
 
     [Fact]
-    public async Task BorrowBook_WithEmptyLastName_ThrowsValidationException()
+    public async Task BorrowBook_WithEmptyLastName_RetrunValidationError()
     {
         // Arrange
         const int bookId = 6;
@@ -135,10 +155,16 @@ public class BorrowBookTests
             LastName = string.Empty
         };
 
+        var result = await handler.Handle(command, CancellationToken.None);
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        await Assert.ThrowsAsync<ValidationException>(() => handler.Handle(command, CancellationToken.None));
+        Assert.False(result.Success);
+        Assert.False(string.IsNullOrEmpty(result.Message));
+        Assert.NotNull(result.ValidationErrors);
+        Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
+        Assert.Equal(MessageConstants.LastNameCannotBeEmpty, result.ValidationErrors?.FirstOrDefault());
+        Assert.Null(result.Data);
 
         Assert.False(book?.IsBorrowed);
         Assert.Null(book?.FirstName);
@@ -146,7 +172,7 @@ public class BorrowBookTests
     }
 
     [Fact]
-    public async Task BorrowBook_WithLastNameOutOfRange_ThrowsValidationException()
+    public async Task BorrowBook_WithLastNameOutOfRange_RetrunValidationError()
     {
         // Arrange
         const int bookId = 6;
@@ -160,10 +186,16 @@ public class BorrowBookTests
             LastName = "a"
         };
 
+        var result = await handler.Handle(command, CancellationToken.None);
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        await Assert.ThrowsAsync<ValidationException>(() => handler.Handle(command, CancellationToken.None));
+        Assert.False(result.Success);
+        Assert.False(string.IsNullOrEmpty(result.Message));
+        Assert.NotNull(result.ValidationErrors);
+        Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
+        Assert.Equal(MessageConstants.LastNameOutOfRange, result.ValidationErrors?.FirstOrDefault());
+        Assert.Null(result.Data);
 
         Assert.False(book?.IsBorrowed);
         Assert.Null(book?.FirstName);
@@ -171,7 +203,7 @@ public class BorrowBookTests
     }
 
     [Fact]
-    public async Task BorrowBook_WhenBorrowed_ThrowsValidationException()
+    public async Task BorrowBook_WhenBorrowed_RetrunValidationError()
     {
         // Arrange
         const int bookId = 1;
@@ -185,10 +217,16 @@ public class BorrowBookTests
             LastName = " Púčik "
         };
 
+        var result = await handler.Handle(command, CancellationToken.None);
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        await Assert.ThrowsAsync<ValidationException>(() => handler.Handle(command, CancellationToken.None));
+        Assert.False(result.Success);
+        Assert.False(string.IsNullOrEmpty(result.Message));
+        Assert.NotNull(result.ValidationErrors);
+        Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
+        Assert.Equal(MessageConstants.BookCannotBeBorrowed, result.ValidationErrors?.FirstOrDefault());
+        Assert.Null(result.Data);
 
         Assert.True(book?.IsBorrowed);
     }

@@ -245,9 +245,20 @@ public class BookController : Controller
 
         var result = await _mediator.Send(command);
 
-        _notyf.Success("Kniha bola objednaná");
+        if (result.Success)
+        {
+            // Success toastr alert
+            _notyf.Success("Kniha bola objednaná");
+            return RedirectToAction(ACTION_INDEX);
+        }
+        else
+        {
+            // Backhand error message
+            _notyf.Error(result.Message);
+            TempData["msg"] = result.ValidationErrorsSummary;
+        }
 
-        return RedirectToAction(ACTION_INDEX);
+        return View(ACTION_DETAIL, model);
     }
 
     #endregion
@@ -262,9 +273,20 @@ public class BookController : Controller
         var command = new ReturnBook.Command(model.ID);
         var result = await _mediator.Send(command);
 
-        _notyf.Success("Kniha bola vrátená");
+        if (result.Success)
+        {
+            // Success toastr alert
+            _notyf.Success("Kniha bola vrátená");
+            return RedirectToAction(ACTION_INDEX);
+        }
+        else
+        {
+            // Backhand error message
+            _notyf.Error(result.Message);
+            TempData["msg"] = result.ValidationErrorsSummary;
+        }
 
-        return RedirectToAction(ACTION_INDEX);
+        return View(ACTION_DETAIL, model);
     }
 
     #endregion

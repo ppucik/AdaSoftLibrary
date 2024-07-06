@@ -5,6 +5,7 @@ using AdaSoftLibrary.Application.Books.Queries;
 using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.Exceptions;
 using AdaSoftLibrary.Application.UnitTests.Mocks;
+using AdaSoftLibrary.Domain.Constants;
 using AutoMapper;
 using Moq;
 using Shouldly;
@@ -41,13 +42,18 @@ public class ReturnBookTests
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        result.ShouldBeOfType<Unit>();
+        result.ShouldBeOfType<ReturnBook.Response>();
+
+        Assert.True(result.Success);
+        Assert.True(string.IsNullOrEmpty(result.Message));
+        Assert.Equal(0, result.ValidationErrors?.Count() ?? 0);
+        Assert.NotNull(result.Data);
 
         Assert.False(book?.IsBorrowed);
     }
 
     [Fact]
-    public async Task ReturnBook_WhenNotValidID_ThrowNotFoundException()
+    public async Task ReturnBook_WhenNotValidID_NotFoundException()
     {
         // Arrange
         const int bookId = 10;
@@ -61,7 +67,7 @@ public class ReturnBookTests
     }
 
     [Fact]
-    public async Task ReturnBook_WhenNotBorrowed_ThrowValidationException()
+    public async Task ReturnBook_WhenNotBorrowed_RetrunValidationError()
     {
         // Arrange
         const int bookId = 6;
@@ -69,10 +75,18 @@ public class ReturnBookTests
 
         // Act
         var command = new ReturnBook.Command(bookId);
+        var result = await handler.Handle(command, CancellationToken.None);
         var book = await GetBookFromRepository(bookId);
 
         // Assert
-        await Assert.ThrowsAsync<ValidationException>(() => handler.Handle(command, CancellationToken.None));
+        result.ShouldBeOfType<ReturnBook.Response>();
+
+        Assert.False(result.Success);
+        Assert.False(string.IsNullOrEmpty(result.Message));
+        Assert.NotNull(result.ValidationErrors);
+        Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
+        Assert.Equal(MessageConstants.BookMustBeBorrowed, result.ValidationErrors?.FirstOrDefault());
+        Assert.Null(result.Data);
 
         Assert.False(book?.IsBorrowed);
     }

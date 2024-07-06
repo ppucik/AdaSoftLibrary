@@ -59,6 +59,7 @@ public class UpdateBookTests
         Assert.True(result.Success);
         Assert.True(string.IsNullOrEmpty(result.Message));
         Assert.Equal(0, result.ValidationErrors?.Count() ?? 0);
+        Assert.NotNull(result.Data);
         Assert.Equal(bookId, result.Data?.Id);
         Assert.Equal("Autor", result.Data?.Author);
         Assert.Equal("Názov", result.Data?.Name);

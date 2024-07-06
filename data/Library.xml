@@ -47,7 +47,7 @@
   <Book id="5">
     <Author>William Shakespeare</Author>
     <Name>Hamlet</Name>
-    <Year>2016</Year>
+    <Year>2006</Year>
     <Description>Bratislava: Ikar, Odeon</Description>
     <Borrowed>
       <FirstName>Jozef</FirstName>
@@ -60,10 +60,5 @@
     <Name>Živý bič</Name>
     <Year>2014</Year>
     <Description>Bratislava: Literárne informačné centrum</Description>
-    <Borrowed>
-      <FirstName />
-      <LastName />
-      <From />
-    </Borrowed>
   </Book>
 </Library>
