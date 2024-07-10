@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using Unchase.Swashbuckle.AspNetCore.Extensions.Extensions;
 using Unchase.Swashbuckle.AspNetCore.Extensions.Options;
@@ -8,9 +9,11 @@ namespace AdaSoftLibrary.Application.Extensions;
 
 public static class SwaggerExtension
 {
+    [RequiresAssemblyFiles()]
     public static void AddSwagger(this IServiceCollection services, string version = "v1")
     {
         var assembly = Assembly.GetExecutingAssembly().GetName();
+        var location = Assembly.GetExecutingAssembly().Location;
 
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(options =>
@@ -18,7 +21,7 @@ public static class SwaggerExtension
             options.SwaggerDoc(version, new OpenApiInfo
             {
                 Title = "AdaSoftLibrary Web API",
-                Description = $"Version: {assembly.Version?.ToString()}, Date: {File.GetLastWriteTime(Assembly.GetExecutingAssembly().Location)}",
+                Description = $"Version: {assembly.Version?.ToString()}, Date: {File.GetLastWriteTime(location)}",
                 Version = version
             });
 

@@ -7,7 +7,7 @@ namespace AdaSoftLibrary.Application.Books.Validation;
 
 public class BorrowBookCommandValidator : AbstractValidator<BorrowBook.Command>
 {
-    private readonly IBookRepository? _bookRepository;
+    private readonly IBookRepository _bookRepository;
 
     public BorrowBookCommandValidator(IBookRepository bookRepository)
     {
