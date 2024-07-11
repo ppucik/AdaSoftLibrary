@@ -1,3 +1,4 @@
+using AdaSoftLibrary.Api.Swagger;
 using AdaSoftLibrary.Application;
 using AdaSoftLibrary.Application.Common.Configurations;
 using AdaSoftLibrary.Application.Extensions;

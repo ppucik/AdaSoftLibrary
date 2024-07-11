@@ -7,7 +7,7 @@ namespace AdaSoftLibrary.Domain.Enums;
 /// Filter pre zoznam kníh
 /// </summary>
 [JsonConverter(typeof(JsonStringEnumConverter))]
-public enum BookFilterEnum
+public enum BookFilterEnum : int
 {
     /// <summary>
     /// Všetky knihy

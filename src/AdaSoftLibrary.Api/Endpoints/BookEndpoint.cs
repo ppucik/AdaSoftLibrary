@@ -1,8 +1,10 @@
 ﻿using AdaSoftLibrary.Api.Contracts;
 using AdaSoftLibrary.Api.Contractsô;
+using AdaSoftLibrary.Api.Filters;
 using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Books.Contracts;
 using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Domain.Enums;
 using Carter;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +15,9 @@ public class BookEndpoint : ICarterModule
 {
     public void AddRoutes(IEndpointRouteBuilder app)
     {
-        var api = app.MapGroup("api/books").WithOpenApi();
+        var api = app.MapGroup("api/books")
+            .AddEndpointFilter<BasicAuthenticationFilter>()
+            .WithOpenApi();
 
         api.MapGet("/", GetBooks)
             .Produces<IReadOnlyCollection<GetBookResponse>>(StatusCodes.Status200OK)
@@ -53,12 +57,13 @@ public class BookEndpoint : ICarterModule
             .WithSummary("Vymazanie knihy");
     }
 
-    private async Task<IResult> GetBooks([AsParameters] GetBooksRequest request, IMediator mediator)
+    //private async Task<IResult> GetBooks([AsParameters] GetBooksRequest request, IMediator mediator)
+    private async Task<IResult> GetBooks([FromQuery] BookFilterEnum bookFilter, [FromQuery] string? searchTerm, IMediator mediator)
     {
         var query = new GetBooks.Query
         {
-            BookFilter = request.BookFilter,
-            SearchTerm = request.SearchTerm
+            BookFilter = bookFilter, //request.BookFilter,
+            SearchTerm = searchTerm  //request.SearchTerm
         };
 
         var result = await mediator.Send(query);
