@@ -84,7 +84,7 @@ public class BookController : Controller
 
         var model = new DetailViewModel
         {
-            ID = id,
+            Id = id,
 
             Author = book.Author,
             Name = book.Name,
@@ -137,12 +137,15 @@ public class BookController : Controller
         {
             // Success toastr alert
             _notyf.Success("Kniha bola zaevidovaná");
+            _logger.LogInformation($"Kniha {model.Author}:{model.Name} bola zaevidovaná");
+
             return RedirectToAction(ACTION_INDEX);
         }
         else
         {
             // Backhand error message
             _notyf.Error(result.Message);
+            _logger.LogError($"Kniha {model.Author}:{model.Name} nebola zaevidovaná");
             TempData["msg"] = result.ValidationErrorsSummary;
         }
 
@@ -210,12 +213,15 @@ public class BookController : Controller
         {
             // Success toastr alert
             _notyf.Success("Kniha bola uložená");
+            _logger.LogInformation($"Kniha ({model.Id}) {model.Author}:{model.Name} bola uložená");
+
             return RedirectToAction(ACTION_INDEX);
         }
         else
         {
             // Backhand error message
             _notyf.Error(result.ValidationErrorsSummary);
+            _logger.LogError($"Kniha ({model.Id}) {model.Author}:{model.Name} nebola uložená");
             TempData["msg"] = result.ValidationErrorsSummary;
         }
 
@@ -238,7 +244,7 @@ public class BookController : Controller
 
         var command = new BorrowBook.Command
         {
-            Id = model.ID,
+            Id = model.Id,
             FirstName = model.FirstName!,
             LastName = model.LastName!
         };
@@ -249,12 +255,15 @@ public class BookController : Controller
         {
             // Success toastr alert
             _notyf.Success("Kniha bola objednaná");
+            _logger.LogInformation($"Kniha ({model.Id}) {model.Author}:{model.Name} bola objednaná");
+
             return RedirectToAction(ACTION_INDEX);
         }
         else
         {
             // Backhand error message
             _notyf.Error(result.ValidationErrorsSummary);
+            _logger.LogError($"Kniha ({model.Id}) {model.Author}:{model.Name} nebola objednaná");
         }
 
         return View(ACTION_DETAIL, model);
@@ -269,19 +278,22 @@ public class BookController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Return(DetailViewModel model)
     {
-        var command = new ReturnBook.Command(model.ID);
+        var command = new ReturnBook.Command(model.Id);
         var result = await _mediator.Send(command);
 
         if (result.Success)
         {
             // Success toastr alert
             _notyf.Success("Kniha bola vrátená");
+            _logger.LogInformation($"Kniha ({model.Id}) {model.Author}:{model.Name} bola vrátená");
+
             return RedirectToAction(ACTION_INDEX);
         }
         else
         {
             // Backhand error message
             _notyf.Error(result.ValidationErrorsSummary);
+            _logger.LogError($"Kniha ({model.Id}) {model.Author}:{model.Name} nebola vrátená");
         }
 
         return View(ACTION_DETAIL, model);
@@ -321,6 +333,7 @@ public class BookController : Controller
 
         // Success toastr alert
         _notyf.Success("Kniha bola vymazaná");
+        _logger.LogInformation($"Kniha ({model.Id}) {model.Author}:{model.Name} bola vymazaná");
 
         return RedirectToAction(ACTION_INDEX);
     }

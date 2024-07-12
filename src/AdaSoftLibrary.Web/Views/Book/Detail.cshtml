@@ -14,7 +14,7 @@
     <div class="row p-2">
         <div class="col-6">
             <form asp-controller="@BookController.NAME" asp-action="@(Model.IsBorrowed ? BookController.ACTION_RETURN : BookController.ACTION_BORROW)" method="post">
-                <input asp-for="@Model.ID" type="hidden" />
+                <input asp-for="@Model.Id" type="hidden" />
                 <input asp-for="@Model.Author" type="hidden" />
                 <input asp-for="@Model.Name" type="hidden" />
                 <input asp-for="@Model.Year" type="hidden" />

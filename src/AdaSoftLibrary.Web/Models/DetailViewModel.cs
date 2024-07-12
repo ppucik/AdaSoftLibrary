@@ -8,7 +8,7 @@ namespace AdaSoftLibrary.Web.Models;
 /// </summary>
 public class DetailViewModel : BookViewModel
 {
-    public int ID { get; set; }
+    public int Id { get; set; }
 
     /// <summary>
     /// Meno čitateľa
