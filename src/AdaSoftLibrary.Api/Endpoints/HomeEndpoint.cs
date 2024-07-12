@@ -13,7 +13,7 @@ public class HomeEndpoint : ICarterModule
         app.MapGet("/", (IHostEnvironment env, IConfiguration cfg) => @$"
             Hello {env.ApplicationName}!
             Web API: {DateTime.Now.ToLongDateString()} '{DateTime.Now.ToLongTimeString()}'
-            Version: {Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyFileVersionAttribute>()?.Version}, {File.GetLastWriteTime(Assembly.GetExecutingAssembly().Location)}
+            Version: {Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyFileVersionAttribute>()?.Version}, {File.GetLastWriteTime(AppContext.BaseDirectory)}
             ENV: {env.EnvironmentName}").WithSummary("Web API Info").WithOpenApi();
 
         app.MapPost("/login", Login)

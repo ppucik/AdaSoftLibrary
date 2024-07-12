@@ -11,7 +11,6 @@ public static class SwaggerExtension
     public static void AddSwagger(this IServiceCollection services, string version = "v1")
     {
         var assembly = Assembly.GetExecutingAssembly().GetName();
-        var location = Assembly.GetExecutingAssembly().Location;
 
         services.AddEndpointsApiExplorer();
 
@@ -22,7 +21,7 @@ public static class SwaggerExtension
             options.SwaggerDoc(version, new OpenApiInfo
             {
                 Title = "AdaSoftLibrary Web API",
-                Description = $"Version: {assembly.Version?.ToString()}, Date: {File.GetLastWriteTime(location)}",
+                Description = $"Version: {assembly.Version?.ToString()}, Date: {File.GetLastWriteTime(AppContext.BaseDirectory)}",
                 Version = version
             });
 
