@@ -1,5 +1,6 @@
 ﻿using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.Extensions;
+using AdaSoftLibrary.Domain.Common;
 using AdaSoftLibrary.Domain.Entities;
 using AdaSoftLibrary.Domain.Enums;
 using Fastenshtein;
@@ -8,44 +9,44 @@ namespace AdaSoftLibrary.Infrastructure.Persistence.BookList;
 
 public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
 {
-    public Task<IEnumerable<Book>> GetListAsync(
-        BookFilterEnum bookFilter,
-        string? author = null,
-        string? name = null,
-        string? searchTerm = null,
+    public async Task<IEnumerable<Book>> GetListAsync(
+        BookFilter bookFilter,
+        Pagination pagination,
         CancellationToken cancellationToken = default)
     {
-        var books = bookFilter switch
+        var books = bookFilter.BookStatus switch
         {
-            BookFilterEnum.AllBooks => _xmlContext.BookList,
-            BookFilterEnum.FreeBooks => _xmlContext.BookList.Where(x => !x.IsBorrowed),
-            BookFilterEnum.BorrowedBooks => _xmlContext.BookList.Where(x => x.IsBorrowed),
+            BookStatusEnum.AllBooks => _xmlContext.BookList,
+            BookStatusEnum.FreeBooks => _xmlContext.BookList.Where(x => !x.IsBorrowed),
+            BookStatusEnum.BorrowedBooks => _xmlContext.BookList.Where(x => x.IsBorrowed),
             _ => _xmlContext.BookList
         };
 
-        if (!string.IsNullOrEmpty(author))
+        if (!string.IsNullOrEmpty(bookFilter.Author))
         {
             // Levenshtein distance algoritmus vyhľadanie autora s 85% zhodou 
-            books = books.Where(x => LevenshteinMatch(x.Author, author, 85));
+            books = books.Where(x => LevenshteinMatch(x.Author, bookFilter.Author, 85));
         }
 
-        if (!string.IsNullOrEmpty(name))
+        if (!string.IsNullOrEmpty(bookFilter.Name))
         {
             // Levenshtein distance algoritmus vyhľadávania názvu s 75% zhodou
-            books = books.Where(x => LevenshteinMatch(x.Name, name, 75));
+            books = books.Where(x => LevenshteinMatch(x.Name, bookFilter.Name, 75));
         }
 
-        if (!string.IsNullOrEmpty(searchTerm))
+        if (!string.IsNullOrEmpty(bookFilter.SearchTerm))
         {
             // Fulltext vyhľadanie časti mena autora alebo slova v názve CI AI
-            string text = searchTerm.RemoveDiacritics().ToUpper();
+            string text = bookFilter.SearchTerm.RemoveDiacritics().ToUpper();
 
             books = books.Where(x =>
                 x.Author.RemoveDiacritics().ToUpper().Contains(text) ||
                 x.Name.RemoveDiacritics().ToUpper().Contains(text));
         }
 
-        return Task.FromResult(books);
+        int skipNumber = (pagination.PageNumber - 1) * pagination.PageSize;
+
+        return await Task.FromResult(books.Skip(skipNumber).Take(pagination.PageSize));
     }
 
     // Levenshtein distance algoritmus
@@ -55,6 +56,11 @@ public class BookXmlRepository(IAppDataContext _xmlContext) : IBookRepository
         double similarity = 100.0 - (distance * 100.0 / Math.Max(originalStr.Length, searchText.Length));
 
         return similarity >= threshold;
+    }
+
+    public Task<int> GetCouuntAsync(CancellationToken cancellationToken = default)
+    {
+        return Task.FromResult(_xmlContext.BookList.Count());
     }
 
     public Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken = default)

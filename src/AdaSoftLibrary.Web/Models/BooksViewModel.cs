@@ -1,5 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Contracts;
-using System.ComponentModel.DataAnnotations;
+using AdaSoftLibrary.Domain.Common;
 
 namespace AdaSoftLibrary.Web.Models;
 
@@ -8,18 +8,12 @@ public class BooksViewModel
     /// <summary>
     /// Zoznam kníh
     /// </summary>
-    public IReadOnlyCollection<GetBookResponse> Books { get; set; } = null!;
+    public PagedList<GetBookResponse> Books { get; set; } = null!;
 
     /// <summary>
     /// Podmienky vyhľadávania <see cref="SearchViewModel" />
     /// </summary>
     public SearchViewModel Search { get; set; } = new();
-
-    /// <summary>
-    /// Počet kníh
-    /// </summary>
-    [Display(Name = "Počet kníh")]
-    public int BooksCount => Books?.Count ?? 0;
 
     /// <summary>
     /// Je prihlásený?

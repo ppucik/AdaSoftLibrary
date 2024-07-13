@@ -3,6 +3,7 @@ using AdaSoftLibrary.Application.Books.Mapping;
 using AdaSoftLibrary.Application.Books.Queries;
 using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.UnitTests.Mocks;
+using AdaSoftLibrary.Domain.Common;
 using AdaSoftLibrary.Domain.Enums;
 using AutoMapper;
 using Moq;
@@ -51,12 +52,28 @@ public class GetBookTests
         var handler = new GetBooks.QueryHandler(_bookRepository.Object, _mapper);
 
         // Act
-        var query = new GetBooks.Query();
+        var query = new GetBooks.Query
+        {
+            BookFilter = new BookFilter
+            {
+                BookStatus = BookStatusEnum.AllBooks
+            },
+            Pagination = new Pagination
+            {
+                PageNumber = 1,
+                PageSize = 100
+            }
+        };
         var result = await handler.Handle(query, CancellationToken.None);
 
         // Assert
-        result.ShouldBeOfType<List<GetBookResponse>>();
-        result.Count.ShouldBe(6);
+        result.ShouldBeOfType<PagedList<GetBookResponse>>();
+
+        //result.Items.Count.ShouldBe(5);
+        //result.PageNumber.ShouldBe(1);
+        //result.PageSize.ShouldBe(5);
+        //result.TotalPages.ShouldBe(2);
+        result.TotalCount.ShouldBe(6);
     }
 
     [Fact]
@@ -68,15 +85,18 @@ public class GetBookTests
         // Act
         var query = new GetBooks.Query()
         {
-            BookFilter = BookFilterEnum.FreeBooks
+            BookFilter = new BookFilter
+            {
+                BookStatus = BookStatusEnum.FreeBooks
+            }
         };
         var result = await handler.Handle(query, CancellationToken.None);
 
         // Assert
-        result.ShouldBeOfType<List<GetBookResponse>>();
+        result.ShouldBeOfType<PagedList<GetBookResponse>>();
 
-        Assert.Equal(2, result.Count());
-        Assert.All(result, book => Assert.False(book.IsBorrowed));
+        Assert.Equal(2, result.Items.Count);
+        Assert.All(result.Items, book => Assert.False(book.IsBorrowed));
     }
 
     [Fact]
@@ -88,15 +108,18 @@ public class GetBookTests
         // Act
         var query = new GetBooks.Query()
         {
-            BookFilter = BookFilterEnum.BorrowedBooks
+            BookFilter = new BookFilter
+            {
+                BookStatus = BookStatusEnum.BorrowedBooks
+            }
         };
         var result = await handler.Handle(query, CancellationToken.None);
 
         // Assert
-        result.ShouldBeOfType<List<GetBookResponse>>();
+        result.ShouldBeOfType<PagedList<GetBookResponse>>();
 
-        Assert.Equal(4, result.Count());
-        Assert.All(result, book => Assert.True(book.IsBorrowed));
+        Assert.Equal(4, result.Items.Count);
+        Assert.All(result.Items, book => Assert.True(book.IsBorrowed));
     }
 
     [Fact]
@@ -108,15 +131,18 @@ public class GetBookTests
         // Act
         var query = new GetBooks.Query()
         {
-            Author = "william shakespeare"
+            BookFilter = new BookFilter
+            {
+                Author = "william shakespeare"
+            }
         };
         var result = await handler.Handle(query, CancellationToken.None);
 
         // Assert
-        result.ShouldBeOfType<List<GetBookResponse>>();
+        result.ShouldBeOfType<PagedList<GetBookResponse>>();
 
-        Assert.Equal(2, result.Count());
-        Assert.All(result, book => Assert.True(book.Author == "William Shakespeare"));
+        Assert.Equal(2, result.Items.Count);
+        Assert.All(result.Items, book => Assert.True(book.Author == "William Shakespeare"));
     }
 
     [Fact]
@@ -128,15 +154,18 @@ public class GetBookTests
         // Act
         var query = new GetBooks.Query()
         {
-            Name = "hamlet"
+            BookFilter = new BookFilter
+            {
+                Name = "hamlet"
+            }
         };
         var result = await handler.Handle(query, CancellationToken.None);
 
         // Assert
-        result.ShouldBeOfType<List<GetBookResponse>>();
+        result.ShouldBeOfType<PagedList<GetBookResponse>>();
 
-        Assert.Single(result);
-        Assert.All(result, book => Assert.True(book.Name == "Hamlet"));
+        Assert.Single(result.Items);
+        Assert.All(result.Items, book => Assert.True(book.Name == "Hamlet"));
     }
 
     [Fact]
@@ -148,14 +177,17 @@ public class GetBookTests
         // Act
         var query = new GetBooks.Query()
         {
-            SearchTerm = "or"
+            BookFilter = new BookFilter
+            {
+                SearchTerm = "or"
+            }
         };
         var result = await handler.Handle(query, CancellationToken.None);
 
         // Assert
-        result.ShouldBeOfType<List<GetBookResponse>>();
+        result.ShouldBeOfType<PagedList<GetBookResponse>>();
 
-        Assert.Equal(3, result.Count());
+        Assert.Equal(3, result.Items.Count);
     }
 
     [Fact]

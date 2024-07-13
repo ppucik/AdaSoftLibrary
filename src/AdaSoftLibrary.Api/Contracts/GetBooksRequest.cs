@@ -8,9 +8,9 @@ namespace AdaSoftLibrary.Api.Contracts;
 public class GetBooksRequest
 {
     /// <summary>
-    /// Filter pre zoznam kníh <see cref="BookFilterEnum" />
+    /// Filter pre zoznam kníh <see cref="BookStatusEnum" />
     /// </summary>
-    public BookFilterEnum BookFilter { get; set; }
+    public BookStatusEnum BookStatus { get; set; }
 
     /// <summary>
     /// Časť názvu knihy alebo mena autora

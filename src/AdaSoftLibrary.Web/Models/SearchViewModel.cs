@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Domain.Enums;
+using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
 namespace AdaSoftLibrary.Web.Models;
@@ -9,12 +10,13 @@ namespace AdaSoftLibrary.Web.Models;
 public class SearchViewModel
 {
     /// <summary>
-    /// Filter zoznamu kníh <see cref="BookFilterEnum" />
+    /// Stav kníhy <see cref="BookStatusEnum" />
     /// </summary>
-    [Display(Name = "Filter")]
-    public BookFilterEnum BookFilter { get; set; } = BookFilterEnum.AllBooks;
+    [Display(Name = "Stav kníhy")]
+    public BookStatusEnum BookStatus { get; set; } = BookStatusEnum.AllBooks;
+
     /// <summary>
-    /// Vyhľadať
+    /// Vyhľadať text
     /// </summary>
     [Display(Name = "Vyhľadané")]
     public string? SearchTerm { get; set; }
@@ -36,6 +38,20 @@ public class SearchViewModel
     /// </summary>
     [Display(Name = "Len dostupné knihy")]
     public bool OnlyAvailable { get; set; }
+
+    /// <summary>
+    /// Číslo stránky
+    /// </summary>
+    [FromQuery(Name = "page-number")]
+    [Range(1, int.MaxValue)]
+    public int PageNumber { get; set; } = 1;
+
+    /// <summary>
+    /// Počet záznamov
+    /// </summary>
+    [FromQuery(Name = "page-size")]
+    [Range(5, 100)]
+    public int PageSize { get; set; } = 100;
 
     public override string ToString()
     {

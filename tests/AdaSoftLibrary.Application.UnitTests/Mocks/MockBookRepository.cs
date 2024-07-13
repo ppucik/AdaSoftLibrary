@@ -1,5 +1,6 @@
 ﻿using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.Extensions;
+using AdaSoftLibrary.Domain.Common;
 using AdaSoftLibrary.Domain.Entities;
 using AdaSoftLibrary.Domain.Enums;
 using Moq;
@@ -86,43 +87,47 @@ public class MockBookRepository
 
         mockBookRepository
             .Setup(x => x.GetListAsync(
-                It.IsAny<BookFilterEnum>(),
-                It.IsAny<string?>(),
-                It.IsAny<string?>(),
-                It.IsAny<string?>(),
+                It.IsAny<BookFilter>(),
+                It.IsAny<Pagination>(),
                 It.IsAny<CancellationToken>()))
-            .ReturnsAsync((BookFilterEnum bookFilter,
-                string? author, string? name, string? searchTerm,
-                CancellationToken cancellationToken) =>
+            .ReturnsAsync((BookFilter bookFilter, Pagination pagination, CancellationToken cancellationToken) =>
             {
-                var result = (bookFilter switch
+                var result = (bookFilter.BookStatus switch
                 {
-                    BookFilterEnum.AllBooks => books,
-                    BookFilterEnum.FreeBooks => books.Where(x => !x.IsBorrowed),
-                    BookFilterEnum.BorrowedBooks => books.Where(x => x.IsBorrowed),
+                    BookStatusEnum.AllBooks => books,
+                    BookStatusEnum.FreeBooks => books.Where(x => !x.IsBorrowed),
+                    BookStatusEnum.BorrowedBooks => books.Where(x => x.IsBorrowed),
                     _ => books
                 }).AsEnumerable();
 
-                if (!string.IsNullOrEmpty(author))
+                if (!string.IsNullOrEmpty(bookFilter.Author))
                 {
-                    result = result.Where(book => book.Author.Equals(author, StringComparison.OrdinalIgnoreCase));
+                    result = result.Where(book => book.Author.Equals(bookFilter.Author, StringComparison.OrdinalIgnoreCase));
                 }
 
-                if (!string.IsNullOrEmpty(name))
+                if (!string.IsNullOrEmpty(bookFilter.Name))
                 {
-                    result = result.Where(book => book.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+                    result = result.Where(book => book.Name.Equals(bookFilter.Name, StringComparison.OrdinalIgnoreCase));
                 }
 
-                if (!string.IsNullOrEmpty(searchTerm))
+                if (!string.IsNullOrEmpty(bookFilter.SearchTerm))
                 {
-                    string text = searchTerm.RemoveDiacritics();
+                    string text = bookFilter.SearchTerm.RemoveDiacritics();
 
                     result = result.Where(book =>
                         book.Author.RemoveDiacritics().Contains(text, StringComparison.OrdinalIgnoreCase) ||
                         book.Name.RemoveDiacritics().Contains(text, StringComparison.OrdinalIgnoreCase));
                 }
 
-                return result;
+                return result.Skip((pagination.PageNumber - 1) * pagination.PageSize).Take(pagination.PageSize);
+            });
+
+        mockBookRepository
+            .Setup(x => x.GetCouuntAsync(
+                It.IsAny<CancellationToken>()))
+            .ReturnsAsync((CancellationToken cancellationToken) =>
+            {
+                return books.Count;
             });
 
         mockBookRepository

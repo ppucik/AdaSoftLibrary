@@ -1,6 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Books.Mapping;
-using AdaSoftLibrary.Application.Books.Queries;
 using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.UnitTests.Mocks;
 using AdaSoftLibrary.Domain.Constants;
@@ -43,7 +42,7 @@ public class CreateBookTests
         };
 
         var result = await handler.Handle(command, CancellationToken.None);
-        var count = await GetBooksCount();
+        var count = await _bookRepository.Object.GetCouuntAsync(CancellationToken.None);
 
         // Assert
         result.ShouldBeOfType<CreateBook.Response>();
@@ -75,7 +74,7 @@ public class CreateBookTests
         };
 
         var result = await handler.Handle(command, CancellationToken.None);
-        var count = await GetBooksCount();
+        var count = await _bookRepository.Object.GetCouuntAsync(CancellationToken.None);
 
         // Assert
         result.ShouldBeOfType<CreateBook.Response>();
@@ -246,13 +245,5 @@ public class CreateBookTests
         Assert.Equal(1, result.ValidationErrors?.Count() ?? 0);
         Assert.Equal(MessageConstants.YearOutOfRange, result.ValidationErrors?.FirstOrDefault());
         Assert.Null(result.Data);
-    }
-
-    private async Task<int> GetBooksCount()
-    {
-        var handler = new GetBooks.QueryHandler(_bookRepository.Object, _mapper);
-        var result = await handler.Handle(new GetBooks.Query(), CancellationToken.None);
-
-        return result?.Count ?? 0;
     }
 }

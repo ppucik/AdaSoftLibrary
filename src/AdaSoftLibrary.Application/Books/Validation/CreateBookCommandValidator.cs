@@ -1,5 +1,6 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Common.Interfaces;
+using AdaSoftLibrary.Domain.Common;
 using AdaSoftLibrary.Domain.Constants;
 using AdaSoftLibrary.Domain.Enums;
 using FluentValidation;
@@ -37,6 +38,13 @@ public class CreateBookCommandValidator : AbstractValidator<CreateBook.Command>
 
     private async Task<bool> IsBooklUnique(CreateBook.Command command)
     {
-        return (await _bookRepository.GetListAsync(BookFilterEnum.AllBooks, command.Author, command.Name)).Count() == 0;
+        var bookFilter = new BookFilter
+        {
+            BookStatus = BookStatusEnum.AllBooks,
+            Author = command.Author,
+            Name = command.Name
+        };
+
+        return (await _bookRepository.GetListAsync(bookFilter, new Pagination())).Count() == 0;
     }
 }

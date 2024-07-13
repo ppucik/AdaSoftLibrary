@@ -2,12 +2,15 @@
 
 namespace AdaSoftLibrary.Domain.Common;
 
+/// <summary>
+/// Filter pre zoznam kníh
+/// </summary>
 public class BookFilter
 {
     /// <summary>
-    /// Filter zoznamu kníh <see cref="BookFilterEnum" />
+    /// Stav kníhy <see cref="BookStatusEnum" />
     /// </summary>
-    public BookFilterEnum Availability { get; set; } = BookFilterEnum.AllBooks;
+    public BookStatusEnum BookStatus { get; set; } = BookStatusEnum.AllBooks;
 
     /// <summary>
     /// Hľadaný text (autor, názov, popis)

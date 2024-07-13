@@ -1,5 +1,6 @@
 ﻿using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Domain.Common;
 using AdaSoftLibrary.Domain.Enums;
 using AdaSoftLibrary.Web.Models;
 using AspNetCoreHero.ToastNotification.Abstractions;
@@ -46,7 +47,7 @@ public class BookController : Controller
     {
         if (search.OnlyAvailable)
         {
-            search.BookFilter = BookFilterEnum.FreeBooks;
+            search.BookStatus = BookStatusEnum.FreeBooks;
         }
 
         var model = new BooksViewModel
@@ -57,10 +58,18 @@ public class BookController : Controller
 
         var query = new GetBooks.Query
         {
-            BookFilter = search.BookFilter,
-            Author = search.Author,
-            Name = search.Name,
-            SearchTerm = search.SearchTerm
+            BookFilter = new BookFilter
+            {
+                BookStatus = search.BookStatus,
+                Author = search.Author,
+                Name = search.Name,
+                SearchTerm = search.SearchTerm,
+            },
+            Pagination = new Pagination
+            {
+                PageNumber = search.PageNumber,
+                PageSize = search.PageSize
+            }
         };
 
         model.Books = await _mediator.Send(query);
@@ -79,6 +88,7 @@ public class BookController : Controller
 
         if (book is null)
         {
+            _logger.LogWarning($"Kniha ID={id} neexistuje");
             return NotFound();
         }
 

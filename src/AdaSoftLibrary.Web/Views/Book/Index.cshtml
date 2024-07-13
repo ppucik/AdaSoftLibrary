@@ -14,13 +14,14 @@
         <div class="col-3 pt-4">
             @if (!string.IsNullOrEmpty(Model.Search.ToString()))
             {
-                <label asp-for="@Model.Search.SearchTerm" class="control-label fw-bolder"></label><span>:&nbsp;@Model.Search.ToString()</span>
+                <label asp-for="@Model.Search.SearchTerm" class="control-label fw-bolder"></label>
+                <span>:&nbsp;@Model.Search.ToString()</span>
             }
         </div>
         <div class="col-3 pt-3 text-end">
             @using (Html.BeginForm())
             {
-                <select asp-for="Search.BookFilter" asp-items="@Html.GetEnumSelectList<BookFilterEnum>()" class="form-control" onchange="this.form.submit();"></select>
+                <select asp-for="Search.BookStatus" asp-items="@Html.GetEnumSelectList<BookStatusEnum>()" class="form-control" onchange="this.form.submit();"></select>
             }
         </div>
         <div class="col-3 pt-3 text-end">
@@ -51,7 +52,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var book in Model.Books)
+            @foreach (var book in Model.Books.Items)
             {
                 <tr>
                     <td width="25%">@book.Author</td>
@@ -90,7 +91,31 @@
 
     <div class="row p-2">
         <div class="col-6">
-            <p><b>@Html.LabelFor(x => x.BooksCount)</b><span>:&nbsp;@Model.BooksCount</span></p>
+            <p><b>Počet záznamov:&nbsp;</b><span>@Model.Books.TotalCount</span></p>
+        </div>
+        <div class="col-6">
+            @*<nav>
+                <ul class="pagination justify-content-end">
+                    <li class="page-item @(Model.Books.HasPreviousPage ? "" : "disabled")">
+                        <a class="page-link text-black" asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" asp-route-page-number="1">Prvá</a>
+                    </li>
+                    <li class="page-item  @(Model.Books.HasPreviousPage ? "" : "disabled")">
+                        <a class="page-link text-black" asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" asp-route-page-number="@(Model.Books.PageNumber - 1)">Predchádzajúca</a>
+                    </li>
+                    @for (int i = 1; i <= Model.Books.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == Model.Books.PageNumber ? "active" : "")">
+                            <a class="page-link text-black" asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" asp-route-page-number="@i">@i</a>
+                        </li>
+                    }
+                    <li class="page-item  @(Model.Books.HasNextPage ? "" : "disabled")">
+                        <a class="page-link text-black" asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" asp-route-page-number="@(Model.Books.PageNumber + 1)">Nasledujúca</a>
+                    </li>
+                    <li class="page-item @(Model.Books.HasNextPage ? "" : "disabled")">
+                        <a class="page-link text-black" asp-controller="@BookController.NAME" asp-action="@BookController.ACTION_INDEX" asp-route-page-number="@Model.Books.TotalPages">Posledná</a>
+                    </li>
+                </ul>
+            </nav> *@
         </div>
     </div>
 </div>

@@ -3,7 +3,6 @@ using AdaSoftLibrary.Application.Books.Mapping;
 using AdaSoftLibrary.Application.Common.Interfaces;
 using AdaSoftLibrary.Application.Exceptions;
 using AdaSoftLibrary.Application.UnitTests.Mocks;
-using AdaSoftLibrary.Domain.Enums;
 using AutoMapper;
 using Moq;
 using Shouldly;
@@ -37,7 +36,7 @@ public class DeleteBookTests
         // Act
         var command = new DeleteBook.Command(bookId);
         var result = await handler.Handle(command, CancellationToken.None);
-        var count = await GetAllBooksCount();
+        var count = await _bookRepository.Object.GetCouuntAsync(CancellationToken.None);
 
         // Assert
         result.ShouldBeOfType<Unit>();
@@ -54,16 +53,11 @@ public class DeleteBookTests
 
         // Act
         var command = new DeleteBook.Command(bookId);
-        var count = await GetAllBooksCount();
+        var count = await _bookRepository.Object.GetCouuntAsync(CancellationToken.None);
 
         // Assert
         await Assert.ThrowsAsync<NotFoundException>(() => handler.Handle(command, CancellationToken.None));
 
         Assert.Equal(6, count);
-    }
-
-    private async Task<int> GetAllBooksCount()
-    {
-        return (await _bookRepository.Object.GetListAsync(BookFilterEnum.AllBooks)).Count();
     }
 }

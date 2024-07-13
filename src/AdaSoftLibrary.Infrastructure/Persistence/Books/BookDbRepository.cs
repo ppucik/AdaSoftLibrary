@@ -1,4 +1,5 @@
 ﻿using AdaSoftLibrary.Application.Common.Interfaces;
+using AdaSoftLibrary.Domain.Common;
 using AdaSoftLibrary.Domain.Entities;
 using AdaSoftLibrary.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
@@ -8,13 +9,11 @@ namespace AdaSoftLibrary.Infrastructure.Persistence.Books;
 public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
 {
     public async Task<IEnumerable<Book>> GetListAsync(
-        BookFilterEnum bookFilter,
-        string? author = null,
-        string? name = null,
-        string? searchTerm = null,
+        BookFilter bookFilter,
+        Pagination pagination,
         CancellationToken cancellationToken = default)
     {
-        var text = searchTerm?.ToUpper();
+        var text = bookFilter.SearchTerm?.ToUpper();
 
         //TODO: Levenshtein distance Author a Name + Fulltext CI AS
 
@@ -22,13 +21,20 @@ public class BookDbRepository(AppDbContext _dbContext) : IBookRepository
             .AsNoTracking()
             .Include(e => e.Borrowed)
             .Where(x =>
-                (bookFilter == BookFilterEnum.AllBooks) ||
-                (bookFilter == BookFilterEnum.FreeBooks && !x.IsBorrowed) ||
-                (bookFilter == BookFilterEnum.BorrowedBooks && x.IsBorrowed))
-            .Where(x => string.IsNullOrEmpty(author) || x.Author.ToUpper().Equals(author.ToUpper()))
-            .Where(x => string.IsNullOrEmpty(name) || x.Name.ToUpper().Equals(name.ToUpper()))
+                (bookFilter.BookStatus == BookStatusEnum.AllBooks) ||
+                (bookFilter.BookStatus == BookStatusEnum.FreeBooks && !x.IsBorrowed) ||
+                (bookFilter.BookStatus == BookStatusEnum.BorrowedBooks && x.IsBorrowed))
+            .Where(x => string.IsNullOrEmpty(bookFilter.Author) || x.Author.ToUpper().Equals(bookFilter.Author.ToUpper()))
+            .Where(x => string.IsNullOrEmpty(bookFilter.Name) || x.Name.ToUpper().Equals(bookFilter.Name.ToUpper()))
             .Where(x => string.IsNullOrEmpty(text) || x.Author.ToUpper().Contains(text) || x.Name.ToUpper().Contains(text))
+            .Skip((pagination.PageNumber - 1) * pagination.PageSize)
+            .Take(pagination.PageSize)
             .ToListAsync(cancellationToken);
+    }
+
+    public async Task<int> GetCouuntAsync(CancellationToken cancellationToken = default)
+    {
+        return await _dbContext.Books.CountAsync(cancellationToken);
     }
 
     public async Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken = default)

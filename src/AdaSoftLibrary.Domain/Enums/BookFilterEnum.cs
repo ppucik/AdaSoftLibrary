@@ -4,10 +4,10 @@ using System.Text.Json.Serialization;
 namespace AdaSoftLibrary.Domain.Enums;
 
 /// <summary>
-/// Filter pre zoznam kníh
+/// Stav kníhy
 /// </summary>
 [JsonConverter(typeof(JsonStringEnumConverter))]
-public enum BookFilterEnum : int
+public enum BookStatusEnum : int
 {
     /// <summary>
     /// Všetky knihy

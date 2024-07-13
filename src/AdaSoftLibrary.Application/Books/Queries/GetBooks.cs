@@ -1,6 +1,6 @@
 ﻿using AdaSoftLibrary.Application.Books.Contracts;
 using AdaSoftLibrary.Application.Common.Interfaces;
-using AdaSoftLibrary.Domain.Enums;
+using AdaSoftLibrary.Domain.Common;
 using AutoMapper;
 using MediatR;
 
@@ -11,30 +11,20 @@ namespace AdaSoftLibrary.Application.Books.Queries;
 /// </summary>
 public class GetBooks
 {
-    public class Query : IRequest<IReadOnlyCollection<GetBookResponse>>
+    public class Query : IRequest<PagedList<GetBookResponse>>
     {
         /// <summary>
-        /// Filter pre zoznam kníh <see cref="BookFilterEnum" />
+        /// Filter pre zoznam kníh
         /// </summary>
-        public BookFilterEnum BookFilter { get; set; }
+        public BookFilter BookFilter { get; set; } = new();
 
         /// <summary>
-        /// Autor
+        /// Stránkovanie a radenie záznamov
         /// </summary>
-        public string? Author { get; set; }
-
-        /// <summary>
-        /// Názov
-        /// </summary>
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Časť názvu knihy alebo mena autora
-        /// </summary>
-        public string? SearchTerm { get; set; }
+        public Pagination Pagination { get; set; } = new();
     }
 
-    public class QueryHandler : IRequestHandler<Query, IReadOnlyCollection<GetBookResponse>>
+    public class QueryHandler : IRequestHandler<Query, PagedList<GetBookResponse>>
     {
         private readonly IBookRepository _bookRepository;
         private readonly IMapper _mapper;
@@ -45,11 +35,20 @@ public class GetBooks
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
-        public async Task<IReadOnlyCollection<GetBookResponse>> Handle(Query query, CancellationToken cancellationToken)
+        public async Task<PagedList<GetBookResponse>> Handle(Query query, CancellationToken cancellationToken)
         {
-            var books = await _bookRepository.GetListAsync(query.BookFilter, query.Author, query.Name, query.SearchTerm, cancellationToken);
+            var books = await _bookRepository.GetListAsync(query.BookFilter, query.Pagination, cancellationToken);
 
-            return _mapper.Map<IReadOnlyCollection<GetBookResponse>>(books);
+            int pageNumber = query.Pagination.PageNumber > 0 ? query.Pagination.PageNumber : 1;
+            int pageSize = query.Pagination.PageSize;
+            int totalCount = books.Count(); // await _bookRepository.GetCouuntAsync(cancellationToken);
+
+            //// Možné použiť len pre DB, ktorá implementuje 'IAsyncQueryProvider', ale ne pre XML
+            //return await bookQuery
+            //    .ProjectTo<GetBookResponse>(_mapper.ConfigurationProvider)
+            //    .PaginatedListAsync(query.PageNumber, query.PageSize)
+
+            return new PagedList<GetBookResponse>(_mapper.Map<IReadOnlyCollection<GetBookResponse>>(books), pageNumber, pageSize, totalCount);
         }
     }
 }

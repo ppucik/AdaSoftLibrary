@@ -4,6 +4,7 @@ using AdaSoftLibrary.Api.Filters;
 using AdaSoftLibrary.Application.Books.Commands;
 using AdaSoftLibrary.Application.Books.Contracts;
 using AdaSoftLibrary.Application.Books.Queries;
+using AdaSoftLibrary.Domain.Common;
 using AdaSoftLibrary.Domain.Enums;
 using Carter;
 using MediatR;
@@ -20,7 +21,7 @@ public class BookEndpoint : ICarterModule
             .WithOpenApi();
 
         api.MapGet("/", GetBooks)
-            .Produces<IReadOnlyCollection<GetBookResponse>>(StatusCodes.Status200OK)
+            .Produces<PagedList<GetBookResponse>>(StatusCodes.Status200OK)
             .WithSummary("Zoznam kníh");
 
         api.MapGet("/{id:int}", GetBook)
@@ -58,12 +59,15 @@ public class BookEndpoint : ICarterModule
     }
 
     //private async Task<IResult> GetBooks([AsParameters] GetBooksRequest request, IMediator mediator)
-    private async Task<IResult> GetBooks([FromQuery] BookFilterEnum bookFilter, [FromQuery] string? searchTerm, IMediator mediator)
+    private async Task<IResult> GetBooks([FromQuery] BookStatusEnum bookStatus, [FromQuery] string? searchTerm, IMediator mediator)
     {
         var query = new GetBooks.Query
         {
-            BookFilter = bookFilter, //request.BookFilter,
-            SearchTerm = searchTerm  //request.SearchTerm
+            BookFilter = new BookFilter
+            {
+                BookStatus = bookStatus, //request.BookStatus,
+                SearchTerm = searchTerm  //request.SearchTerm
+            }
         };
 
         var result = await mediator.Send(query);
