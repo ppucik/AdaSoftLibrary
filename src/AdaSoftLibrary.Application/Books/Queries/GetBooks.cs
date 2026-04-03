@@ -43,11 +43,6 @@ public class GetBooks
             int pageSize = query.Pagination.PageSize;
             int totalCount = books.Count(); // await _bookRepository.GetCouuntAsync(cancellationToken);
 
-            //// Možné použiť len pre DB, ktorá implementuje 'IAsyncQueryProvider', ale ne pre XML
-            //return await bookQuery
-            //    .ProjectTo<GetBookResponse>(_mapper.ConfigurationProvider)
-            //    .PaginatedListAsync(query.PageNumber, query.PageSize)
-
             return new PagedList<GetBookResponse>(_mapper.Map<IReadOnlyCollection<GetBookResponse>>(books), pageNumber, pageSize, totalCount);
         }
     }

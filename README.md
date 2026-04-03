@@ -1,4 +1,4 @@
-﻿# AdaSoft Testovací príklad – C#/.NET Developer
+﻿# AdaSoft testovací príklad – C#/.NET Developer
 
 Príklad je zameraný na overenie základných programátorských schopností v C# na platforme .NET s použitím vývojového nástroja Microsoft Visual Studio.
 
